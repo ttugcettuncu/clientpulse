@@ -18,3 +18,9 @@ __pycache__/
 
 # Editor settings (local)
 .vscode/
+
+# Local task plan (not published, mentions employer)
+GOREV_PLANI.md
+
+# Generated STT outputs (reproducible: python -m src.eval_stt)
+data/synthetic_calls/transcripts/

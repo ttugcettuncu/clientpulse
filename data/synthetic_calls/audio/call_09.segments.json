@@ -1,0 +1,128 @@
+[
+  {
+    "speaker": "consultant",
+    "start": 0.0,
+    "end": 2.568,
+    "text": "Good morning, this is Elena Ward."
+  },
+  {
+    "speaker": "customer",
+    "start": 2.968,
+    "end": 10.888,
+    "text": "Good morning, Elena! It is Michael Torres. I just have a couple of quick questions, nothing urgent."
+  },
+  {
+    "speaker": "consultant",
+    "start": 11.288,
+    "end": 15.608,
+    "text": "Hi Michael, always happy to help. What is on your mind?"
+  },
+  {
+    "speaker": "customer",
+    "start": 16.008,
+    "end": 25.056,
+    "text": "First, I am going on vacation in two weeks. Our session is planned for the day I leave. Can we move it?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 25.456,
+    "end": 31.84,
+    "text": "Of course. Since it is more than forty-eight hours away, moving it is completely free."
+  },
+  {
+    "speaker": "customer",
+    "start": 32.24,
+    "end": 35.96,
+    "text": "Great. Could we do it the Friday before instead?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 36.36,
+    "end": 42.84,
+    "text": "Let me check. Friday the thirteenth, I have eleven in the morning or three in the afternoon."
+  },
+  {
+    "speaker": "customer",
+    "start": 43.239,
+    "end": 45.519,
+    "text": "Eleven works better for me."
+  },
+  {
+    "speaker": "consultant",
+    "start": 45.919,
+    "end": 50.695,
+    "text": "Done, Friday at eleven. I will update the calendar invite."
+  },
+  {
+    "speaker": "customer",
+    "start": 51.095,
+    "end": 58.823,
+    "text": "Thanks. Second question. My accountant asked about your invoices. When exactly are they due?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 59.223,
+    "end": 63.447,
+    "text": "All invoices are due within fourteen days of the invoice date."
+  },
+  {
+    "speaker": "customer",
+    "start": 63.847,
+    "end": 69.919,
+    "text": "And she asked if bank transfer is okay, because the company card has a low limit."
+  },
+  {
+    "speaker": "consultant",
+    "start": 70.319,
+    "end": 76.463,
+    "text": "Yes, bank transfer is fine. The bank details are at the bottom of every invoice."
+  },
+  {
+    "speaker": "customer",
+    "start": 76.863,
+    "end": 84.303,
+    "text": "Perfect. Last thing. While I am away, can I still email you if something comes up at work?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 84.703,
+    "end": 93.247,
+    "text": "Yes. As part of your retainer you have email support, and I reply within one business day, Monday to Friday."
+  },
+  {
+    "speaker": "customer",
+    "start": 93.647,
+    "end": 97.967,
+    "text": "So if I email on a Saturday, I hear back on Monday."
+  },
+  {
+    "speaker": "consultant",
+    "start": 98.367,
+    "end": 102.975,
+    "text": "Exactly. My working hours are nine to six on weekdays."
+  },
+  {
+    "speaker": "customer",
+    "start": 103.375,
+    "end": 108.007,
+    "text": "That is totally fine. I just wanted to know what to expect."
+  },
+  {
+    "speaker": "consultant",
+    "start": 108.406,
+    "end": 111.094,
+    "text": "Of course. Is there anything else?"
+  },
+  {
+    "speaker": "customer",
+    "start": 111.494,
+    "end": 115.862,
+    "text": "No, that was everything. Thanks for being so flexible."
+  },
+  {
+    "speaker": "consultant",
+    "start": 116.262,
+    "end": 121.758,
+    "text": "My pleasure, Michael. Enjoy your vacation, and see you Friday at eleven."
+  }
+]

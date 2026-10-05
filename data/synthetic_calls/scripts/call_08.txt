@@ -1,0 +1,24 @@
+DANIŞMAN: Hello, Elena Ward speaking.
+MÜŞTERİ: Elena, it is Rachel Green. I just saw an invoice from you for seventy-nine dollars, and I want to know what this is about.
+DANIŞMAN: Hi Rachel. Let me pull it up. Yes, that is the late cancellation fee for the session you cancelled on Wednesday.
+MÜŞTERİ: I cancelled because my daughter was sick. You are charging me for that?
+DANIŞMAN: I am really sorry about your daughter. I hope she is feeling better. The cancellation came in about six hours before the session, and my policy is that cancellations less than forty-eight hours before are charged at fifty percent.
+MÜŞTERİ: Fifty percent of a session I did not even have. That feels unfair.
+DANIŞMAN: I understand why it feels that way. The policy exists because I keep that time reserved and usually cannot fill it on short notice.
+MÜŞTERİ: I have been your client for two months. I have never cancelled before. Can you not make an exception?
+DANIŞMAN: I take that into account, Rachel. What I can do is apply the seventy-nine dollars as credit toward your next session, so it is not lost.
+MÜŞTERİ: That is not the point. I would still be paying for nothing.
+DANIŞMAN: I hear you. I do need to apply the same policy to all clients, otherwise it is not fair to the others.
+MÜŞTERİ: Honestly, this makes me question the whole thing. I have four sessions left in my package.
+DANIŞMAN: I would really like to continue working with you. The progress on your hiring plan has been good.
+MÜŞTERİ: Maybe, but I don't want to feel nickel and dimed every time life happens.
+DANIŞMAN: I understand. If you decide to stop, you can still get a pro rata refund for the unused sessions, minus the fifty dollar admin fee.
+MÜŞTERİ: Then I think that is what I want. Please cancel the rest of the package.
+DANIŞMAN: Alright. I am sorry it ends this way. I will calculate the refund and send you the details by email today.
+MÜŞTERİ: And the seventy-nine dollars?
+DANIŞMAN: I will deduct it from the refund, so you do not need to pay the invoice separately.
+MÜŞTERİ: Fine. Just send me the numbers.
+DANIŞMAN: I will. Take care, Rachel, and I hope your daughter feels better soon.
+# topic: complaint about a late cancellation fee, unresolved, client cancels the package
+# disposition: vazgecti
+# sentiment: negatif

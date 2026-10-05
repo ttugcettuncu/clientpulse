@@ -1,0 +1,128 @@
+[
+  {
+    "speaker": "consultant",
+    "start": 0.0,
+    "end": 2.496,
+    "text": "Hello, this is Elena Ward."
+  },
+  {
+    "speaker": "customer",
+    "start": 2.896,
+    "end": 9.664,
+    "text": "Elena, it is Priya Sharma. I have to be honest, I am quite frustrated right now."
+  },
+  {
+    "speaker": "consultant",
+    "start": 10.064,
+    "end": 14.504,
+    "text": "I am sorry to hear that, Priya. Please tell me what happened."
+  },
+  {
+    "speaker": "customer",
+    "start": 14.904,
+    "end": 24.24,
+    "text": "We had our kickoff session nine days ago. You said I would get the action plan within five business days. I still have nothing."
+  },
+  {
+    "speaker": "consultant",
+    "start": 24.64,
+    "end": 31.888,
+    "text": "You are right, and I apologize. That is my mistake. The plan should have reached you last Thursday."
+  },
+  {
+    "speaker": "customer",
+    "start": 32.288,
+    "end": 38.096,
+    "text": "I told my business partner we would have it this week. Now I look unprepared."
+  },
+  {
+    "speaker": "consultant",
+    "start": 38.496,
+    "end": 47.304,
+    "text": "I understand, and that is not the experience I want you to have. Can I explain what happened, and then tell you how I will fix it?"
+  },
+  {
+    "speaker": "customer",
+    "start": 47.703,
+    "end": 49.791,
+    "text": "Fine. Go ahead."
+  },
+  {
+    "speaker": "consultant",
+    "start": 50.191,
+    "end": 59.503,
+    "text": "The plan was finished, but it was sent to an old email address from your questionnaire. I should have checked that it arrived. That is on me."
+  },
+  {
+    "speaker": "customer",
+    "start": 59.903,
+    "end": 62.615,
+    "text": "An old address? Which one?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 63.015,
+    "end": 66.063,
+    "text": "The one ending in old studio dot com."
+  },
+  {
+    "speaker": "customer",
+    "start": 66.463,
+    "end": 72.775,
+    "text": "Oh, I did write that by accident. But you still should have noticed I never replied."
+  },
+  {
+    "speaker": "consultant",
+    "start": 73.175,
+    "end": 83.327,
+    "text": "Absolutely. Here is what I will do. I will send the plan to your current address within the next hour, and I will call you to confirm it arrived."
+  },
+  {
+    "speaker": "customer",
+    "start": 83.727,
+    "end": 85.695,
+    "text": "Okay, that helps."
+  },
+  {
+    "speaker": "consultant",
+    "start": 86.095,
+    "end": 97.927,
+    "text": "And because of the delay, I would like to add one extra session to your package at no cost. We can use it with your business partner, so we can walk through the plan together."
+  },
+  {
+    "speaker": "customer",
+    "start": 98.327,
+    "end": 104.255,
+    "text": "That is actually a good idea. He has a lot of questions about the budget part."
+  },
+  {
+    "speaker": "consultant",
+    "start": 104.655,
+    "end": 110.079,
+    "text": "Perfect. Would next Tuesday at two in the afternoon work for both of you?"
+  },
+  {
+    "speaker": "customer",
+    "start": 110.479,
+    "end": 114.559,
+    "text": "Let me check. Yes, Tuesday at two works."
+  },
+  {
+    "speaker": "consultant",
+    "start": 114.958,
+    "end": 119.158,
+    "text": "Great. I will send the calendar invite together with the plan."
+  },
+  {
+    "speaker": "customer",
+    "start": 119.558,
+    "end": 125.006,
+    "text": "Alright. Thank you for owning the mistake, Elena. I appreciate it."
+  },
+  {
+    "speaker": "consultant",
+    "start": 125.406,
+    "end": 130.83,
+    "text": "Thank you for telling me directly, Priya. You will have the plan within the hour."
+  }
+]

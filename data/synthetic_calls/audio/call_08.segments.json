@@ -1,0 +1,128 @@
+[
+  {
+    "speaker": "consultant",
+    "start": 0.0,
+    "end": 2.616,
+    "text": "Hello, Elena Ward speaking."
+  },
+  {
+    "speaker": "customer",
+    "start": 3.016,
+    "end": 12.544,
+    "text": "Elena, it is Rachel Green. I just saw an invoice from you for seventy-nine dollars, and I want to know what this is about."
+  },
+  {
+    "speaker": "consultant",
+    "start": 12.944,
+    "end": 21.608,
+    "text": "Hi Rachel. Let me pull it up. Yes, that is the late cancellation fee for the session you cancelled on Wednesday."
+  },
+  {
+    "speaker": "customer",
+    "start": 22.008,
+    "end": 27.168,
+    "text": "I cancelled because my daughter was sick. You are charging me for that?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 27.568,
+    "end": 43.216,
+    "text": "I am really sorry about your daughter. I hope she is feeling better. The cancellation came in about six hours before the session, and my policy is that cancellations less than forty-eight hours before are charged at fifty percent."
+  },
+  {
+    "speaker": "customer",
+    "start": 43.616,
+    "end": 48.824,
+    "text": "Fifty percent of a session I did not even have. That feels unfair."
+  },
+  {
+    "speaker": "consultant",
+    "start": 49.224,
+    "end": 58.872,
+    "text": "I understand why it feels that way. The policy exists because I keep that time reserved and usually cannot fill it on short notice."
+  },
+  {
+    "speaker": "customer",
+    "start": 59.271,
+    "end": 66.423,
+    "text": "I have been your client for two months. I have never cancelled before. Can you not make an exception?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 66.823,
+    "end": 76.903,
+    "text": "I take that into account, Rachel. What I can do is apply the seventy-nine dollars as credit toward your next session, so it is not lost."
+  },
+  {
+    "speaker": "customer",
+    "start": 77.303,
+    "end": 81.503,
+    "text": "That is not the point. I would still be paying for nothing."
+  },
+  {
+    "speaker": "consultant",
+    "start": 81.903,
+    "end": 89.679,
+    "text": "I hear you. I do need to apply the same policy to all clients, otherwise it is not fair to the others."
+  },
+  {
+    "speaker": "customer",
+    "start": 90.079,
+    "end": 96.847,
+    "text": "Honestly, this makes me question the whole thing. I have four sessions left in my package."
+  },
+  {
+    "speaker": "consultant",
+    "start": 97.247,
+    "end": 103.415,
+    "text": "I would really like to continue working with you. The progress on your hiring plan has been good."
+  },
+  {
+    "speaker": "customer",
+    "start": 103.815,
+    "end": 109.263,
+    "text": "Maybe, but I don't want to feel nickel and dimed every time life happens."
+  },
+  {
+    "speaker": "consultant",
+    "start": 109.663,
+    "end": 120.199,
+    "text": "I understand. If you decide to stop, you can still get a pro rata refund for the unused sessions, minus the fifty dollar admin fee."
+  },
+  {
+    "speaker": "customer",
+    "start": 120.599,
+    "end": 125.807,
+    "text": "Then I think that is what I want. Please cancel the rest of the package."
+  },
+  {
+    "speaker": "consultant",
+    "start": 126.207,
+    "end": 134.271,
+    "text": "Alright. I am sorry it ends this way. I will calculate the refund and send you the details by email today."
+  },
+  {
+    "speaker": "customer",
+    "start": 134.671,
+    "end": 136.711,
+    "text": "And the seventy-nine dollars?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 137.11,
+    "end": 142.798,
+    "text": "I will deduct it from the refund, so you do not need to pay the invoice separately."
+  },
+  {
+    "speaker": "customer",
+    "start": 143.198,
+    "end": 146.27,
+    "text": "Fine. Just send me the numbers."
+  },
+  {
+    "speaker": "consultant",
+    "start": 146.67,
+    "end": 152.286,
+    "text": "I will. Take care, Rachel, and I hope your daughter feels better soon."
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "speaker": "consultant",
+    "start": 0.0,
+    "end": 2.616,
+    "text": "Hello, Elena Ward speaking."
+  },
+  {
+    "speaker": "customer",
+    "start": 3.016,
+    "end": 9.568,
+    "text": "Hi Elena, it is Laura Kim. We did a single strategy session together last month."
+  },
+  {
+    "speaker": "consultant",
+    "start": 9.968,
+    "end": 13.376,
+    "text": "Hi Laura! How is the online store going?"
+  },
+  {
+    "speaker": "customer",
+    "start": 13.776,
+    "end": 22.68,
+    "text": "Really well, actually. We changed the shipping prices like you suggested, and orders went up almost twenty percent."
+  },
+  {
+    "speaker": "consultant",
+    "start": 23.08,
+    "end": 26.872,
+    "text": "That is fantastic news. Congratulations."
+  },
+  {
+    "speaker": "customer",
+    "start": 27.272,
+    "end": 37.088,
+    "text": "Thank you. That is why I am calling. I want more regular support, not just one session. What would you recommend?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 37.488,
+    "end": 46.776,
+    "text": "Since you are growing fast and making decisions every week, I think the monthly retainer fits you best. It is six hundred dollars per month."
+  },
+  {
+    "speaker": "customer",
+    "start": 47.175,
+    "end": 48.807,
+    "text": "What is included?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 49.207,
+    "end": 60.127,
+    "text": "Two sessions per month, plus email support. If you send me a question, I reply within one business day. The minimum commitment is three months."
+  },
+  {
+    "speaker": "customer",
+    "start": 60.527,
+    "end": 65.327,
+    "text": "Three months is fine. I would probably want it for longer anyway."
+  },
+  {
+    "speaker": "consultant",
+    "start": 65.727,
+    "end": 71.991,
+    "text": "Great. After the first three months, you can cancel any time with thirty days notice."
+  },
+  {
+    "speaker": "customer",
+    "start": 72.391,
+    "end": 75.799,
+    "text": "Perfect. Let's start the retainer then."
+  },
+  {
+    "speaker": "consultant",
+    "start": 76.199,
+    "end": 80.687,
+    "text": "Wonderful. Would you like to pay by card or by bank transfer?"
+  },
+  {
+    "speaker": "customer",
+    "start": 81.087,
+    "end": 85.407,
+    "text": "By card, please. Can I give you the details now?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 85.807,
+    "end": 96.799,
+    "text": "For security, I will send you a secure payment link instead. But I can note the last four digits of the card you plan to use, so I can match the payment."
+  },
+  {
+    "speaker": "customer",
+    "start": 97.199,
+    "end": 101.159,
+    "text": "Sure, the card ends in four four one nine."
+  },
+  {
+    "speaker": "consultant",
+    "start": 101.559,
+    "end": 108.471,
+    "text": "Thank you. And the best phone number for you is still five five five, zero one seven three?"
+  },
+  {
+    "speaker": "customer",
+    "start": 108.871,
+    "end": 110.983,
+    "text": "Yes, that is right."
+  },
+  {
+    "speaker": "consultant",
+    "start": 111.382,
+    "end": 121.774,
+    "text": "Great. Since you already did the questionnaire for the single session, we can skip that step. How about our first retainer session next Monday at ten?"
+  },
+  {
+    "speaker": "customer",
+    "start": 122.174,
+    "end": 124.646,
+    "text": "Monday at ten is perfect."
+  },
+  {
+    "speaker": "consultant",
+    "start": 125.046,
+    "end": 130.878,
+    "text": "Then it is booked. I will send the payment link and the invite in the next few minutes."
+  },
+  {
+    "speaker": "customer",
+    "start": 131.278,
+    "end": 135.55,
+    "text": "Thanks, Elena. I am really excited about this."
+  }
+]

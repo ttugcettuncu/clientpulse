@@ -1,0 +1,122 @@
+[
+  {
+    "speaker": "consultant",
+    "start": 0.0,
+    "end": 2.64,
+    "text": "Good morning, Elena Ward speaking."
+  },
+  {
+    "speaker": "customer",
+    "start": 3.04,
+    "end": 10.552,
+    "text": "Hi Elena, this is Tom Becker. We had a discovery call last week about my accounting practice."
+  },
+  {
+    "speaker": "consultant",
+    "start": 10.952,
+    "end": 15.056,
+    "text": "Yes, of course, Tom. Good to hear from you again."
+  },
+  {
+    "speaker": "customer",
+    "start": 15.456,
+    "end": 21.648,
+    "text": "I have been thinking about it, and I am stuck between the Growth Package and the monthly retainer."
+  },
+  {
+    "speaker": "consultant",
+    "start": 22.048,
+    "end": 36.568,
+    "text": "That is a common question. Let me explain the difference. The Growth Package is six sessions over three months for nine hundred and fifty dollars. It is best for one clear project with a start and an end."
+  },
+  {
+    "speaker": "customer",
+    "start": 36.968,
+    "end": 38.456,
+    "text": "And the retainer?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 38.856,
+    "end": 53.592,
+    "text": "The retainer is six hundred dollars per month, with two sessions a month and email support. I reply to emails within one business day. It works better when you want ongoing support while you make many decisions."
+  },
+  {
+    "speaker": "customer",
+    "start": 53.991,
+    "end": 56.679,
+    "text": "The retainer has a minimum, right?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 57.079,
+    "end": 63.127,
+    "text": "Yes, the minimum is three months. After that you can cancel with thirty days notice."
+  },
+  {
+    "speaker": "customer",
+    "start": 63.527,
+    "end": 70.103,
+    "text": "So three months of retainer is eighteen hundred dollars, compared to nine fifty for the package."
+  },
+  {
+    "speaker": "consultant",
+    "start": 70.503,
+    "end": 76.623,
+    "text": "Correct. You get twice as many sessions with the retainer, plus the email support."
+  },
+  {
+    "speaker": "customer",
+    "start": 77.023,
+    "end": 84.775,
+    "text": "My main goal is to hire two new staff and change how we price our services. Is that one project or two?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 85.175,
+    "end": 99.359,
+    "text": "Honestly, it could be either. If you want to move fast on both at the same time, the retainer gives you more contact. If you are happy to do pricing first and hiring later, the package is enough."
+  },
+  {
+    "speaker": "customer",
+    "start": 99.759,
+    "end": 106.767,
+    "text": "Hmm. I need to talk to my wife about the budget. She manages our finances."
+  },
+  {
+    "speaker": "consultant",
+    "start": 107.167,
+    "end": 114.919,
+    "text": "That makes sense. Would it help if I sent you a short comparison by email, so you can look at it together?"
+  },
+  {
+    "speaker": "customer",
+    "start": 115.319,
+    "end": 117.791,
+    "text": "Yes, that would help a lot."
+  },
+  {
+    "speaker": "consultant",
+    "start": 118.191,
+    "end": 122.919,
+    "text": "I will send it today. There is no pressure, take the time you need."
+  },
+  {
+    "speaker": "customer",
+    "start": 123.319,
+    "end": 127.879,
+    "text": "Thanks. I will probably get back to you by the end of next week."
+  },
+  {
+    "speaker": "consultant",
+    "start": 128.279,
+    "end": 134.422,
+    "text": "Sounds good, Tom. Feel free to email me if any questions come up before then."
+  },
+  {
+    "speaker": "customer",
+    "start": 134.822,
+    "end": 137.894,
+    "text": "Will do. Thanks, Elena."
+  }
+]

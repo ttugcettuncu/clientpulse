@@ -1,0 +1,134 @@
+[
+  {
+    "speaker": "consultant",
+    "start": 0.0,
+    "end": 2.28,
+    "text": "Good afternoon, Elena Ward."
+  },
+  {
+    "speaker": "customer",
+    "start": 2.68,
+    "end": 10.96,
+    "text": "Hello, my name is Mark Daniels. I found your website and I have some questions about how your process works."
+  },
+  {
+    "speaker": "consultant",
+    "start": 11.36,
+    "end": 14.576,
+    "text": "Of course, Mark. What would you like to know?"
+  },
+  {
+    "speaker": "customer",
+    "start": 14.976,
+    "end": 21.216,
+    "text": "I have never worked with a consultant before. What actually happens after the first call?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 21.616,
+    "end": 32.008,
+    "text": "It starts with a free discovery call, about twenty minutes. We talk about your business and whether I am the right person to help. There is no commitment."
+  },
+  {
+    "speaker": "customer",
+    "start": 32.408,
+    "end": 34.928,
+    "text": "And if we decide to work together?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 35.328,
+    "end": 44.928,
+    "text": "Then I send you an intake questionnaire within twenty-four hours. It asks about your goals, your numbers, and what you have already tried."
+  },
+  {
+    "speaker": "customer",
+    "start": 45.327,
+    "end": 47.847,
+    "text": "How long does the questionnaire take?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 48.247,
+    "end": 56.407,
+    "text": "Most people finish it in about thirty minutes. The more honest you are, the more useful our first session will be."
+  },
+  {
+    "speaker": "customer",
+    "start": 56.807,
+    "end": 59.855,
+    "text": "Makes sense. What comes next?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 60.255,
+    "end": 71.103,
+    "text": "The kickoff session, which happens within ten days of signing. After the kickoff, I write an action plan and send it to you within five business days."
+  },
+  {
+    "speaker": "customer",
+    "start": 71.503,
+    "end": 74.551,
+    "text": "Are the sessions in person or online?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 74.951,
+    "end": 80.327,
+    "text": "Mostly online by video, but I can meet in person if you are in the city."
+  },
+  {
+    "speaker": "customer",
+    "start": 80.727,
+    "end": 88.767,
+    "text": "I run a small landscaping company, so my schedule is a bit unpredictable. What are your working hours?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 89.167,
+    "end": 100.615,
+    "text": "Monday to Friday, nine in the morning until six in the evening. If you need to move a session, it is free as long as you tell me at least forty-eight hours before."
+  },
+  {
+    "speaker": "customer",
+    "start": 101.015,
+    "end": 107.615,
+    "text": "That is good to know. I am not ready to sign anything yet, I am just collecting information."
+  },
+  {
+    "speaker": "consultant",
+    "start": 108.015,
+    "end": 115.239,
+    "text": "That is completely fine. Would you like me to email you a short overview of the process and the prices?"
+  },
+  {
+    "speaker": "customer",
+    "start": 115.639,
+    "end": 121.399,
+    "text": "Yes, please. My email is mark dot daniels at example dot com."
+  },
+  {
+    "speaker": "consultant",
+    "start": 121.798,
+    "end": 125.374,
+    "text": "Got it. And is there a phone number where I can reach you?"
+  },
+  {
+    "speaker": "customer",
+    "start": 125.774,
+    "end": 130.502,
+    "text": "Sure, it is five five five, zero one four two."
+  },
+  {
+    "speaker": "consultant",
+    "start": 130.902,
+    "end": 139.206,
+    "text": "Thank you, Mark. I will send the overview today, and you can book the free discovery call whenever you are ready."
+  },
+  {
+    "speaker": "customer",
+    "start": 139.606,
+    "end": 143.734,
+    "text": "Great, thanks for explaining everything so clearly."
+  }
+]

@@ -1,0 +1,24 @@
+DANIŞMAN: Hello, Elena Ward speaking.
+MÜŞTERİ: Hi Elena, it is David Chen. I am calling about my Growth Package.
+DANIŞMAN: Hi David, good to hear from you. What can I do for you?
+MÜŞTERİ: This is a bit awkward. My company is being bought by a larger firm, and the new owners have their own advisors. So I need to cancel the rest of my package.
+DANIŞMAN: I understand, and congratulations on the sale. That is a big step. Let me check your account. You bought the package five weeks ago and we have used two of the six sessions.
+MÜŞTERİ: That is right. Do I get anything back for the four sessions I did not use?
+DANIŞMAN: Yes. The full refund applies only in the first fourteen days, and only if no sessions were used. After that, you get a pro rata refund for the unused sessions, minus a fifty dollar admin fee.
+MÜŞTERİ: So how much is that in my case?
+DANIŞMAN: You paid nine hundred and fifty dollars upfront. Four unused sessions out of six is about six hundred and thirty-three dollars. Minus the fifty dollar fee, the refund is five hundred and eighty-three dollars.
+MÜŞTERİ: Okay. I was hoping there would be no fee, but I understand it was in the terms.
+DANIŞMAN: It covers the admin work and the preparation I already did for the next sessions. I hope that feels fair.
+MÜŞTERİ: Yes, it is fair. How long does the refund take?
+DANIŞMAN: I will process it today. It goes back to the card you paid with, and it usually arrives within five to seven business days.
+MÜŞTERİ: Good. And what about the action plan you sent me? Can I still use it?
+DANIŞMAN: Of course, the action plan is yours. You can share it with the new owners if it helps.
+MÜŞTERİ: That is kind of you. The pricing section was really helpful, actually.
+DANIŞMAN: I am glad. If you ever start a new business, my door is open.
+MÜŞTERİ: I will keep that in mind. So we are done after today?
+DANIŞMAN: Yes. I will send you a written confirmation of the cancellation and the refund amount by email.
+MÜŞTERİ: Thank you, Elena. Sorry it ended early.
+DANIŞMAN: No need to apologize, David. Good luck with the transition.
+# topic: package cancellation and refund request
+# disposition: vazgecti
+# sentiment: notr

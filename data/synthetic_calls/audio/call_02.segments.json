@@ -1,0 +1,128 @@
+[
+  {
+    "speaker": "consultant",
+    "start": 0.0,
+    "end": 2.616,
+    "text": "Hello, Elena Ward speaking."
+  },
+  {
+    "speaker": "customer",
+    "start": 3.016,
+    "end": 8.896,
+    "text": "Hi Elena, it is David Chen. I am calling about my Growth Package."
+  },
+  {
+    "speaker": "consultant",
+    "start": 9.296,
+    "end": 13.52,
+    "text": "Hi David, good to hear from you. What can I do for you?"
+  },
+  {
+    "speaker": "customer",
+    "start": 13.92,
+    "end": 25.728,
+    "text": "This is a bit awkward. My company is being bought by a larger firm, and the new owners have their own advisors. So I need to cancel the rest of my package."
+  },
+  {
+    "speaker": "consultant",
+    "start": 26.128,
+    "end": 38.896,
+    "text": "I understand, and congratulations on the sale. That is a big step. Let me check your account. You bought the package five weeks ago and we have used two of the six sessions."
+  },
+  {
+    "speaker": "customer",
+    "start": 39.296,
+    "end": 44.528,
+    "text": "That is right. Do I get anything back for the four sessions I did not use?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 44.928,
+    "end": 60.096,
+    "text": "Yes. The full refund applies only in the first fourteen days, and only if no sessions were used. After that, you get a pro rata refund for the unused sessions, minus a fifty dollar admin fee."
+  },
+  {
+    "speaker": "customer",
+    "start": 60.495,
+    "end": 63.207,
+    "text": "So how much is that in my case?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 63.607,
+    "end": 78.079,
+    "text": "You paid nine hundred and fifty dollars upfront. Four unused sessions out of six is about six hundred and thirty-three dollars. Minus the fifty dollar fee, the refund is five hundred and eighty-three dollars."
+  },
+  {
+    "speaker": "customer",
+    "start": 78.479,
+    "end": 84.407,
+    "text": "Okay. I was hoping there would be no fee, but I understand it was in the terms."
+  },
+  {
+    "speaker": "consultant",
+    "start": 84.807,
+    "end": 92.391,
+    "text": "It covers the admin work and the preparation I already did for the next sessions. I hope that feels fair."
+  },
+  {
+    "speaker": "customer",
+    "start": 92.791,
+    "end": 97.063,
+    "text": "Yes, it is fair. How long does the refund take?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 97.463,
+    "end": 106.199,
+    "text": "I will process it today. It goes back to the card you paid with, and it usually arrives within five to seven business days."
+  },
+  {
+    "speaker": "customer",
+    "start": 106.599,
+    "end": 111.951,
+    "text": "Good. And what about the action plan you sent me? Can I still use it?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 112.351,
+    "end": 118.351,
+    "text": "Of course, the action plan is yours. You can share it with the new owners if it helps."
+  },
+  {
+    "speaker": "customer",
+    "start": 118.751,
+    "end": 124.031,
+    "text": "That is kind of you. The pricing section was really helpful, actually."
+  },
+  {
+    "speaker": "consultant",
+    "start": 124.431,
+    "end": 129.591,
+    "text": "I am glad. If you ever start a new business, my door is open."
+  },
+  {
+    "speaker": "customer",
+    "start": 129.991,
+    "end": 134.143,
+    "text": "I will keep that in mind. So we are done after today?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 134.542,
+    "end": 141.55,
+    "text": "Yes. I will send you a written confirmation of the cancellation and the refund amount by email."
+  },
+  {
+    "speaker": "customer",
+    "start": 141.95,
+    "end": 145.742,
+    "text": "Thank you, Elena. Sorry it ended early."
+  },
+  {
+    "speaker": "consultant",
+    "start": 146.142,
+    "end": 150.822,
+    "text": "No need to apologize, David. Good luck with the transition."
+  }
+]

@@ -1,0 +1,24 @@
+DANIŞMAN: Good afternoon, this is Elena Ward.
+MÜŞTERİ: Hi. My name is James Porter. I got your price list by email, and to be honest, it is a lot more than I expected.
+DANIŞMAN: Thank you for being direct, James. Which option were you looking at?
+MÜŞTERİ: The Growth Package. Nine hundred and fifty dollars for six sessions. That is more than I spend on marketing in a month.
+DANIŞMAN: I understand. Can I ask what you hoped to get out of it?
+MÜŞTERİ: I run a small fitness studio. Members join and then leave after two or three months. I need to fix that.
+DANIŞMAN: Member retention is something I work on a lot. If you keep even five more members a month, the package usually pays for itself quickly.
+MÜŞTERİ: That is what every consultant says. I found an online course for ninety-nine dollars that covers the same topic.
+DANIŞMAN: A course can be a good start. The difference is that I look at your actual numbers and your studio, and we test changes together. But I understand the price difference is big.
+MÜŞTERİ: Is there anything cheaper?
+DANIŞMAN: Yes. You could start with a single strategy session for one hundred and eighty dollars. In ninety minutes we can focus only on retention, and you get a written summary within two business days.
+MÜŞTERİ: Still not cheap for one meeting.
+DANIŞMAN: That is fair. There is also a free twenty minute discovery call, so you can see if my approach makes sense before paying anything.
+MÜŞTERİ: Can I pay the package in parts at least?
+DANIŞMAN: Yes, three monthly payments of three hundred and thirty dollars.
+MÜŞTERİ: So that is actually more in total. Nine hundred and ninety.
+DANIŞMAN: That is correct. Paying upfront saves you forty dollars.
+MÜŞTERİ: I don't know. I need to think about whether this is worth it right now. Money is tight this quarter.
+DANIŞMAN: I completely understand. Take your time. If you want, I can hold a discovery call slot for you next week, with no obligation.
+MÜŞTERİ: No, don't book anything yet. I will call you if I decide.
+DANIŞMAN: Alright, James. Thank you for calling, and good luck with the studio.
+# topic: price objection, compares with a cheaper course, will think about it
+# disposition: dusunecek
+# sentiment: negatif

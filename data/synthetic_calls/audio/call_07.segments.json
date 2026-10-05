@@ -1,0 +1,128 @@
+[
+  {
+    "speaker": "consultant",
+    "start": 0.0,
+    "end": 2.784,
+    "text": "Good afternoon, this is Elena Ward."
+  },
+  {
+    "speaker": "customer",
+    "start": 3.184,
+    "end": 13.408,
+    "text": "Hi. My name is James Porter. I got your price list by email, and to be honest, it is a lot more than I expected."
+  },
+  {
+    "speaker": "consultant",
+    "start": 13.808,
+    "end": 18.704,
+    "text": "Thank you for being direct, James. Which option were you looking at?"
+  },
+  {
+    "speaker": "customer",
+    "start": 19.104,
+    "end": 27.648,
+    "text": "The Growth Package. Nine hundred and fifty dollars for six sessions. That is more than I spend on marketing in a month."
+  },
+  {
+    "speaker": "consultant",
+    "start": 28.048,
+    "end": 31.864,
+    "text": "I understand. Can I ask what you hoped to get out of it?"
+  },
+  {
+    "speaker": "customer",
+    "start": 32.264,
+    "end": 40.424,
+    "text": "I run a small fitness studio. Members join and then leave after two or three months. I need to fix that."
+  },
+  {
+    "speaker": "consultant",
+    "start": 40.824,
+    "end": 50.328,
+    "text": "Member retention is something I work on a lot. If you keep even five more members a month, the package usually pays for itself quickly."
+  },
+  {
+    "speaker": "customer",
+    "start": 50.727,
+    "end": 58.527,
+    "text": "That is what every consultant says. I found an online course for ninety-nine dollars that covers the same topic."
+  },
+  {
+    "speaker": "consultant",
+    "start": 58.927,
+    "end": 70.975,
+    "text": "A course can be a good start. The difference is that I look at your actual numbers and your studio, and we test changes together. But I understand the price difference is big."
+  },
+  {
+    "speaker": "customer",
+    "start": 71.375,
+    "end": 73.295,
+    "text": "Is there anything cheaper?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 73.695,
+    "end": 87.063,
+    "text": "Yes. You could start with a single strategy session for one hundred and eighty dollars. In ninety minutes we can focus only on retention, and you get a written summary within two business days."
+  },
+  {
+    "speaker": "customer",
+    "start": 87.463,
+    "end": 90.055,
+    "text": "Still not cheap for one meeting."
+  },
+  {
+    "speaker": "consultant",
+    "start": 90.455,
+    "end": 99.719,
+    "text": "That is fair. There is also a free twenty minute discovery call, so you can see if my approach makes sense before paying anything."
+  },
+  {
+    "speaker": "customer",
+    "start": 100.119,
+    "end": 103.119,
+    "text": "Can I pay the package in parts at least?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 103.519,
+    "end": 107.839,
+    "text": "Yes, three monthly payments of three hundred and thirty dollars."
+  },
+  {
+    "speaker": "customer",
+    "start": 108.239,
+    "end": 113.159,
+    "text": "So that is actually more in total. Nine hundred and ninety."
+  },
+  {
+    "speaker": "consultant",
+    "start": 113.559,
+    "end": 117.855,
+    "text": "That is correct. Paying upfront saves you forty dollars."
+  },
+  {
+    "speaker": "customer",
+    "start": 118.255,
+    "end": 125.335,
+    "text": "I don't know. I need to think about whether this is worth it right now. Money is tight this quarter."
+  },
+  {
+    "speaker": "consultant",
+    "start": 125.734,
+    "end": 135.094,
+    "text": "I completely understand. Take your time. If you want, I can hold a discovery call slot for you next week, with no obligation."
+  },
+  {
+    "speaker": "customer",
+    "start": 135.494,
+    "end": 140.486,
+    "text": "No, don't book anything yet. I will call you if I decide."
+  },
+  {
+    "speaker": "consultant",
+    "start": 140.886,
+    "end": 145.998,
+    "text": "Alright, James. Thank you for calling, and good luck with the studio."
+  }
+]

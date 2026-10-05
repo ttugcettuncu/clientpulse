@@ -1,0 +1,134 @@
+[
+  {
+    "speaker": "consultant",
+    "start": 0.0,
+    "end": 4.896,
+    "text": "Good morning, this is Elena Ward speaking. How can I help you today?"
+  },
+  {
+    "speaker": "customer",
+    "start": 5.296,
+    "end": 16.336,
+    "text": "Hi Elena, my name is Sarah Mitchell. I run a small bakery downtown and a friend recommended you. I wanted to ask about your prices."
+  },
+  {
+    "speaker": "consultant",
+    "start": 16.736,
+    "end": 30.608,
+    "text": "Thank you for calling, Sarah, and please thank your friend for me. I have three main options. The first is a single strategy session, which is ninety minutes and costs one hundred and eighty dollars."
+  },
+  {
+    "speaker": "customer",
+    "start": 31.008,
+    "end": 34.68,
+    "text": "Okay. And what do I get from that one session?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 35.08,
+    "end": 46.072,
+    "text": "We focus on one specific problem, for example pricing or staffing. Within two business days you get a written summary with the actions we agreed on."
+  },
+  {
+    "speaker": "customer",
+    "start": 46.472,
+    "end": 50.264,
+    "text": "That sounds useful. What are the other options?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 50.664,
+    "end": 63.792,
+    "text": "The second is the Growth Package. That is six sessions over three months. It costs nine hundred and fifty dollars if you pay upfront, or three monthly payments of three hundred and thirty dollars."
+  },
+  {
+    "speaker": "customer",
+    "start": 64.191,
+    "end": 65.799,
+    "text": "And the third one?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 66.199,
+    "end": 79.231,
+    "text": "The third is a monthly retainer at six hundred dollars per month. You get two sessions a month plus email support, and I reply within one business day. The minimum is three months."
+  },
+  {
+    "speaker": "customer",
+    "start": 79.631,
+    "end": 91.583,
+    "text": "Honestly, my problem is bigger than one session. Sales have been flat for a year and I am not sure if it is my prices, my menu, or my marketing."
+  },
+  {
+    "speaker": "consultant",
+    "start": 91.983,
+    "end": 101.967,
+    "text": "Then I would suggest the Growth Package. Three months gives us time to look at all three areas, test a few changes, and see real results."
+  },
+  {
+    "speaker": "customer",
+    "start": 102.367,
+    "end": 106.567,
+    "text": "Six sessions over three months. How does it start?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 106.967,
+    "end": 120.239,
+    "text": "After we agree, I send you a short questionnaire within twenty-four hours. Then we have a kickoff session within ten days, and five business days after that you receive a written action plan."
+  },
+  {
+    "speaker": "customer",
+    "start": 120.639,
+    "end": 126.447,
+    "text": "I like that there is a plan in writing. I tend to forget things after a meeting."
+  },
+  {
+    "speaker": "consultant",
+    "start": 126.847,
+    "end": 133.735,
+    "text": "Most of my clients say the same thing. The plan is something you can share with your staff as well."
+  },
+  {
+    "speaker": "customer",
+    "start": 134.135,
+    "end": 138.935,
+    "text": "If I pay the nine hundred and fifty upfront, can I pay by card?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 139.335,
+    "end": 145.983,
+    "text": "Yes, card or bank transfer are both fine. The invoice is due within fourteen days."
+  },
+  {
+    "speaker": "customer",
+    "start": 146.383,
+    "end": 152.455,
+    "text": "Great. Let's do it. I would like to sign up for the Growth Package and pay upfront."
+  },
+  {
+    "speaker": "consultant",
+    "start": 152.854,
+    "end": 161.158,
+    "text": "Wonderful, Sarah. I will send the invoice and the questionnaire to you today. Could you confirm the best email for you?"
+  },
+  {
+    "speaker": "customer",
+    "start": 161.558,
+    "end": 164.99,
+    "text": "It is sarah at mitchell bakery dot com."
+  },
+  {
+    "speaker": "consultant",
+    "start": 165.39,
+    "end": 171.39,
+    "text": "Perfect. You will hear from me this afternoon. I am looking forward to working with you."
+  },
+  {
+    "speaker": "customer",
+    "start": 171.79,
+    "end": 176.278,
+    "text": "Thank you so much, Elena. I feel better already."
+  }
+]

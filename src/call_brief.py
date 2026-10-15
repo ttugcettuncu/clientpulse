@@ -25,7 +25,7 @@ from src import db
 from src.budget_guard import PRICE, BudgetGuard
 
 MODEL = "gpt-4o-mini"
-PROMPT_VERSION = "v3"  # bump on every prompt change; eval results are kept per version
+PROMPT_VERSION = "v4"  # bump on every prompt change; eval results are kept per version
 STEP = "call_brief"
 MAX_OUTPUT_TOKENS = 400
 MAX_RETRIES = 2
@@ -54,8 +54,10 @@ disposition: the outcome of the call. Go through the rules in order and pick the
    includes a free extra session or other compensation
 2. vazgecti: the customer cancels, declines or decides not to continue (including after an unresolved complaint)
 3. teklif_kabul: the customer agrees to pay for a new or upgraded service during the call
-4. dusunecek: the customer is interested in buying but postpones the decision
-5. bilgi_talebi: anything else, e.g. questions about process, invoices or support, or moving an existing appointment
+4. dusunecek: the customer is interested in buying but postpones the decision, including a prospect
+   who wants more information (e.g. an overview by email) before deciding; a follow-up is expected
+5. bilgi_talebi: anything else where no purchase decision is pending, e.g. an existing client's
+   questions about process, invoices or support, or moving an existing appointment
 
 key_topics: 2-5 short noun phrases, e.g. "pricing", "refund policy".
 """
@@ -105,10 +107,10 @@ def mask_pii(text: str) -> str:
     return text
 
 
-def _estimate_cost(transcript: str) -> float:
+def _estimate_cost(transcript: str, model: str = MODEL) -> float:
     """Upper-bound guess for guard.check(): ~4 chars per token, plus prompt and max output."""
     input_tokens = (len(SYSTEM_PROMPT) + len(transcript)) / 4 + 200
-    price = PRICE[MODEL]
+    price = PRICE[model]
     return input_tokens * price["input"] + MAX_OUTPUT_TOKENS * price["output"]
 
 
@@ -132,18 +134,19 @@ def generate_call_brief(
     guard: BudgetGuard | None = None,
     db_path: Path | str = db.DEFAULT_DB_PATH,
     sleep=time.sleep,
+    model: str = MODEL,
 ) -> dict:
     client = client or OpenAI(max_retries=0)  # retries are handled here, so they are logged
     guard = guard or BudgetGuard(db_path=db_path)
-    log = {"step": STEP, "call_id": call_id, "model": MODEL}
+    log_fields = {"step": STEP, "call_id": call_id}
     transcript = mask_pii(transcript)
 
     for attempt in range(MAX_RETRIES + 1):
-        guard.check(upcoming_cost=_estimate_cost(transcript))
+        guard.check(upcoming_cost=_estimate_cost(transcript, model))
         start = time.perf_counter()
         try:
             response = client.chat.completions.create(
-                model=MODEL,
+                model=model,
                 messages=[
                     {"role": "system", "content": SYSTEM_PROMPT},
                     {"role": "user", "content": f"Transcript:\n{transcript}"},
@@ -156,13 +159,13 @@ def generate_call_brief(
         except RETRYABLE:
             latency = time.perf_counter() - start
             if attempt == MAX_RETRIES:
-                db.log_step(STEP, "error", call_id=call_id, model=MODEL, latency=latency, db_path=db_path)
+                db.log_step(STEP, "error", call_id=call_id, model=model, latency=latency, db_path=db_path)
                 raise
-            db.log_step(STEP, "retry", call_id=call_id, model=MODEL, latency=latency, db_path=db_path)
+            db.log_step(STEP, "retry", call_id=call_id, model=model, latency=latency, db_path=db_path)
             sleep(BACKOFF_SECONDS * 2 ** attempt)
             continue
         except Exception:
-            db.log_step(STEP, "error", call_id=call_id, model=MODEL,
+            db.log_step(STEP, "error", call_id=call_id, model=model,
                         latency=time.perf_counter() - start, db_path=db_path)
             raise
         latency = time.perf_counter() - start
@@ -170,9 +173,10 @@ def generate_call_brief(
         try:
             brief = _parse(response)
         except InvalidBriefError:
-            guard.record_chat(response.usage, status="invalid", latency=latency, **log)  # billed anyway
+            guard.record_chat(response.usage, model=model, status="invalid", latency=latency,
+                              **log_fields)  # billed anyway
             raise
-        cost = guard.record_chat(response.usage, latency=latency, **log)
+        cost = guard.record_chat(response.usage, model=model, latency=latency, **log_fields)
         return {**brief, "cost": cost, "latency": latency,
                 "input_tokens": response.usage.prompt_tokens,
                 "output_tokens": response.usage.completion_tokens}

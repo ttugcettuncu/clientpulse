@@ -12,6 +12,7 @@ from src import db
 # Prices as of Sep 2026 — verify at platform.openai.com/docs/pricing
 PRICE = {
     "gpt-4o-mini": {"input": 0.15 / 1_000_000, "output": 0.60 / 1_000_000},
+    "gpt-4o": {"input": 2.50 / 1_000_000, "output": 10.00 / 1_000_000},  # quality comparison only
     "whisper-1": {"per_minute": 0.006},
     "gpt-4o-mini-transcribe": {"per_minute": 0.003},
     "text-embedding-3-small": {"input": 0.02 / 1_000_000},

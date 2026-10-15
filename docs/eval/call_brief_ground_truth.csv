@@ -1,7 +1,7 @@
 call_id,disposition,sentiment,topic
 call_01,teklif_kabul,pozitif,"pricing inquiry, chooses Growth Package"
 call_02,vazgecti,notr,package cancellation and refund request
-call_03,bilgi_talebi,notr,service process questions from a new lead
+call_03,dusunecek,notr,service process questions from a new lead
 call_04,sikayet_cozuldu,notr,"complaint about a late action plan, resolved with an extra session"
 call_05,dusunecek,notr,"comparing Growth Package and Monthly Retainer, needs to discuss budget"
 call_06,teklif_kabul,pozitif,existing client upgrades to Monthly Retainer

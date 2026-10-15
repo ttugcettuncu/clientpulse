@@ -6,7 +6,7 @@ Briefs are cached in data/synthetic_calls/briefs/<prompt version>/; a call that 
 brief is not sent again (no double spend for the same call_id) unless
 --force is given.
 
-Usage:  python -m src.eval_call_brief [--stt-model base] [--force]
+Usage:  python -m src.eval_call_brief [--stt-model base] [--model gpt-4o] [--force]
 Run `python -m src.eval_stt` first so the transcripts exist.
 """
 import argparse
@@ -42,11 +42,14 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--stt-model", default="base")
     parser.add_argument("--force", action="store_true", help="regenerate cached briefs")
+    parser.add_argument("--model", default=MODEL, help="e.g. gpt-4o for a quality comparison")
     args = parser.parse_args()
 
     load_dotenv(PROJECT_ROOT / ".env")
     guard = BudgetGuard()
-    out_dir = BRIEFS_DIR / PROMPT_VERSION / args.stt_model
+    variant = PROMPT_VERSION if args.model == MODEL else f"{PROMPT_VERSION}-{args.model}"
+    out_dir = BRIEFS_DIR / variant / args.stt_model
+    report_path = REPORT_PATH if args.model == MODEL else REPORT_PATH.with_stem(f"{REPORT_PATH.stem}_{args.model}")
     out_dir.mkdir(parents=True, exist_ok=True)
 
     rows = []
@@ -58,7 +61,7 @@ def main() -> None:
         else:
             transcript = json.loads(
                 (TRANSCRIPTS_DIR / args.stt_model / f"{call_id}.json").read_text(encoding="utf-8"))
-            brief = generate_call_brief(transcript["text"], call_id=call_id, guard=guard)
+            brief = generate_call_brief(transcript["text"], call_id=call_id, guard=guard, model=args.model)
             brief_path.write_text(json.dumps(brief, indent=2, ensure_ascii=False), encoding="utf-8")
         rows.append({**truth, "pred_disposition": brief["disposition"],
                      "pred_sentiment": brief["sentiment"], "brief": brief})
@@ -79,7 +82,7 @@ def main() -> None:
         "# Call Brief accuracy",
         "",
         f"Generated {date.today().isoformat()} by `python -m src.eval_call_brief`. "
-        f"Model: `{MODEL}`, prompt `{PROMPT_VERSION}` (temperature 0, strict function calling). "
+        f"Model: `{args.model}`, prompt `{PROMPT_VERSION}` (temperature 0, strict function calling). "
         f"Input: faster-whisper `{args.stt_model}` transcripts (no speaker labels). "
         f"Ground truth: `docs/eval/call_brief_ground_truth.csv` ({len(rows)} calls).",
         "",
@@ -106,14 +109,14 @@ def main() -> None:
     lines += [f"- **{r['call_id']}:** {r['brief']['summary']}" for r in rows]
 
     manual = ""
-    if REPORT_PATH.exists():
-        old = REPORT_PATH.read_text(encoding="utf-8")
+    if report_path.exists():
+        old = report_path.read_text(encoding="utf-8")
         if MANUAL_MARKER in old:
             manual = old[old.index(MANUAL_MARKER):]
-    REPORT_PATH.write_text("\n".join(lines) + "\n\n" + (manual or MANUAL_MARKER + "\n"), encoding="utf-8")
+    report_path.write_text("\n".join(lines) + "\n\n" + (manual or MANUAL_MARKER + "\n"), encoding="utf-8")
 
     print(f"\nDisposition {disp_acc:.0%} | Sentiment {sent_acc:.0%} | Both {both_acc:.0%}")
-    print(f"Rapor yazıldı: {REPORT_PATH.relative_to(PROJECT_ROOT)}  |  "
+    print(f"Rapor yazıldı: {report_path.relative_to(PROJECT_ROOT)}  |  "
           f"adım bazlı maliyet: {db.cost_by_step()}  |  toplam: ${guard.spent:.4f}")
 
 

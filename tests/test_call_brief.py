@@ -64,6 +64,16 @@ def test_returns_brief_and_records_cost(tmp_path):
     assert TOOL["function"]["strict"] is True
 
 
+def test_model_can_be_overridden_and_is_priced(tmp_path):
+    db_path = tmp_path / "test.db"
+    client = FakeClient(response(BRIEF))
+    brief = generate_call_brief("t", client=client, db_path=db_path, model="gpt-4o")
+    assert client.requests[0]["model"] == "gpt-4o"
+    assert brief["cost"] == pytest.approx(1000 * 2.50e-6 + 100 * 10.00e-6)
+    with sqlite3.connect(db_path) as conn:
+        assert conn.execute("SELECT model FROM calls").fetchone() == ("gpt-4o",)
+
+
 def test_retries_transient_errors_without_charging(tmp_path):
     db_path = tmp_path / "test.db"
     waits = []

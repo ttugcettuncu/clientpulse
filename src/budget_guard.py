@@ -53,8 +53,9 @@ class BudgetGuard:
         self._record(cost, model=model, **log_fields)
         return cost
 
-    def _record(self, cost: float, *, step: str, **log_fields) -> None:
-        db.log_step(step, "ok", cost=cost, db_path=self.db_path, **log_fields)
+    def _record(self, cost: float, *, step: str, status: str = "ok", **log_fields) -> None:
+        """`status` is not "ok" only when a billed response was unusable (e.g. invalid output)."""
+        db.log_step(step, status, cost=cost, db_path=self.db_path, **log_fields)
         spent = self.spent
         if spent >= self.limit * WARN_RATIO:
             print(f"⚠️ Bütçenin %{WARN_RATIO * 100:.0f}'i harcandı: ${spent:.4f} / ${self.limit}")

@@ -69,3 +69,10 @@ def total_cost(db_path: Path | str = DEFAULT_DB_PATH) -> float:
         (total,) = conn.execute("SELECT COALESCE(SUM(cost), 0) FROM calls").fetchone()
     conn.close()
     return float(total)
+
+
+def cost_by_step(db_path: Path | str = DEFAULT_DB_PATH) -> dict[str, float]:
+    with connect(db_path) as conn:
+        rows = conn.execute("SELECT step, SUM(cost) FROM calls GROUP BY step ORDER BY step").fetchall()
+    conn.close()
+    return {step: float(cost) for step, cost in rows}

@@ -24,3 +24,6 @@ GOREV_PLANI.md
 
 # Generated STT outputs (reproducible: python -m src.eval_stt)
 data/synthetic_calls/transcripts/
+
+# Generated Call Briefs (reproducible: python -m src.eval_call_brief, costs a few cents)
+data/synthetic_calls/briefs/

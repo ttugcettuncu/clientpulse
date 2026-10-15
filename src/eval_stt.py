@@ -1,4 +1,4 @@
-"""Görev 1.4 — WER of the STT output against the original scripts.
+"""WER of the STT output against the original scripts.
 
 Two scores per call:
 - raw WER: lowercase + punctuation removed only.
@@ -25,7 +25,7 @@ from src.call_scripts import AUDIO_DIR, PROJECT_ROOT, load_scripts
 
 TRANSCRIPTS_DIR = PROJECT_ROOT / "data" / "synthetic_calls" / "transcripts"
 REPORT_PATH = PROJECT_ROOT / "docs" / "eval" / "wer_report.md"
-WER_TARGET = 0.15  # CLAUDE.md Bölüm 11.3
+WER_TARGET = 0.15  # project success metric
 MANUAL_MARKER = "<!-- manual analysis below: kept when the report is regenerated -->"
 
 _basic = jiwer.Compose([
@@ -159,7 +159,7 @@ def write_report(rows: list[dict], path: Path = REPORT_PATH) -> None:
     if path.exists() and MANUAL_MARKER in (old := path.read_text(encoding="utf-8")):
         manual = old[old.index(MANUAL_MARKER):]
     path.write_text("\n".join(lines) + "\n" + manual, encoding="utf-8")
-    print(f"\nRapor yazıldı: {path.relative_to(PROJECT_ROOT)}")
+    print(f"\nReport written: {path.relative_to(PROJECT_ROOT)}")
 
 
 def main() -> None:

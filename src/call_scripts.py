@@ -1,7 +1,7 @@
 """Reads the synthetic call scripts in data/synthetic_calls/scripts/.
 
 Script format: one turn per line, prefixed with a speaker label
-(DANIŞMAN: or MÜŞTERİ:). Lines starting with '#' are metadata, e.g.
+(CONSULTANT: or CUSTOMER:). Lines starting with '#' are metadata, e.g.
 '# disposition: offer_accepted'.
 """
 from dataclasses import dataclass, field
@@ -11,7 +11,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 SCRIPTS_DIR = PROJECT_ROOT / "data" / "synthetic_calls" / "scripts"
 AUDIO_DIR = PROJECT_ROOT / "data" / "synthetic_calls" / "audio"
 
-SPEAKERS = {"DANIŞMAN": "consultant", "MÜŞTERİ": "customer"}
+SPEAKERS = {"CONSULTANT": "consultant", "CUSTOMER": "customer"}
 
 
 @dataclass

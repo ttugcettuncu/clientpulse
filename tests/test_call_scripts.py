@@ -15,7 +15,7 @@ def test_all_scripts_parse_with_metadata():
 
 def test_reference_text_has_no_labels(tmp_path):
     path = tmp_path / "call_99.txt"
-    path.write_text("DANIŞMAN: Hello there.\nMÜŞTERİ: Hi.\n# disposition: customer_inquiry\n",
+    path.write_text("CONSULTANT: Hello there.\nCUSTOMER: Hi.\n# disposition: customer_inquiry\n",
                     encoding="utf-8")
     script = parse_script(path)
     assert script.reference_text == "Hello there. Hi."

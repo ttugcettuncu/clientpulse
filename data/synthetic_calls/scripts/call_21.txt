@@ -1,20 +1,20 @@
-DANIŞMAN: Good afternoon, this is Elena Ward.
-MÜŞTERİ: Good afternoon. This is Robert Hayes. I am calling about my last card payment.
-DANIŞMAN: Hello Robert. What happened?
-MÜŞTERİ: I was charged twice for this month's retainer. Six hundred dollars, two times, on the same day.
-DANIŞMAN: That should not happen. Let me look at the payments.
-MÜŞTERİ: I have the bank statement here if you need the details.
-DANIŞMAN: Thank you, I can see it. There are two payments of six hundred dollars on the third. The payment link was processed twice.
-MÜŞTERİ: So what happens now?
-DANIŞMAN: I will refund the second payment today. It usually takes three to five business days to appear on your card.
-MÜŞTERİ: Okay. Will I get something in writing?
-DANIŞMAN: Yes. I will email you a refund confirmation within the hour, with the amount and the date.
-MÜŞTERİ: Good. And will this happen again next month?
-DANIŞMAN: No. I will send next month's invoice with a new payment link, and I will check the payment myself.
-MÜŞTERİ: Fine. That is all I need.
-DANIŞMAN: I am sorry for the trouble, Robert.
-MÜŞTERİ: These things happen. Thank you for sorting it out.
-DANIŞMAN: You're welcome. Have a good afternoon.
+CONSULTANT: Good afternoon, this is Elena Ward.
+CUSTOMER: Good afternoon. This is Robert Hayes. I am calling about my last card payment.
+CONSULTANT: Hello Robert. What happened?
+CUSTOMER: I was charged twice for this month's retainer. Six hundred dollars, two times, on the same day.
+CONSULTANT: That should not happen. Let me look at the payments.
+CUSTOMER: I have the bank statement here if you need the details.
+CONSULTANT: Thank you, I can see it. There are two payments of six hundred dollars on the third. The payment link was processed twice.
+CUSTOMER: So what happens now?
+CONSULTANT: I will refund the second payment today. It usually takes three to five business days to appear on your card.
+CUSTOMER: Okay. Will I get something in writing?
+CONSULTANT: Yes. I will email you a refund confirmation within the hour, with the amount and the date.
+CUSTOMER: Good. And will this happen again next month?
+CONSULTANT: No. I will send next month's invoice with a new payment link, and I will check the payment myself.
+CUSTOMER: Fine. That is all I need.
+CONSULTANT: I am sorry for the trouble, Robert.
+CUSTOMER: These things happen. Thank you for sorting it out.
+CONSULTANT: You're welcome. Have a good afternoon.
 # topic: client was charged twice for the retainer, refund issued during the call
 # disposition: complaint_resolved
 # sentiment: neutral

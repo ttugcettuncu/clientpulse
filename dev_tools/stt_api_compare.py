@@ -1,4 +1,4 @@
-"""Görev 1.5 — one call through OpenAI's hosted STT vs local faster-whisper.
+"""one call through OpenAI's hosted STT vs local faster-whisper.
 
 Approved spend for this experiment: $0.05 (checked before every call, on top
 of the global BudgetGuard limit). Cost is recorded only for successful calls.
@@ -48,7 +48,7 @@ def main() -> None:
     for model in API_MODELS:
         estimated = minutes * PRICE[model]["per_minute"]
         if experiment_spent + estimated > EXPERIMENT_CAP:
-            print(f"{model}: atlandı — onaylı deney bütçesi ${EXPERIMENT_CAP} aşılır")
+            print(f"{model}: skipped — would exceed the approved experiment cap ${EXPERIMENT_CAP}")
             continue
         guard.check(upcoming_cost=estimated)
         start = time.perf_counter()
@@ -58,7 +58,7 @@ def main() -> None:
         except Exception as exc:
             db.log_step("stt", "error", call_id=args.call, model=model,
                         latency=time.perf_counter() - start)
-            print(f"{model}: hata — {exc}")
+            print(f"{model}: error — {exc}")
             continue
         latency = time.perf_counter() - start
         cost = guard.record_audio(minutes, model=model, step="stt", call_id=args.call, latency=latency)
@@ -92,7 +92,7 @@ def main() -> None:
         "Local cost excludes hardware and electricity.",
     ]
     REPORT_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")
-    print(f"\nRapor yazıldı: {REPORT_PATH.relative_to(PROJECT_ROOT)}  |  toplam harcama: ${guard.spent:.4f}")
+    print(f"\nReport written: {REPORT_PATH.relative_to(PROJECT_ROOT)}  |  total spend: ${guard.spent:.4f}")
 
 
 if __name__ == "__main__":

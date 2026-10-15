@@ -1,22 +1,22 @@
-DANIŞMAN: Hello, this is Elena Ward.
-MÜŞTERİ: Hello Elena, this is Martin Kowalski. I have a few administrative questions about my Growth Package.
-DANIŞMAN: Sure, Martin. Go ahead.
-MÜŞTERİ: First, how many sessions do I have left?
-DANIŞMAN: Let me check. You have used three sessions, so three are left.
-MÜŞTERİ: And they all have to be used within the three months?
-DANIŞMAN: Yes, the package runs for three months from the kickoff, so until the end of February.
-MÜŞTERİ: Okay. Second, my bookkeeper needs a copy of the second invoice. I cannot find it.
-DANIŞMAN: No problem. I will email a copy today.
-MÜŞTERİ: Thanks. Is that invoice already paid? We pay in three parts.
-DANIŞMAN: Yes, the second payment of three hundred and thirty dollars arrived on the fifth.
-MÜŞTERİ: Good. And the third one is due next month?
-DANIŞMAN: Correct. I will send the invoice on the first, and it is due within fourteen days.
-MÜŞTERİ: Can I pay that one by card instead of bank transfer?
-DANIŞMAN: Yes, card is fine. There is a payment link on the invoice.
-MÜŞTERİ: Okay. That is everything I needed.
-DANIŞMAN: Great. Anything else, Martin?
-MÜŞTERİ: No, that's it. Thank you.
-DANIŞMAN: You're welcome. Talk to you at our next session.
+CONSULTANT: Hello, this is Elena Ward.
+CUSTOMER: Hello Elena, this is Martin Kowalski. I have a few administrative questions about my Growth Package.
+CONSULTANT: Sure, Martin. Go ahead.
+CUSTOMER: First, how many sessions do I have left?
+CONSULTANT: Let me check. You have used three sessions, so three are left.
+CUSTOMER: And they all have to be used within the three months?
+CONSULTANT: Yes, the package runs for three months from the kickoff, so until the end of February.
+CUSTOMER: Okay. Second, my bookkeeper needs a copy of the second invoice. I cannot find it.
+CONSULTANT: No problem. I will email a copy today.
+CUSTOMER: Thanks. Is that invoice already paid? We pay in three parts.
+CONSULTANT: Yes, the second payment of three hundred and thirty dollars arrived on the fifth.
+CUSTOMER: Good. And the third one is due next month?
+CONSULTANT: Correct. I will send the invoice on the first, and it is due within fourteen days.
+CUSTOMER: Can I pay that one by card instead of bank transfer?
+CONSULTANT: Yes, card is fine. There is a payment link on the invoice.
+CUSTOMER: Okay. That is everything I needed.
+CONSULTANT: Great. Anything else, Martin?
+CUSTOMER: No, that's it. Thank you.
+CONSULTANT: You're welcome. Talk to you at our next session.
 # topic: existing client asks about remaining sessions, an invoice copy and payment by card
 # disposition: customer_inquiry
 # sentiment: neutral

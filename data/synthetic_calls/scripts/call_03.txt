@@ -1,25 +1,25 @@
-DANIŞMAN: Good afternoon, Elena Ward.
-MÜŞTERİ: Hello, my name is Mark Daniels. I found your website and I have some questions about how your process works.
-DANIŞMAN: Of course, Mark. What would you like to know?
-MÜŞTERİ: I have never worked with a consultant before. What actually happens after the first call?
-DANIŞMAN: It starts with a free discovery call, about twenty minutes. We talk about your business and whether I am the right person to help. There is no commitment.
-MÜŞTERİ: And if we decide to work together?
-DANIŞMAN: Then I send you an intake questionnaire within twenty-four hours. It asks about your goals, your numbers, and what you have already tried.
-MÜŞTERİ: How long does the questionnaire take?
-DANIŞMAN: Most people finish it in about thirty minutes. The more honest you are, the more useful our first session will be.
-MÜŞTERİ: Makes sense. What comes next?
-DANIŞMAN: The kickoff session, which happens within ten days of signing. After the kickoff, I write an action plan and send it to you within five business days.
-MÜŞTERİ: Are the sessions in person or online?
-DANIŞMAN: Mostly online by video, but I can meet in person if you are in the city.
-MÜŞTERİ: I run a small landscaping company, so my schedule is a bit unpredictable. What are your working hours?
-DANIŞMAN: Monday to Friday, nine in the morning until six in the evening. If you need to move a session, it is free as long as you tell me at least forty-eight hours before.
-MÜŞTERİ: That is good to know. I am not ready to sign anything yet, I am just collecting information.
-DANIŞMAN: That is completely fine. Would you like me to email you a short overview of the process and the prices?
-MÜŞTERİ: Yes, please. My email is mark dot daniels at example dot com.
-DANIŞMAN: Got it. And is there a phone number where I can reach you?
-MÜŞTERİ: Sure, it is five five five, zero one four two.
-DANIŞMAN: Thank you, Mark. I will send the overview today, and you can book the free discovery call whenever you are ready.
-MÜŞTERİ: Great, thanks for explaining everything so clearly.
+CONSULTANT: Good afternoon, Elena Ward.
+CUSTOMER: Hello, my name is Mark Daniels. I found your website and I have some questions about how your process works.
+CONSULTANT: Of course, Mark. What would you like to know?
+CUSTOMER: I have never worked with a consultant before. What actually happens after the first call?
+CONSULTANT: It starts with a free discovery call, about twenty minutes. We talk about your business and whether I am the right person to help. There is no commitment.
+CUSTOMER: And if we decide to work together?
+CONSULTANT: Then I send you an intake questionnaire within twenty-four hours. It asks about your goals, your numbers, and what you have already tried.
+CUSTOMER: How long does the questionnaire take?
+CONSULTANT: Most people finish it in about thirty minutes. The more honest you are, the more useful our first session will be.
+CUSTOMER: Makes sense. What comes next?
+CONSULTANT: The kickoff session, which happens within ten days of signing. After the kickoff, I write an action plan and send it to you within five business days.
+CUSTOMER: Are the sessions in person or online?
+CONSULTANT: Mostly online by video, but I can meet in person if you are in the city.
+CUSTOMER: I run a small landscaping company, so my schedule is a bit unpredictable. What are your working hours?
+CONSULTANT: Monday to Friday, nine in the morning until six in the evening. If you need to move a session, it is free as long as you tell me at least forty-eight hours before.
+CUSTOMER: That is good to know. I am not ready to sign anything yet, I am just collecting information.
+CONSULTANT: That is completely fine. Would you like me to email you a short overview of the process and the prices?
+CUSTOMER: Yes, please. My email is mark dot daniels at example dot com.
+CONSULTANT: Got it. And is there a phone number where I can reach you?
+CUSTOMER: Sure, it is five five five, zero one four two.
+CONSULTANT: Thank you, Mark. I will send the overview today, and you can book the free discovery call whenever you are ready.
+CUSTOMER: Great, thanks for explaining everything so clearly.
 # topic: service process questions from a new lead
 # disposition: prospect_considering
 # sentiment: neutral

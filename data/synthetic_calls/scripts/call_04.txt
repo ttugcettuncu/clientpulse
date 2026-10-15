@@ -1,24 +1,24 @@
-DANIŞMAN: Hello, this is Elena Ward.
-MÜŞTERİ: Elena, it is Priya Sharma. I have to be honest, I am quite frustrated right now.
-DANIŞMAN: I am sorry to hear that, Priya. Please tell me what happened.
-MÜŞTERİ: We had our kickoff session nine days ago. You said I would get the action plan within five business days. I still have nothing.
-DANIŞMAN: You are right, and I apologize. That is my mistake. The plan should have reached you last Thursday.
-MÜŞTERİ: I told my business partner we would have it this week. Now I look unprepared.
-DANIŞMAN: I understand, and that is not the experience I want you to have. Can I explain what happened, and then tell you how I will fix it?
-MÜŞTERİ: Fine. Go ahead.
-DANIŞMAN: The plan was finished, but it was sent to an old email address from your questionnaire. I should have checked that it arrived. That is on me.
-MÜŞTERİ: An old address? Which one?
-DANIŞMAN: The one ending in old studio dot com.
-MÜŞTERİ: Oh, I did write that by accident. But you still should have noticed I never replied.
-DANIŞMAN: Absolutely. Here is what I will do. I will send the plan to your current address within the next hour, and I will call you to confirm it arrived.
-MÜŞTERİ: Okay, that helps.
-DANIŞMAN: And because of the delay, I would like to add one extra session to your package at no cost. We can use it with your business partner, so we can walk through the plan together.
-MÜŞTERİ: That is actually a good idea. He has a lot of questions about the budget part.
-DANIŞMAN: Perfect. Would next Tuesday at two in the afternoon work for both of you?
-MÜŞTERİ: Let me check. Yes, Tuesday at two works.
-DANIŞMAN: Great. I will send the calendar invite together with the plan.
-MÜŞTERİ: Alright. Thank you for owning the mistake, Elena. I appreciate it.
-DANIŞMAN: Thank you for telling me directly, Priya. You will have the plan within the hour.
+CONSULTANT: Hello, this is Elena Ward.
+CUSTOMER: Elena, it is Priya Sharma. I have to be honest, I am quite frustrated right now.
+CONSULTANT: I am sorry to hear that, Priya. Please tell me what happened.
+CUSTOMER: We had our kickoff session nine days ago. You said I would get the action plan within five business days. I still have nothing.
+CONSULTANT: You are right, and I apologize. That is my mistake. The plan should have reached you last Thursday.
+CUSTOMER: I told my business partner we would have it this week. Now I look unprepared.
+CONSULTANT: I understand, and that is not the experience I want you to have. Can I explain what happened, and then tell you how I will fix it?
+CUSTOMER: Fine. Go ahead.
+CONSULTANT: The plan was finished, but it was sent to an old email address from your questionnaire. I should have checked that it arrived. That is on me.
+CUSTOMER: An old address? Which one?
+CONSULTANT: The one ending in old studio dot com.
+CUSTOMER: Oh, I did write that by accident. But you still should have noticed I never replied.
+CONSULTANT: Absolutely. Here is what I will do. I will send the plan to your current address within the next hour, and I will call you to confirm it arrived.
+CUSTOMER: Okay, that helps.
+CONSULTANT: And because of the delay, I would like to add one extra session to your package at no cost. We can use it with your business partner, so we can walk through the plan together.
+CUSTOMER: That is actually a good idea. He has a lot of questions about the budget part.
+CONSULTANT: Perfect. Would next Tuesday at two in the afternoon work for both of you?
+CUSTOMER: Let me check. Yes, Tuesday at two works.
+CONSULTANT: Great. I will send the calendar invite together with the plan.
+CUSTOMER: Alright. Thank you for owning the mistake, Elena. I appreciate it.
+CONSULTANT: Thank you for telling me directly, Priya. You will have the plan within the hour.
 # topic: complaint about a late action plan, resolved with an extra session
 # disposition: complaint_resolved
 # sentiment: neutral

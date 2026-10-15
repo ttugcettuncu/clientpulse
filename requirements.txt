@@ -4,7 +4,7 @@ fastapi
 uvicorn
 chromadb
 pytest
-# Faz 1 — TTS (synthetic audio) and STT
+# Phase 1 — TTS (synthetic audio) and STT
 gTTS
 pydub
 audioop-lts; python_version >= "3.13"  # pydub needs audioop, removed from stdlib in 3.13

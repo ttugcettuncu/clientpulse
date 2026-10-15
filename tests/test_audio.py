@@ -1,4 +1,4 @@
-"""Smoke test for Görev 1.2: every script has a non-empty audio file."""
+"""Smoke test for audio generation: every script has a non-empty audio file."""
 import json
 
 import pytest

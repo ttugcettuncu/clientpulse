@@ -1,20 +1,20 @@
-DANIŞMAN: Good afternoon, this is Elena Ward.
-MÜŞTERİ: Hi Elena, this is Owen Price. We spoke in the free discovery call last week.
-DANIŞMAN: Of course, Owen. The bicycle repair shop. How are you?
-MÜŞTERİ: Great, thanks. I have been thinking about our call all week. The ideas about service plans were brilliant.
-DANIŞMAN: I am happy it was useful. Have you thought about the next step?
-MÜŞTERİ: Yes. I would love to do the Growth Package. But my business partner, Jun, has to agree on any big spending.
-DANIŞMAN: That makes sense. Nine hundred and fifty dollars is a real investment for a small shop.
-MÜŞTERİ: Exactly. Jun is away until the end of the month, so we can only decide when he is back.
-DANIŞMAN: That is no problem. Would it help if I sent you a short summary of what we discussed, so Jun can read it?
-MÜŞTERİ: Yes, that would be really helpful.
-DANIŞMAN: I will send it tomorrow. It will include the package details and the payment options.
-MÜŞTERİ: Thank you. Just so you know, I am personally convinced. I just need Jun on board.
-DANIŞMAN: I understand. When should I follow up with you?
-MÜŞTERİ: Call me in the first week of next month. We should have an answer by then.
-DANIŞMAN: I will put it in my calendar. Is there anything else I can prepare for Jun?
-MÜŞTERİ: No, the summary is enough. Thanks again, Elena. That discovery call really opened my eyes.
-DANIŞMAN: My pleasure, Owen. Talk to you next month.
+CONSULTANT: Good afternoon, this is Elena Ward.
+CUSTOMER: Hi Elena, this is Owen Price. We spoke in the free discovery call last week.
+CONSULTANT: Of course, Owen. The bicycle repair shop. How are you?
+CUSTOMER: Great, thanks. I have been thinking about our call all week. The ideas about service plans were brilliant.
+CONSULTANT: I am happy it was useful. Have you thought about the next step?
+CUSTOMER: Yes. I would love to do the Growth Package. But my business partner, Jun, has to agree on any big spending.
+CONSULTANT: That makes sense. Nine hundred and fifty dollars is a real investment for a small shop.
+CUSTOMER: Exactly. Jun is away until the end of the month, so we can only decide when he is back.
+CONSULTANT: That is no problem. Would it help if I sent you a short summary of what we discussed, so Jun can read it?
+CUSTOMER: Yes, that would be really helpful.
+CONSULTANT: I will send it tomorrow. It will include the package details and the payment options.
+CUSTOMER: Thank you. Just so you know, I am personally convinced. I just need Jun on board.
+CONSULTANT: I understand. When should I follow up with you?
+CUSTOMER: Call me in the first week of next month. We should have an answer by then.
+CONSULTANT: I will put it in my calendar. Is there anything else I can prepare for Jun?
+CUSTOMER: No, the summary is enough. Thanks again, Elena. That discovery call really opened my eyes.
+CONSULTANT: My pleasure, Owen. Talk to you next month.
 # topic: enthusiastic prospect wants the Growth Package but must wait for his partner's approval
 # disposition: prospect_considering
 # sentiment: positive

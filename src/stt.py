@@ -4,8 +4,8 @@ Runs on CPU with int8 quantization (no CUDA runtime on the dev machine);
 it switches to the GPU automatically if one becomes available. Every run
 is logged to SQLite as step='stt' with cost 0 (local model).
 
-Diarization (who said what) is deferred to Faz 1b — see CLAUDE.md
-Bölüm 15, risk #2.
+Diarization (who said what) is deferred to Phase 1b; the transcript has
+no speaker labels.
 """
 import time
 from dataclasses import dataclass

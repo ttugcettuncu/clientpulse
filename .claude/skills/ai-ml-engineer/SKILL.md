@@ -1,21 +1,21 @@
 ---
 name: ai-ml-engineer
-description: RAG pipeline, embedding/chunking stratejisi, prompt tasarımı, LLM değerlendirme metrikleri (WER, RAGAS, faithfulness) için kullan. Model/veri ile ilgili her karar bu skille alınmalı.
+description: Use for the RAG pipeline, embedding/chunking strategy, prompt design and LLM evaluation metrics (WER, RAGAS, faithfulness). Every model or data decision goes through this skill.
 dependencies: python>=3.10, openai, chromadb, sentence-transformers
 ---
 
-## Rol
-Bu projenin AI/ML mühendisisin. CLAUDE.md Bölüm 5 (Veri), 9-10 (Maliyet), 11 (Metrikler)
-senin alanın.
+## Role
+You are the AI/ML engineer of this project. Data (CLAUDE.md Section 5), cost (Sections 9-10)
+and metrics (Section 11) are your area.
 
-## Sorumluluklar
-- RAG için chunk boyutu, top-k, embedding modeli seçimlerini gerekçelendir.
-- Her yeni prompt değişikliğinden sonra küçük altın test setiyle (docs/eval/) doğruluğu
-  ölç, CLAUDE.md Bölüm 11.3'teki tabloyu güncelle.
-- Maliyet optimizasyonu önerirken önce ölç (mevcut token/cost), sonra optimize et,
-  sonra tekrar ölç — asla ölçmeden optimize etme.
-- Tüm LLM/embedding çağrıları OpenAI SDK üzerinden olmalı; BudgetGuard'ı bypass eden
-  hiçbir kod önerme.
+## Responsibilities
+- Justify the RAG chunk size, top-k and embedding model choices.
+- After every prompt change, measure accuracy on the small golden test set (docs/eval/)
+  and update the table in CLAUDE.md Section 11.3.
+- When proposing a cost optimization, measure first (current tokens/cost), then optimize,
+  then measure again — never optimize without measuring.
+- All LLM/embedding calls go through the OpenAI SDK; never propose code that bypasses
+  BudgetGuard.
 
-## Ne zaman kullanılır
-RAG pipeline kurarken/değiştirirken, prompt yazarken, metrik/eval çalışması yaparken.
+## When to use
+Building or changing the RAG pipeline, writing prompts, running metric/eval work.

@@ -1,4 +1,4 @@
-"""Görev 2.4 — Call Brief accuracy against the hand-labelled ground truth.
+"""Call Brief accuracy against the hand-labelled ground truth.
 
 Input is the STT output (faster-whisper base, the production default), not
 the original scripts, so recognition errors are part of the measurement.
@@ -26,7 +26,7 @@ GROUND_TRUTH_PATH = PROJECT_ROOT / "docs" / "eval" / "call_brief_ground_truth.cs
 BRIEFS_DIR = PROJECT_ROOT / "data" / "synthetic_calls" / "briefs"
 REPORT_PATH = PROJECT_ROOT / "docs" / "eval" / "call_brief_accuracy.md"
 SPLITS = ["dev", "test"]  # dev = used for prompt tuning, test = held out
-ACCURACY_TARGET = 0.85  # CLAUDE.md Bölüm 11.3
+ACCURACY_TARGET = 0.85  # project success metric
 MANUAL_MARKER = "<!-- manual analysis below: kept when the report is regenerated -->"
 
 
@@ -130,8 +130,8 @@ def main() -> None:
 
     for name, sc in scores.items():
         print(f"{name:5} Disposition {sc['disposition']:.0%} | Sentiment {sc['sentiment']:.0%} | Both {sc['both']:.0%}")
-    print(f"Rapor yazıldı: {report_path.relative_to(PROJECT_ROOT)}  |  "
-          f"adım bazlı maliyet: {db.cost_by_step()}  |  toplam: ${guard.spent:.4f}")
+    print(f"Report written: {report_path.relative_to(PROJECT_ROOT)}  |  "
+          f"cost by step: {db.cost_by_step()}  |  total: ${guard.spent:.4f}")
 
 
 if __name__ == "__main__":

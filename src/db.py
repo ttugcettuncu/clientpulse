@@ -1,7 +1,7 @@
 """SQLite log of every pipeline step (STT, Call Brief, RAG).
 
 One row per step execution. Feeds BudgetGuard (persistent spend) and the
-Phase 4 dashboard. Schema follows the task plan (Görev 2.3) plus a `model`
+Phase 4 dashboard. Schema follows the task plan, plus a `model`
 column.
 """
 import sqlite3

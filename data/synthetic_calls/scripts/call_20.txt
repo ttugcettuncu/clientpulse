@@ -1,20 +1,20 @@
-DANIŞMAN: Hello, this is Elena Ward.
-MÜŞTERİ: Hi Elena. It's Chloe Bennett. I had a strategy session with you last Monday.
-DANIŞMAN: Hi Chloe. Yes, about your online shop. How can I help?
-MÜŞTERİ: You said I would get the written summary within two business days. It's Friday and I haven't received anything.
-DANIŞMAN: I am sorry, Chloe. Let me check right now.
-MÜŞTERİ: I was really looking forward to it. I wanted to start on the changes this weekend.
-DANIŞMAN: I see the problem. The summary was finished on Wednesday, but it is still in my drafts. I never sent it. That is my mistake.
-MÜŞTERİ: Oh. Okay, at least it exists.
-DANIŞMAN: I am sending it right now. You should have it in a minute.
-MÜŞTERİ: Let me check. Yes, it just arrived.
-DANIŞMAN: Good. Because of the delay, I would also like to offer you a free thirty minute call next week to go through it together.
-MÜŞTERİ: Really? That would be great, thank you.
-DANIŞMAN: Of course. Would Tuesday at eleven work?
-MÜŞTERİ: Tuesday at eleven is perfect. And the summary looks really detailed, I can start this weekend after all.
-DANIŞMAN: I am glad. Again, sorry for the delay.
-MÜŞTERİ: No problem at all. You fixed it in two minutes. Thanks, Elena.
-DANIŞMAN: Thank you for calling, Chloe. Enjoy the weekend.
+CONSULTANT: Hello, this is Elena Ward.
+CUSTOMER: Hi Elena. It's Chloe Bennett. I had a strategy session with you last Monday.
+CONSULTANT: Hi Chloe. Yes, about your online shop. How can I help?
+CUSTOMER: You said I would get the written summary within two business days. It's Friday and I haven't received anything.
+CONSULTANT: I am sorry, Chloe. Let me check right now.
+CUSTOMER: I was really looking forward to it. I wanted to start on the changes this weekend.
+CONSULTANT: I see the problem. The summary was finished on Wednesday, but it is still in my drafts. I never sent it. That is my mistake.
+CUSTOMER: Oh. Okay, at least it exists.
+CONSULTANT: I am sending it right now. You should have it in a minute.
+CUSTOMER: Let me check. Yes, it just arrived.
+CONSULTANT: Good. Because of the delay, I would also like to offer you a free thirty minute call next week to go through it together.
+CUSTOMER: Really? That would be great, thank you.
+CONSULTANT: Of course. Would Tuesday at eleven work?
+CUSTOMER: Tuesday at eleven is perfect. And the summary looks really detailed, I can start this weekend after all.
+CONSULTANT: I am glad. Again, sorry for the delay.
+CUSTOMER: No problem at all. You fixed it in two minutes. Thanks, Elena.
+CONSULTANT: Thank you for calling, Chloe. Enjoy the weekend.
 # topic: complaint about a missing session summary, resolved immediately with a free follow-up call
 # disposition: complaint_resolved
 # sentiment: positive

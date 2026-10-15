@@ -1,14 +1,14 @@
 # ClientPulse
 
-_Proje açıklaması Faz 5'te yazılacak._
+_The project description will be written in Phase 5._
 
-## Gereksinimler
+## Requirements
 
-- Python 3.14 (3.14.7 ile geliştirildi ve test edildi)
+- Python 3.14 (developed and tested with 3.14.7)
 - Git
-- OpenAI API anahtarı
+- OpenAI API key
 
-## Kurulum (Windows)
+## Setup (Windows)
 
 ```powershell
 git clone https://github.com/ttugcettuncu/clientpulse.git
@@ -16,15 +16,15 @@ cd clientpulse
 py -3.14 -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
-copy .env.example .env   # ardından .env içine OPENAI_API_KEY değerini yaz
+copy .env.example .env   # then put your OPENAI_API_KEY into .env
 ```
 
-## Klasör Yapısı
+## Folder Structure
 
 ```
-src/         uygulama kodu (STT, Call Brief, RAG, BudgetGuard, FastAPI)
-tests/       pytest testleri
-data/        sentetik ses kayıtları ve RAG doküman seti
-docs/        maliyet deneyi raporu ve değerlendirme setleri
-dev_tools/   sadece geliştirme amaçlı araçlar (ürünün parçası değil)
+src/         application code (STT, Call Brief, RAG, BudgetGuard, FastAPI)
+tests/       pytest tests
+data/        synthetic call audio and the RAG document set
+docs/        cost experiment report and evaluation sets
+dev_tools/   development-only tools (not part of the product)
 ```

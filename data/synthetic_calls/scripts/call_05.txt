@@ -1,23 +1,23 @@
-DANIŞMAN: Good morning, Elena Ward speaking.
-MÜŞTERİ: Hi Elena, this is Tom Becker. We had a discovery call last week about my accounting practice.
-DANIŞMAN: Yes, of course, Tom. Good to hear from you again.
-MÜŞTERİ: I have been thinking about it, and I am stuck between the Growth Package and the monthly retainer.
-DANIŞMAN: That is a common question. Let me explain the difference. The Growth Package is six sessions over three months for nine hundred and fifty dollars. It is best for one clear project with a start and an end.
-MÜŞTERİ: And the retainer?
-DANIŞMAN: The retainer is six hundred dollars per month, with two sessions a month and email support. I reply to emails within one business day. It works better when you want ongoing support while you make many decisions.
-MÜŞTERİ: The retainer has a minimum, right?
-DANIŞMAN: Yes, the minimum is three months. After that you can cancel with thirty days notice.
-MÜŞTERİ: So three months of retainer is eighteen hundred dollars, compared to nine fifty for the package.
-DANIŞMAN: Correct. You get twice as many sessions with the retainer, plus the email support.
-MÜŞTERİ: My main goal is to hire two new staff and change how we price our services. Is that one project or two?
-DANIŞMAN: Honestly, it could be either. If you want to move fast on both at the same time, the retainer gives you more contact. If you are happy to do pricing first and hiring later, the package is enough.
-MÜŞTERİ: Hmm. I need to talk to my wife about the budget. She manages our finances.
-DANIŞMAN: That makes sense. Would it help if I sent you a short comparison by email, so you can look at it together?
-MÜŞTERİ: Yes, that would help a lot.
-DANIŞMAN: I will send it today. There is no pressure, take the time you need.
-MÜŞTERİ: Thanks. I will probably get back to you by the end of next week.
-DANIŞMAN: Sounds good, Tom. Feel free to email me if any questions come up before then.
-MÜŞTERİ: Will do. Thanks, Elena.
+CONSULTANT: Good morning, Elena Ward speaking.
+CUSTOMER: Hi Elena, this is Tom Becker. We had a discovery call last week about my accounting practice.
+CONSULTANT: Yes, of course, Tom. Good to hear from you again.
+CUSTOMER: I have been thinking about it, and I am stuck between the Growth Package and the monthly retainer.
+CONSULTANT: That is a common question. Let me explain the difference. The Growth Package is six sessions over three months for nine hundred and fifty dollars. It is best for one clear project with a start and an end.
+CUSTOMER: And the retainer?
+CONSULTANT: The retainer is six hundred dollars per month, with two sessions a month and email support. I reply to emails within one business day. It works better when you want ongoing support while you make many decisions.
+CUSTOMER: The retainer has a minimum, right?
+CONSULTANT: Yes, the minimum is three months. After that you can cancel with thirty days notice.
+CUSTOMER: So three months of retainer is eighteen hundred dollars, compared to nine fifty for the package.
+CONSULTANT: Correct. You get twice as many sessions with the retainer, plus the email support.
+CUSTOMER: My main goal is to hire two new staff and change how we price our services. Is that one project or two?
+CONSULTANT: Honestly, it could be either. If you want to move fast on both at the same time, the retainer gives you more contact. If you are happy to do pricing first and hiring later, the package is enough.
+CUSTOMER: Hmm. I need to talk to my wife about the budget. She manages our finances.
+CONSULTANT: That makes sense. Would it help if I sent you a short comparison by email, so you can look at it together?
+CUSTOMER: Yes, that would help a lot.
+CONSULTANT: I will send it today. There is no pressure, take the time you need.
+CUSTOMER: Thanks. I will probably get back to you by the end of next week.
+CONSULTANT: Sounds good, Tom. Feel free to email me if any questions come up before then.
+CUSTOMER: Will do. Thanks, Elena.
 # topic: comparing Growth Package and Monthly Retainer, needs to discuss budget
 # disposition: prospect_considering
 # sentiment: neutral

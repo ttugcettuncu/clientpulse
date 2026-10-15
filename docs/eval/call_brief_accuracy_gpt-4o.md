@@ -12,15 +12,15 @@ Cost: $0.03195 total, $0.00355 per call (avg 938 input / 120 output tokens). Ave
 
 | Call | Disposition (truth → predicted) | Sentiment (truth → predicted) | Key topics |
 |---|---|---|---|
-| call_01 | teklif_kabul | pozitif | pricing, growth package, payment options, consulting services |
-| call_02 | vazgecti | notr | cancellation, refund policy, growth package, company acquisition |
-| call_03 | **dusunecek → bilgi_talebi** | notr | consulting process, discovery call, intake questionnaire, scheduling, pricing |
-| call_04 | sikayet_cozuldu | notr | action plan delay, email address error, compensation offer, scheduling extra session |
-| call_05 | dusunecek | notr | growth package, monthly retainer, pricing, budget discussion |
-| call_06 | teklif_kabul | pozitif | monthly retainer, online store growth, payment method, session scheduling |
-| call_07 | dusunecek | **negatif → notr** | pricing, growth package, member retention, payment options |
-| call_08 | vazgecti | negatif | cancellation fee, refund policy, client dissatisfaction, session cancellation |
-| call_09 | bilgi_talebi | pozitif | session rescheduling, invoice payment terms, email support |
+| call_01 | offer_accepted | positive | pricing, growth package, payment options, consulting services |
+| call_02 | customer_cancelled | neutral | cancellation, refund policy, growth package, company acquisition |
+| call_03 | **prospect_considering → customer_inquiry** | neutral | consulting process, discovery call, intake questionnaire, scheduling, pricing |
+| call_04 | complaint_resolved | neutral | action plan delay, email address error, compensation offer, scheduling extra session |
+| call_05 | prospect_considering | neutral | growth package, monthly retainer, pricing, budget discussion |
+| call_06 | offer_accepted | positive | monthly retainer, online store growth, payment method, session scheduling |
+| call_07 | prospect_considering | **negative → neutral** | pricing, growth package, member retention, payment options |
+| call_08 | customer_cancelled | negative | cancellation fee, refund policy, client dissatisfaction, session cancellation |
+| call_09 | customer_inquiry | positive | session rescheduling, invoice payment terms, email support |
 
 ## Summaries
 

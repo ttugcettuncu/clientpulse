@@ -63,17 +63,18 @@ Target: ≥ 85% (CLAUDE.md 11.3). Cost: $0.00429 total, $0.00020 per call (avg 9
 
 ## Label decision (2026-10-15)
 
-call_03 was relabelled from `bilgi_talebi` to `dusunecek`: a prospect who wants more information before
-deciding still needs a follow-up, so it is a pending sale. `bilgi_talebi` is now reserved for calls where
+call_03 was relabelled from `customer_inquiry` to `prospect_considering`: a prospect who wants more information before
+deciding still needs a follow-up, so it is a pending sale. `customer_inquiry` is now reserved for calls where
 no purchase decision is pending (e.g. an existing client's questions about invoices or scheduling).
 Prompt v4 adds this definition. v1–v3 below are re-scored against the corrected label.
 
-New label `red` (prompt v5): a prospect who has never bought anything declines the offer or asks not to be
-followed up (call_14, call_16). `vazgecti` is now reserved for an existing client who cancels a service
+New label `offer_declined` (prompt v5, then still called `red`): a prospect who has never bought anything declines the offer or asks not to be
+followed up (call_14, call_16). `customer_cancelled` is now reserved for an existing client who cancels a service
 they already bought. Both test labels were set before any model output on the test set was seen.
 
 **English label names (prompt v6).** All labels were renamed to self-describing English values so the
-statuses are understandable for any reader. Sections below that describe v1–v5 use the old names.
+statuses are understandable for any reader. Sections below that describe v1–v5 also use the new names;
+the table maps them to the names those runs actually used.
 
 | Old (v1–v5) | New (v6) | Meaning |
 |---|---|---|
@@ -95,13 +96,13 @@ All runs: same 9 STT transcripts, temperature 0. Briefs per version are cached i
 | v1 | Label definitions only | 67% | 56% | 44% | $0.00017 |
 | v2 | "Politeness is not sentiment"; rescheduling / free make-up session is not a purchase | 67% | 78% | 56% | $0.00019 |
 | v3 | `outcome_evidence` sentence before the label; disposition rules applied in a fixed order | 89% | 78% | 78% | $0.00021 |
-| v4 | `dusunecek` / `bilgi_talebi` boundary from the label decision above | 89% | 78% | 67% | $0.00022 |
+| v4 | `prospect_considering` / `customer_inquiry` boundary from the label decision above | 89% | 78% | 67% | $0.00022 |
 
-v1 failure pattern: every sentiment error was a shift towards `pozitif`. The customers in the scripts
+v1 failure pattern: every sentiment error was a shift towards `positive`. The customers in the scripts
 are polite, and the model read polite closings ("thank you, good luck") as satisfaction. v2 fixed 3 of the 4.
 
-v3 → v4 shows the instability: call_04 flipped to correct (`sikayet_cozuldu`) while call_09 flipped to
-wrong (`bilgi_talebi` → `sikayet_cozuldu`). Same score, different errors. On 9 calls this is noise, not signal.
+v3 → v4 shows the instability: call_04 flipped to correct (`complaint_resolved`) while call_09 flipped to
+wrong (`customer_inquiry` → `complaint_resolved`). Same score, different errors. On 9 calls this is noise, not signal.
 
 ## Model comparison: gpt-4o-mini vs gpt-4o (prompt v3)
 
@@ -111,9 +112,9 @@ wrong (`bilgi_talebi` → `sikayet_cozuldu`). Same score, different errors. On 9
 | gpt-4o | 89% | 89% | 78% | $0.0036 | $3.55 |
 
 Full gpt-4o run: `call_brief_accuracy_gpt-4o.md`. gpt-4o was 17× more expensive for one more correct
-sentiment label. Its only disposition miss was call_03 (`bilgi_talebi`), the label whose definition was
+sentiment label. Its only disposition miss was call_03 (`customer_inquiry`), the label whose definition was
 unclear before v4, so that miss reflects the prompt, not model capacity. Both models rate call_07
-(price objection, "I will think about it") as `notr` instead of `negatif`.
+(price objection, "I will think about it") as `neutral` instead of `negative`.
 
 Decision: keep **gpt-4o-mini** as the default. The quality gap is within the noise of a 9-call set and
 does not justify a 17× cost.
@@ -137,20 +138,20 @@ so its dev score is optimistic. **The test score is the real performance.**
 
 | Call | Truth → predicted | Analysis |
 |---|---|---|
-| call_14 | red → dusunecek | The model's own evidence ("decided to think about it and requested not to be contacted") matches the `red` definition, but it picks another label. |
-| call_16 | red → vazgecti | Same: evidence says the prospect "decided not to proceed and asked to be removed from the follow-up list". The model does not separate a prospect's decline from a client's cancellation. |
-| call_19 | bilgi_talebi → dusunecek | Client will tell which rescheduling option he picks tomorrow; the model reads the pending choice as a pending purchase. |
-| call_10 | notr → pozitif | Matter-of-fact purchase rated positive. |
-| call_17 | notr → pozitif | Routine admin questions rated positive. |
-| call_21 | notr → pozitif | Calm, resolved double charge rated positive. |
-| call_14 | negatif → notr | Polite but unconvinced prospect rated neutral (same pattern as call_07 in dev). |
+| call_14 | offer_declined → prospect_considering | The model's own evidence ("decided to think about it and requested not to be contacted") matches the `offer_declined` definition, but it picks another label. |
+| call_16 | offer_declined → customer_cancelled | Same: evidence says the prospect "decided not to proceed and asked to be removed from the follow-up list". The model does not separate a prospect's decline from a client's cancellation. |
+| call_19 | customer_inquiry → prospect_considering | Client will tell which rescheduling option he picks tomorrow; the model reads the pending choice as a pending purchase. |
+| call_10 | neutral → positive | Matter-of-fact purchase rated positive. |
+| call_17 | neutral → positive | Routine admin questions rated positive. |
+| call_21 | neutral → positive | Calm, resolved double charge rated positive. |
+| call_14 | negative → neutral | Polite but unconvinced prospect rated neutral (same pattern as call_07 in dev). |
 
 Patterns:
 1. **`red` was never predicted** (0 of 21 calls), although the evidence sentences fit it. Hypothesis: the
    prompt is in English, where "red" is a colour, so the enum name works against its definition. A
    self-describing value (e.g. `teklif_reddedildi`) is the first thing to try.
-2. **Sentiment is biased in two directions:** neutral calls with a good outcome become `pozitif` (3 errors),
-   and polite negativity becomes `notr` (call_14, and call_07 in dev). The model rates the outcome and
+2. **Sentiment is biased in two directions:** neutral calls with a good outcome become `positive` (3 errors),
+   and polite negativity becomes `neutral` (call_14, and call_07 in dev). The model rates the outcome and
    the tone of voice rather than the customer's attitude.
 
 ## English labels (prompt v6, gpt-4o-mini)
@@ -167,10 +168,10 @@ Same disposition score, different errors:
 
 | Call | v5 | v6 | Truth |
 |---|---|---|---|
-| call_14 | `red` ❌ (predicted dusunecek) | `offer_declined` ✅ | offer_declined |
-| call_16 | vazgecti ❌ | `customer_cancelled` ❌ | offer_declined |
-| call_19 | dusunecek ❌ | `prospect_considering` ❌ | customer_inquiry |
-| call_20 | sikayet_cozuldu ✅ | `offer_accepted` ❌ | complaint_resolved |
+| call_14 | `offer_declined` ❌ (predicted prospect_considering) | `offer_declined` ✅ | offer_declined |
+| call_16 | customer_cancelled ❌ | `customer_cancelled` ❌ | offer_declined |
+| call_19 | prospect_considering ❌ | `prospect_considering` ❌ | customer_inquiry |
+| call_20 | complaint_resolved ✅ | `offer_accepted` ❌ | complaint_resolved |
 
 - Pattern 1 is partly confirmed: with a self-describing name the label is used (call_14). call_16 shows
   the model still does not separate a prospect's decline from a client's cancellation.

@@ -1,24 +1,24 @@
-DANIŞMAN: Good morning, this is Elena Ward.
-MÜŞTERİ: Good morning, Elena! It is Michael Torres. I just have a couple of quick questions, nothing urgent.
-DANIŞMAN: Hi Michael, always happy to help. What is on your mind?
-MÜŞTERİ: First, I am going on vacation in two weeks. Our session is planned for the day I leave. Can we move it?
-DANIŞMAN: Of course. Since it is more than forty-eight hours away, moving it is completely free.
-MÜŞTERİ: Great. Could we do it the Friday before instead?
-DANIŞMAN: Let me check. Friday the thirteenth, I have eleven in the morning or three in the afternoon.
-MÜŞTERİ: Eleven works better for me.
-DANIŞMAN: Done, Friday at eleven. I will update the calendar invite.
-MÜŞTERİ: Thanks. Second question. My accountant asked about your invoices. When exactly are they due?
-DANIŞMAN: All invoices are due within fourteen days of the invoice date.
-MÜŞTERİ: And she asked if bank transfer is okay, because the company card has a low limit.
-DANIŞMAN: Yes, bank transfer is fine. The bank details are at the bottom of every invoice.
-MÜŞTERİ: Perfect. Last thing. While I am away, can I still email you if something comes up at work?
-DANIŞMAN: Yes. As part of your retainer you have email support, and I reply within one business day, Monday to Friday.
-MÜŞTERİ: So if I email on a Saturday, I hear back on Monday.
-DANIŞMAN: Exactly. My working hours are nine to six on weekdays.
-MÜŞTERİ: That is totally fine. I just wanted to know what to expect.
-DANIŞMAN: Of course. Is there anything else?
-MÜŞTERİ: No, that was everything. Thanks for being so flexible.
-DANIŞMAN: My pleasure, Michael. Enjoy your vacation, and see you Friday at eleven.
+CONSULTANT: Good morning, this is Elena Ward.
+CUSTOMER: Good morning, Elena! It is Michael Torres. I just have a couple of quick questions, nothing urgent.
+CONSULTANT: Hi Michael, always happy to help. What is on your mind?
+CUSTOMER: First, I am going on vacation in two weeks. Our session is planned for the day I leave. Can we move it?
+CONSULTANT: Of course. Since it is more than forty-eight hours away, moving it is completely free.
+CUSTOMER: Great. Could we do it the Friday before instead?
+CONSULTANT: Let me check. Friday the thirteenth, I have eleven in the morning or three in the afternoon.
+CUSTOMER: Eleven works better for me.
+CONSULTANT: Done, Friday at eleven. I will update the calendar invite.
+CUSTOMER: Thanks. Second question. My accountant asked about your invoices. When exactly are they due?
+CONSULTANT: All invoices are due within fourteen days of the invoice date.
+CUSTOMER: And she asked if bank transfer is okay, because the company card has a low limit.
+CONSULTANT: Yes, bank transfer is fine. The bank details are at the bottom of every invoice.
+CUSTOMER: Perfect. Last thing. While I am away, can I still email you if something comes up at work?
+CONSULTANT: Yes. As part of your retainer you have email support, and I reply within one business day, Monday to Friday.
+CUSTOMER: So if I email on a Saturday, I hear back on Monday.
+CONSULTANT: Exactly. My working hours are nine to six on weekdays.
+CUSTOMER: That is totally fine. I just wanted to know what to expect.
+CONSULTANT: Of course. Is there anything else?
+CUSTOMER: No, that was everything. Thanks for being so flexible.
+CONSULTANT: My pleasure, Michael. Enjoy your vacation, and see you Friday at eleven.
 # topic: existing client asks about rescheduling, invoice terms and email support
 # disposition: customer_inquiry
 # sentiment: positive

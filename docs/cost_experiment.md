@@ -1,3 +1,3 @@
-# RAG vs no-RAG Maliyet Deneyi
+# RAG vs no-RAG Cost Experiment
 
-_Faz 3'te doldurulacak._
+_To be filled in Phase 3._

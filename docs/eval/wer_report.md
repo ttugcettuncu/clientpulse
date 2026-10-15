@@ -107,7 +107,7 @@ RTF = processing time / audio duration (below 1 = faster than real time).
 **Raw vs normalized WER:** the gap (about 4.4 points) comes almost entirely from numbers and money amounts. This is why the ground truth needs a normalization step before scoring.
 
 **Caveat (important):** this audio is clean text-to-speech: no background noise, no overlapping speech, full bandwidth. Real calls (8 kHz phone audio, noise, accents, people interrupting each other) give much higher WER. The numbers above are a **best case**. Next steps:
-1. Add a degraded-audio test (8 kHz resampling + noise) to see how WER changes. Could be done in Faz 1b.
-2. For Call Brief and PII masking (Faz 2), names, amounts and e-mails are exactly the error-prone fields. Masking must work on the STT format (`sarah@mitchellbakery.com`, `555-0142`), not on the spoken form.
+1. Add a degraded-audio test (8 kHz resampling + noise) to see how WER changes. Could be done in Phase 1b.
+2. For Call Brief and PII masking (Phase 2), names, amounts and e-mails are exactly the error-prone fields. Masking must work on the STT format (`sarah@mitchellbakery.com`, `555-0142`), not on the spoken form.
 
 **Hosted API** (see `stt_api_vs_local.md`): on this clean audio `whisper-1` and `gpt-4o-mini-transcribe` reach the same WER as local `base` (1.7% on call_01) and are faster (5–9 s vs 18 s on CPU), but cost $0.003–0.006/min. The local model stays the default; the API is the fallback when there is no GPU and latency matters.

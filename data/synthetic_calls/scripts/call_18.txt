@@ -1,20 +1,20 @@
-DANIŞMAN: Good afternoon, this is Elena Ward.
-MÜŞTERİ: Elena, hi! It is Grace Okafor. I just had to call you. We had our best month ever.
-DANIŞMAN: Grace, that is fantastic news! Congratulations.
-MÜŞTERİ: The new opening hours at the café worked. Weekday mornings are almost full now.
-DANIŞMAN: I am so happy for you. You did the hard work.
-MÜŞTERİ: Well, I would never have tried it without our sessions. Anyway, I have two quick questions.
-DANIŞMAN: Of course. What are they?
-MÜŞTERİ: What should I prepare for our next session? I want to make the most of it.
-DANIŞMAN: Please bring last month's sales by hour, and your staff schedule. We will look at the afternoons next.
-MÜŞTERİ: Sales by hour and the staff schedule. Got it.
-DANIŞMAN: Perfect. And your second question?
-MÜŞTERİ: If I have an idea on a Sunday, can I email you, or should I wait?
-DANIŞMAN: You can email any time. Your retainer includes email support, and I reply within one business day, Monday to Friday.
-MÜŞTERİ: So I will hear from you on Monday. That's perfect.
-DANIŞMAN: Exactly. Is there anything else?
-MÜŞTERİ: No, I just wanted to share the good news. Thank you, Elena. Really.
-DANIŞMAN: Thank you for calling, Grace. See you next Tuesday.
+CONSULTANT: Good afternoon, this is Elena Ward.
+CUSTOMER: Elena, hi! It is Grace Okafor. I just had to call you. We had our best month ever.
+CONSULTANT: Grace, that is fantastic news! Congratulations.
+CUSTOMER: The new opening hours at the café worked. Weekday mornings are almost full now.
+CONSULTANT: I am so happy for you. You did the hard work.
+CUSTOMER: Well, I would never have tried it without our sessions. Anyway, I have two quick questions.
+CONSULTANT: Of course. What are they?
+CUSTOMER: What should I prepare for our next session? I want to make the most of it.
+CONSULTANT: Please bring last month's sales by hour, and your staff schedule. We will look at the afternoons next.
+CUSTOMER: Sales by hour and the staff schedule. Got it.
+CONSULTANT: Perfect. And your second question?
+CUSTOMER: If I have an idea on a Sunday, can I email you, or should I wait?
+CONSULTANT: You can email any time. Your retainer includes email support, and I reply within one business day, Monday to Friday.
+CUSTOMER: So I will hear from you on Monday. That's perfect.
+CONSULTANT: Exactly. Is there anything else?
+CUSTOMER: No, I just wanted to share the good news. Thank you, Elena. Really.
+CONSULTANT: Thank you for calling, Grace. See you next Tuesday.
 # topic: happy retainer client shares results, asks what to prepare and about email support
 # disposition: customer_inquiry
 # sentiment: positive

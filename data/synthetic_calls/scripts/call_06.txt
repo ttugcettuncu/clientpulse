@@ -1,25 +1,25 @@
-DANIŞMAN: Hello, Elena Ward speaking.
-MÜŞTERİ: Hi Elena, it is Laura Kim. We did a single strategy session together last month.
-DANIŞMAN: Hi Laura! How is the online store going?
-MÜŞTERİ: Really well, actually. We changed the shipping prices like you suggested, and orders went up almost twenty percent.
-DANIŞMAN: That is fantastic news. Congratulations.
-MÜŞTERİ: Thank you. That is why I am calling. I want more regular support, not just one session. What would you recommend?
-DANIŞMAN: Since you are growing fast and making decisions every week, I think the monthly retainer fits you best. It is six hundred dollars per month.
-MÜŞTERİ: What is included?
-DANIŞMAN: Two sessions per month, plus email support. If you send me a question, I reply within one business day. The minimum commitment is three months.
-MÜŞTERİ: Three months is fine. I would probably want it for longer anyway.
-DANIŞMAN: Great. After the first three months, you can cancel any time with thirty days notice.
-MÜŞTERİ: Perfect. Let's start the retainer then.
-DANIŞMAN: Wonderful. Would you like to pay by card or by bank transfer?
-MÜŞTERİ: By card, please. Can I give you the details now?
-DANIŞMAN: For security, I will send you a secure payment link instead. But I can note the last four digits of the card you plan to use, so I can match the payment.
-MÜŞTERİ: Sure, the card ends in four four one nine.
-DANIŞMAN: Thank you. And the best phone number for you is still five five five, zero one seven three?
-MÜŞTERİ: Yes, that is right.
-DANIŞMAN: Great. Since you already did the questionnaire for the single session, we can skip that step. How about our first retainer session next Monday at ten?
-MÜŞTERİ: Monday at ten is perfect.
-DANIŞMAN: Then it is booked. I will send the payment link and the invite in the next few minutes.
-MÜŞTERİ: Thanks, Elena. I am really excited about this.
+CONSULTANT: Hello, Elena Ward speaking.
+CUSTOMER: Hi Elena, it is Laura Kim. We did a single strategy session together last month.
+CONSULTANT: Hi Laura! How is the online store going?
+CUSTOMER: Really well, actually. We changed the shipping prices like you suggested, and orders went up almost twenty percent.
+CONSULTANT: That is fantastic news. Congratulations.
+CUSTOMER: Thank you. That is why I am calling. I want more regular support, not just one session. What would you recommend?
+CONSULTANT: Since you are growing fast and making decisions every week, I think the monthly retainer fits you best. It is six hundred dollars per month.
+CUSTOMER: What is included?
+CONSULTANT: Two sessions per month, plus email support. If you send me a question, I reply within one business day. The minimum commitment is three months.
+CUSTOMER: Three months is fine. I would probably want it for longer anyway.
+CONSULTANT: Great. After the first three months, you can cancel any time with thirty days notice.
+CUSTOMER: Perfect. Let's start the retainer then.
+CONSULTANT: Wonderful. Would you like to pay by card or by bank transfer?
+CUSTOMER: By card, please. Can I give you the details now?
+CONSULTANT: For security, I will send you a secure payment link instead. But I can note the last four digits of the card you plan to use, so I can match the payment.
+CUSTOMER: Sure, the card ends in four four one nine.
+CONSULTANT: Thank you. And the best phone number for you is still five five five, zero one seven three?
+CUSTOMER: Yes, that is right.
+CONSULTANT: Great. Since you already did the questionnaire for the single session, we can skip that step. How about our first retainer session next Monday at ten?
+CUSTOMER: Monday at ten is perfect.
+CONSULTANT: Then it is booked. I will send the payment link and the invite in the next few minutes.
+CUSTOMER: Thanks, Elena. I am really excited about this.
 # topic: existing client upgrades to Monthly Retainer
 # disposition: offer_accepted
 # sentiment: positive

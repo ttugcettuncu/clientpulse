@@ -1,25 +1,25 @@
-DANIŞMAN: Good morning, this is Elena Ward speaking. How can I help you today?
-MÜŞTERİ: Hi Elena, my name is Sarah Mitchell. I run a small bakery downtown and a friend recommended you. I wanted to ask about your prices.
-DANIŞMAN: Thank you for calling, Sarah, and please thank your friend for me. I have three main options. The first is a single strategy session, which is ninety minutes and costs one hundred and eighty dollars.
-MÜŞTERİ: Okay. And what do I get from that one session?
-DANIŞMAN: We focus on one specific problem, for example pricing or staffing. Within two business days you get a written summary with the actions we agreed on.
-MÜŞTERİ: That sounds useful. What are the other options?
-DANIŞMAN: The second is the Growth Package. That is six sessions over three months. It costs nine hundred and fifty dollars if you pay upfront, or three monthly payments of three hundred and thirty dollars.
-MÜŞTERİ: And the third one?
-DANIŞMAN: The third is a monthly retainer at six hundred dollars per month. You get two sessions a month plus email support, and I reply within one business day. The minimum is three months.
-MÜŞTERİ: Honestly, my problem is bigger than one session. Sales have been flat for a year and I am not sure if it is my prices, my menu, or my marketing.
-DANIŞMAN: Then I would suggest the Growth Package. Three months gives us time to look at all three areas, test a few changes, and see real results.
-MÜŞTERİ: Six sessions over three months. How does it start?
-DANIŞMAN: After we agree, I send you a short questionnaire within twenty-four hours. Then we have a kickoff session within ten days, and five business days after that you receive a written action plan.
-MÜŞTERİ: I like that there is a plan in writing. I tend to forget things after a meeting.
-DANIŞMAN: Most of my clients say the same thing. The plan is something you can share with your staff as well.
-MÜŞTERİ: If I pay the nine hundred and fifty upfront, can I pay by card?
-DANIŞMAN: Yes, card or bank transfer are both fine. The invoice is due within fourteen days.
-MÜŞTERİ: Great. Let's do it. I would like to sign up for the Growth Package and pay upfront.
-DANIŞMAN: Wonderful, Sarah. I will send the invoice and the questionnaire to you today. Could you confirm the best email for you?
-MÜŞTERİ: It is sarah at mitchell bakery dot com.
-DANIŞMAN: Perfect. You will hear from me this afternoon. I am looking forward to working with you.
-MÜŞTERİ: Thank you so much, Elena. I feel better already.
+CONSULTANT: Good morning, this is Elena Ward speaking. How can I help you today?
+CUSTOMER: Hi Elena, my name is Sarah Mitchell. I run a small bakery downtown and a friend recommended you. I wanted to ask about your prices.
+CONSULTANT: Thank you for calling, Sarah, and please thank your friend for me. I have three main options. The first is a single strategy session, which is ninety minutes and costs one hundred and eighty dollars.
+CUSTOMER: Okay. And what do I get from that one session?
+CONSULTANT: We focus on one specific problem, for example pricing or staffing. Within two business days you get a written summary with the actions we agreed on.
+CUSTOMER: That sounds useful. What are the other options?
+CONSULTANT: The second is the Growth Package. That is six sessions over three months. It costs nine hundred and fifty dollars if you pay upfront, or three monthly payments of three hundred and thirty dollars.
+CUSTOMER: And the third one?
+CONSULTANT: The third is a monthly retainer at six hundred dollars per month. You get two sessions a month plus email support, and I reply within one business day. The minimum is three months.
+CUSTOMER: Honestly, my problem is bigger than one session. Sales have been flat for a year and I am not sure if it is my prices, my menu, or my marketing.
+CONSULTANT: Then I would suggest the Growth Package. Three months gives us time to look at all three areas, test a few changes, and see real results.
+CUSTOMER: Six sessions over three months. How does it start?
+CONSULTANT: After we agree, I send you a short questionnaire within twenty-four hours. Then we have a kickoff session within ten days, and five business days after that you receive a written action plan.
+CUSTOMER: I like that there is a plan in writing. I tend to forget things after a meeting.
+CONSULTANT: Most of my clients say the same thing. The plan is something you can share with your staff as well.
+CUSTOMER: If I pay the nine hundred and fifty upfront, can I pay by card?
+CONSULTANT: Yes, card or bank transfer are both fine. The invoice is due within fourteen days.
+CUSTOMER: Great. Let's do it. I would like to sign up for the Growth Package and pay upfront.
+CONSULTANT: Wonderful, Sarah. I will send the invoice and the questionnaire to you today. Could you confirm the best email for you?
+CUSTOMER: It is sarah at mitchell bakery dot com.
+CONSULTANT: Perfect. You will hear from me this afternoon. I am looking forward to working with you.
+CUSTOMER: Thank you so much, Elena. I feel better already.
 # topic: pricing inquiry, chooses Growth Package
 # disposition: offer_accepted
 # sentiment: positive

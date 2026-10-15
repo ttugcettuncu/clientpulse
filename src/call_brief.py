@@ -5,9 +5,9 @@ writing the evidence first makes the label more reliable (prompt v3, see
 docs/eval/call_brief_accuracy.md).
 
 PII (card numbers, national ID numbers, e-mail addresses) is masked before
-the transcript leaves the machine (CLAUDE.md Bölüm 15, risk #5).
+the transcript leaves the machine.
 
-One gpt-4o-mini call with a forced, strict function call (CLAUDE.md 6.2), so
+One gpt-4o-mini call with a forced, strict function call, so
 the output always matches the schema below. BudgetGuard is checked before
 every attempt; transient API errors are retried with exponential backoff
 (2 retries). Failed attempts are logged with cost 0; a billed response that

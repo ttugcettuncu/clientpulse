@@ -1,4 +1,4 @@
-"""Code-level hard stop for OpenAI spend (CLAUDE.md Bölüm 12).
+"""Code-level hard stop for OpenAI spend.
 
 The OpenAI account budget only sends e-mail alerts, so this is the real
 limit. Spend is persisted in SQLite (the `calls` table), so the limit
@@ -39,7 +39,7 @@ class BudgetGuard:
         spent = self.spent
         if spent + upcoming_cost >= self.limit:
             raise BudgetExceededError(
-                f"Bütçe doldu: ${spent:.4f} harcandı (+${upcoming_cost:.4f} planlanan) / ${self.limit}"
+                f"Budget exhausted: ${spent:.4f} spent (+${upcoming_cost:.4f} planned) / ${self.limit}"
             )
 
     def record_chat(self, usage, model: str = "gpt-4o-mini", **log_fields) -> float:
@@ -59,4 +59,4 @@ class BudgetGuard:
         db.log_step(step, status, cost=cost, db_path=self.db_path, **log_fields)
         spent = self.spent
         if spent >= self.limit * WARN_RATIO:
-            print(f"⚠️ Bütçenin %{WARN_RATIO * 100:.0f}'i harcandı: ${spent:.4f} / ${self.limit}")
+            print(f"⚠️ {WARN_RATIO * 100:.0f}% of the budget used: ${spent:.4f} / ${self.limit}")

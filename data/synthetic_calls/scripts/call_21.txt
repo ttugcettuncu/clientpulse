@@ -16,5 +16,5 @@ DANIŞMAN: I am sorry for the trouble, Robert.
 MÜŞTERİ: These things happen. Thank you for sorting it out.
 DANIŞMAN: You're welcome. Have a good afternoon.
 # topic: client was charged twice for the retainer, refund issued during the call
-# disposition: sikayet_cozuldu
-# sentiment: notr
+# disposition: complaint_resolved
+# sentiment: neutral

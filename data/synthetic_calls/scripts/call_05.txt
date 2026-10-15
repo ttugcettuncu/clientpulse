@@ -19,5 +19,5 @@ MÜŞTERİ: Thanks. I will probably get back to you by the end of next week.
 DANIŞMAN: Sounds good, Tom. Feel free to email me if any questions come up before then.
 MÜŞTERİ: Will do. Thanks, Elena.
 # topic: comparing Growth Package and Monthly Retainer, needs to discuss budget
-# disposition: dusunecek
-# sentiment: notr
+# disposition: prospect_considering
+# sentiment: neutral

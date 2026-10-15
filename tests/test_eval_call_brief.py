@@ -31,9 +31,9 @@ def test_test_split_is_held_out_and_covers_every_label():
 
 def test_score_counts_each_field_and_both():
     rows = [
-        {"disposition": "vazgecti", "pred_disposition": "vazgecti", "sentiment": "notr", "pred_sentiment": "notr"},
-        {"disposition": "vazgecti", "pred_disposition": "vazgecti", "sentiment": "notr", "pred_sentiment": "negatif"},
-        {"disposition": "dusunecek", "pred_disposition": "bilgi_talebi", "sentiment": "notr", "pred_sentiment": "notr"},
-        {"disposition": "dusunecek", "pred_disposition": "bilgi_talebi", "sentiment": "notr", "pred_sentiment": "pozitif"},
+        {"disposition": "customer_cancelled", "pred_disposition": "customer_cancelled", "sentiment": "neutral", "pred_sentiment": "neutral"},
+        {"disposition": "customer_cancelled", "pred_disposition": "customer_cancelled", "sentiment": "neutral", "pred_sentiment": "negative"},
+        {"disposition": "prospect_considering", "pred_disposition": "customer_inquiry", "sentiment": "neutral", "pred_sentiment": "neutral"},
+        {"disposition": "prospect_considering", "pred_disposition": "customer_inquiry", "sentiment": "neutral", "pred_sentiment": "positive"},
     ]
     assert score(rows) == {"disposition": 0.5, "sentiment": 0.5, "both": pytest.approx(0.25)}

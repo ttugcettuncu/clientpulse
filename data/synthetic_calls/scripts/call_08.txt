@@ -20,5 +20,5 @@ DANIŞMAN: I will deduct it from the refund, so you do not need to pay the invoi
 MÜŞTERİ: Fine. Just send me the numbers.
 DANIŞMAN: I will. Take care, Rachel, and I hope your daughter feels better soon.
 # topic: complaint about a late cancellation fee, unresolved, client cancels the package
-# disposition: vazgecti
-# sentiment: negatif
+# disposition: customer_cancelled
+# sentiment: negative

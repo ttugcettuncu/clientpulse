@@ -20,5 +20,5 @@ DANIŞMAN: I completely understand. Take your time. If you want, I can hold a di
 MÜŞTERİ: No, don't book anything yet. I will call you if I decide.
 DANIŞMAN: Alright, James. Thank you for calling, and good luck with the studio.
 # topic: price objection, compares with a cheaper course, will think about it
-# disposition: dusunecek
-# sentiment: negatif
+# disposition: prospect_considering
+# sentiment: negative

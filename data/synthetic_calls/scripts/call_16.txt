@@ -15,5 +15,5 @@ MÜŞTERİ: Yes, please. We are not planning to work with a consultant right now
 DANIŞMAN: Done. Thank you for letting me know, Sofia.
 MÜŞTERİ: Thank you, Elena. Have a good day.
 # topic: prospect declines the Growth Package after hiring an office manager
-# disposition: red
-# sentiment: notr
+# disposition: offer_declined
+# sentiment: neutral

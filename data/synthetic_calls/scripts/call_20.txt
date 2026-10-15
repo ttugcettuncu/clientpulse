@@ -16,5 +16,5 @@ DANIŞMAN: I am glad. Again, sorry for the delay.
 MÜŞTERİ: No problem at all. You fixed it in two minutes. Thanks, Elena.
 DANIŞMAN: Thank you for calling, Chloe. Enjoy the weekend.
 # topic: complaint about a missing session summary, resolved immediately with a free follow-up call
-# disposition: sikayet_cozuldu
-# sentiment: pozitif
+# disposition: complaint_resolved
+# sentiment: positive

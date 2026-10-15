@@ -18,5 +18,5 @@ DANIŞMAN: Of course. I will not follow up unless you contact me.
 MÜŞTERİ: Fine. Thanks for your time.
 DANIŞMAN: Thank you, Victor. Good luck with the car washes.
 # topic: sceptical prospect doubts consulting results, stays unconvinced, asks not to be called
-# disposition: red
-# sentiment: negatif
+# disposition: offer_declined
+# sentiment: negative

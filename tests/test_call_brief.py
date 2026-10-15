@@ -11,8 +11,8 @@ from src.budget_guard import BudgetExceededError, BudgetGuard
 from src.call_brief import TOOL, InvalidBriefError, generate_call_brief, mask_pii
 
 BRIEF = {"summary": "A bakery owner asked about prices and booked the Growth Package.",
-         "sentiment": "pozitif",
-         "outcome_evidence": "She paid for the Growth Package.", "disposition": "teklif_kabul", "key_topics": ["pricing"]}
+         "sentiment": "positive",
+         "outcome_evidence": "She paid for the Growth Package.", "disposition": "offer_accepted", "key_topics": ["pricing"]}
 
 
 def response(arguments: dict | str):
@@ -55,7 +55,7 @@ def test_returns_brief_and_records_cost(tmp_path):
     client = FakeClient(response(BRIEF))
     brief = generate_call_brief("transcript", call_id="c1", client=client, db_path=db_path)
 
-    assert brief["disposition"] == "teklif_kabul"
+    assert brief["disposition"] == "offer_accepted"
     assert brief["cost"] == pytest.approx(1000 * 0.15e-6 + 100 * 0.60e-6)
     assert statuses(db_path) == [("call_brief", "ok", pytest.approx(brief["cost"]))]
     # one forced function call, strict schema

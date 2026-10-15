@@ -17,5 +17,5 @@ MÜŞTERİ: Fine. Please cancel the last session too. I won't use it.
 DANIŞMAN: Understood. I will confirm everything by email.
 MÜŞTERİ: Okay. Goodbye.
 # topic: client cancels the Monthly Retainer, unhappy with results and the notice period
-# disposition: vazgecti
-# sentiment: negatif
+# disposition: customer_cancelled
+# sentiment: negative

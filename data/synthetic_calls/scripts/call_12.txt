@@ -16,5 +16,5 @@ DANIŞMAN: I will put it in my calendar. Is there anything else I can prepare fo
 MÜŞTERİ: No, the summary is enough. Thanks again, Elena. That discovery call really opened my eyes.
 DANIŞMAN: My pleasure, Owen. Talk to you next month.
 # topic: enthusiastic prospect wants the Growth Package but must wait for his partner's approval
-# disposition: dusunecek
-# sentiment: pozitif
+# disposition: prospect_considering
+# sentiment: positive

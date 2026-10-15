@@ -17,5 +17,5 @@ MÜŞTERİ: Yes, Friday would be fine.
 DANIŞMAN: Great. I will call you on Friday, Hannah.
 MÜŞTERİ: Thank you. Goodbye.
 # topic: prospect compares packages and other consultants, wants an overview before deciding
-# disposition: dusunecek
-# sentiment: notr
+# disposition: prospect_considering
+# sentiment: neutral

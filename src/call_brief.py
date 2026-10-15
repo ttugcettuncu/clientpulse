@@ -25,14 +25,15 @@ from src import db
 from src.budget_guard import PRICE, BudgetGuard
 
 MODEL = "gpt-4o-mini"
-PROMPT_VERSION = "v5"  # bump on every prompt change; eval results are kept per version
+PROMPT_VERSION = "v6"  # bump on every prompt change; eval results are kept per version
 STEP = "call_brief"
 MAX_OUTPUT_TOKENS = 400
 MAX_RETRIES = 2
 BACKOFF_SECONDS = 1.0  # 1s, then 2s
 
-DISPOSITIONS = ["teklif_kabul", "dusunecek", "vazgecti", "red", "bilgi_talebi", "sikayet_cozuldu"]
-SENTIMENTS = ["pozitif", "notr", "negatif"]
+DISPOSITIONS = ["offer_accepted", "prospect_considering", "customer_cancelled", "offer_declined",
+                "customer_inquiry", "complaint_resolved"]
+SENTIMENTS = ["positive", "neutral", "negative"]
 
 SYSTEM_PROMPT = f"""You analyse phone calls between an independent business consultant and a customer.
 The transcript comes from speech-to-text, has no speaker labels and may contain small recognition errors.
@@ -42,24 +43,24 @@ summary: 2-3 sentences in English: who called, what they wanted, how the call en
 
 sentiment: the customer's attitude across the whole call (not the consultant's).
 Politeness is not sentiment: thanks, greetings and well-wishes at the end of a call are neutral.
-- pozitif: the customer is clearly pleased, e.g. enthusiastic about a service or happy with how a request was handled
-- notr: matter-of-fact; or the call starts with a problem or bad news and ends calmly
-- negatif: the customer stays frustrated, dissatisfied or unconvinced (e.g. finds the price too high) at the end
+- positive: the customer is clearly pleased, e.g. enthusiastic about a service or happy with how a request was handled
+- neutral: matter-of-fact; or the call starts with a problem or bad news and ends calmly
+- negative: the customer stays frustrated, dissatisfied or unconvinced (e.g. finds the price too high) at the end
 
 outcome_evidence: one sentence stating what the customer decided or received by the end of the call,
 and whether money changed hands for a new or upgraded service. Write it before choosing the disposition.
 
 disposition: the outcome of the call. Go through the rules in order and pick the first that applies.
-1. sikayet_cozuldu: the customer raised a complaint and it was resolved during the call, even if the fix
+1. complaint_resolved: the customer raised a complaint and it was resolved during the call, even if the fix
    includes a free extra session or other compensation
-2. vazgecti: an existing client cancels or stops a service they already bought
+2. customer_cancelled: an existing client cancels or stops a service they already bought
    (including after an unresolved complaint)
-3. red: a prospect who has not bought anything declines the offer, or says they do not want to be
+3. offer_declined: a prospect who has not bought anything declines the offer, or says they do not want to be
    contacted or followed up about it
-4. teklif_kabul: the customer agrees to pay for a new or upgraded service during the call
-5. dusunecek: the customer is interested in buying but postpones the decision, including a prospect
+4. offer_accepted: the customer agrees to pay for a new or upgraded service during the call
+5. prospect_considering: the customer is interested in buying but postpones the decision, including a prospect
    who wants more information (e.g. an overview by email) before deciding; a follow-up is expected
-6. bilgi_talebi: anything else where no purchase decision is pending, e.g. an existing client's
+6. customer_inquiry: anything else where no purchase decision is pending, e.g. an existing client's
    questions about process, invoices or support, or moving an existing appointment
 
 key_topics: 2-5 short noun phrases, e.g. "pricing", "refund policy".

@@ -17,5 +17,5 @@ MÜŞTERİ: Okay. I still think the rule is too strict.
 DANIŞMAN: I hear you, Ben. I will wait for your message.
 MÜŞTERİ: Right. Bye.
 # topic: existing client asks about moving a session at short notice and is annoyed by the fee rule
-# disposition: bilgi_talebi
-# sentiment: negatif
+# disposition: customer_inquiry
+# sentiment: negative

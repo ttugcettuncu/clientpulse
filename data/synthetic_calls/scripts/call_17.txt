@@ -18,5 +18,5 @@ DANIŞMAN: Great. Anything else, Martin?
 MÜŞTERİ: No, that's it. Thank you.
 DANIŞMAN: You're welcome. Talk to you at our next session.
 # topic: existing client asks about remaining sessions, an invoice copy and payment by card
-# disposition: bilgi_talebi
-# sentiment: notr
+# disposition: customer_inquiry
+# sentiment: neutral

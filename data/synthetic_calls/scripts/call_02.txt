@@ -20,5 +20,5 @@ DANIŞMAN: Yes. I will send you a written confirmation of the cancellation and t
 MÜŞTERİ: Thank you, Elena. Sorry it ended early.
 DANIŞMAN: No need to apologize, David. Good luck with the transition.
 # topic: package cancellation and refund request
-# disposition: vazgecti
-# sentiment: notr
+# disposition: customer_cancelled
+# sentiment: neutral

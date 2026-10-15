@@ -20,5 +20,5 @@ DANIŞMAN: Great. I will send the calendar invite together with the plan.
 MÜŞTERİ: Alright. Thank you for owning the mistake, Elena. I appreciate it.
 DANIŞMAN: Thank you for telling me directly, Priya. You will have the plan within the hour.
 # topic: complaint about a late action plan, resolved with an extra session
-# disposition: sikayet_cozuldu
-# sentiment: notr
+# disposition: complaint_resolved
+# sentiment: neutral

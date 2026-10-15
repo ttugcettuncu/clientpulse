@@ -16,5 +16,5 @@ DANIŞMAN: Exactly. Is there anything else?
 MÜŞTERİ: No, I just wanted to share the good news. Thank you, Elena. Really.
 DANIŞMAN: Thank you for calling, Grace. See you next Tuesday.
 # topic: happy retainer client shares results, asks what to prepare and about email support
-# disposition: bilgi_talebi
-# sentiment: pozitif
+# disposition: customer_inquiry
+# sentiment: positive

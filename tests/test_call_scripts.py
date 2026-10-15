@@ -10,16 +10,16 @@ def test_all_scripts_parse_with_metadata():
         assert 15 <= len(s.turns) <= 30, s.call_id
         assert {t.speaker for t in s.turns} == {"consultant", "customer"}
         assert s.metadata["disposition"]
-        assert s.metadata["sentiment"] in {"pozitif", "notr", "negatif"}
+        assert s.metadata["sentiment"] in {"positive", "neutral", "negative"}
 
 
 def test_reference_text_has_no_labels(tmp_path):
     path = tmp_path / "call_99.txt"
-    path.write_text("DANIŞMAN: Hello there.\nMÜŞTERİ: Hi.\n# disposition: bilgi_talebi\n",
+    path.write_text("DANIŞMAN: Hello there.\nMÜŞTERİ: Hi.\n# disposition: customer_inquiry\n",
                     encoding="utf-8")
     script = parse_script(path)
     assert script.reference_text == "Hello there. Hi."
-    assert script.metadata == {"disposition": "bilgi_talebi"}
+    assert script.metadata == {"disposition": "customer_inquiry"}
 
 
 def test_unknown_label_is_rejected(tmp_path):

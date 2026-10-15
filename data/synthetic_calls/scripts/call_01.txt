@@ -21,5 +21,5 @@ MÜŞTERİ: It is sarah at mitchell bakery dot com.
 DANIŞMAN: Perfect. You will hear from me this afternoon. I am looking forward to working with you.
 MÜŞTERİ: Thank you so much, Elena. I feel better already.
 # topic: pricing inquiry, chooses Growth Package
-# disposition: teklif_kabul
-# sentiment: pozitif
+# disposition: offer_accepted
+# sentiment: positive

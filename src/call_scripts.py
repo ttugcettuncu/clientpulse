@@ -2,7 +2,7 @@
 
 Script format: one turn per line, prefixed with a speaker label
 (DANIŞMAN: or MÜŞTERİ:). Lines starting with '#' are metadata, e.g.
-'# disposition: teklif_kabul'.
+'# disposition: offer_accepted'.
 """
 from dataclasses import dataclass, field
 from pathlib import Path

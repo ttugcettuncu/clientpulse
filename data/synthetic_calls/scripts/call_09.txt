@@ -20,5 +20,5 @@ DANIŞMAN: Of course. Is there anything else?
 MÜŞTERİ: No, that was everything. Thanks for being so flexible.
 DANIŞMAN: My pleasure, Michael. Enjoy your vacation, and see you Friday at eleven.
 # topic: existing client asks about rescheduling, invoice terms and email support
-# disposition: bilgi_talebi
-# sentiment: pozitif
+# disposition: customer_inquiry
+# sentiment: positive

@@ -18,5 +18,5 @@ DANIŞMAN: Yes, free of charge if you tell me at least forty-eight hours before.
 MÜŞTERİ: Understood. That is all then.
 DANIŞMAN: Thank you, Greg. See you on Wednesday.
 # topic: books a single strategy session about quoting, pays by bank transfer
-# disposition: teklif_kabul
-# sentiment: notr
+# disposition: offer_accepted
+# sentiment: neutral

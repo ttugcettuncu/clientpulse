@@ -16,5 +16,5 @@ DANIŞMAN: Then I will send the agreement and the first invoice today.
 MÜŞTERİ: Thank you so much, Elena. I already feel calmer just having a plan.
 DANIŞMAN: I am glad. Talk to you on Monday, Nadia.
 # topic: referral signs up for the Growth Package with monthly payments
-# disposition: teklif_kabul
-# sentiment: pozitif
+# disposition: offer_accepted
+# sentiment: positive

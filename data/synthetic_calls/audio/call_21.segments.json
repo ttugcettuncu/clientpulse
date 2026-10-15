@@ -1,0 +1,104 @@
+[
+  {
+    "speaker": "consultant",
+    "start": 0.0,
+    "end": 2.784,
+    "text": "Good afternoon, this is Elena Ward."
+  },
+  {
+    "speaker": "customer",
+    "start": 3.184,
+    "end": 9.544,
+    "text": "Good afternoon. This is Robert Hayes. I am calling about my last card payment."
+  },
+  {
+    "speaker": "consultant",
+    "start": 9.944,
+    "end": 12.272,
+    "text": "Hello Robert. What happened?"
+  },
+  {
+    "speaker": "customer",
+    "start": 12.672,
+    "end": 20.184,
+    "text": "I was charged twice for this month's retainer. Six hundred dollars, two times, on the same day."
+  },
+  {
+    "speaker": "consultant",
+    "start": 20.584,
+    "end": 24.208,
+    "text": "That should not happen. Let me look at the payments."
+  },
+  {
+    "speaker": "customer",
+    "start": 24.608,
+    "end": 28.28,
+    "text": "I have the bank statement here if you need the details."
+  },
+  {
+    "speaker": "consultant",
+    "start": 28.68,
+    "end": 36.96,
+    "text": "Thank you, I can see it. There are two payments of six hundred dollars on the third. The payment link was processed twice."
+  },
+  {
+    "speaker": "customer",
+    "start": 37.359,
+    "end": 39.327,
+    "text": "So what happens now?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 39.727,
+    "end": 47.335,
+    "text": "I will refund the second payment today. It usually takes three to five business days to appear on your card."
+  },
+  {
+    "speaker": "customer",
+    "start": 47.735,
+    "end": 50.903,
+    "text": "Okay. Will I get something in writing?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 51.303,
+    "end": 57.903,
+    "text": "Yes. I will email you a refund confirmation within the hour, with the amount and the date."
+  },
+  {
+    "speaker": "customer",
+    "start": 58.303,
+    "end": 61.495,
+    "text": "Good. And will this happen again next month?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 61.895,
+    "end": 68.735,
+    "text": "No. I will send next month's invoice with a new payment link, and I will check the payment myself."
+  },
+  {
+    "speaker": "customer",
+    "start": 69.135,
+    "end": 72.207,
+    "text": "Fine. That is all I need."
+  },
+  {
+    "speaker": "consultant",
+    "start": 72.607,
+    "end": 75.295,
+    "text": "I am sorry for the trouble, Robert."
+  },
+  {
+    "speaker": "customer",
+    "start": 75.695,
+    "end": 79.463,
+    "text": "These things happen. Thank you for sorting it out."
+  },
+  {
+    "speaker": "consultant",
+    "start": 79.863,
+    "end": 82.575,
+    "text": "You're welcome. Have a good afternoon."
+  }
+]

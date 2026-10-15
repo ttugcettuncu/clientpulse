@@ -1,0 +1,110 @@
+[
+  {
+    "speaker": "consultant",
+    "start": 0.0,
+    "end": 2.784,
+    "text": "Good afternoon, this is Elena Ward."
+  },
+  {
+    "speaker": "customer",
+    "start": 3.184,
+    "end": 8.992,
+    "text": "Hi Elena, it is Patrick Doyle. I am calling to cancel my retainer."
+  },
+  {
+    "speaker": "consultant",
+    "start": 9.392,
+    "end": 14.288,
+    "text": "I am sorry to hear that, Patrick. Can I ask what made you decide?"
+  },
+  {
+    "speaker": "customer",
+    "start": 14.688,
+    "end": 22.176,
+    "text": "Honestly, I expected more. We have had eight sessions, and our sales are exactly where they were."
+  },
+  {
+    "speaker": "consultant",
+    "start": 22.576,
+    "end": 30.4,
+    "text": "I understand that is frustrating. We did change the pricing only last month, so the effect may not show yet."
+  },
+  {
+    "speaker": "customer",
+    "start": 30.8,
+    "end": 35.768,
+    "text": "Maybe. But I cannot keep paying six hundred dollars a month and hope."
+  },
+  {
+    "speaker": "consultant",
+    "start": 36.168,
+    "end": 43.752,
+    "text": "That is completely fair. Would a shorter plan help, for example one more month focused only on sales?"
+  },
+  {
+    "speaker": "customer",
+    "start": 44.151,
+    "end": 50.439,
+    "text": "No. I have made up my mind. I just want to know how the cancellation works."
+  },
+  {
+    "speaker": "consultant",
+    "start": 50.839,
+    "end": 59.167,
+    "text": "The retainer has a thirty day notice period. If you cancel today, your last month ends on the fourteenth of next month."
+  },
+  {
+    "speaker": "customer",
+    "start": 59.567,
+    "end": 62.735,
+    "text": "And this month? I paid on the first."
+  },
+  {
+    "speaker": "consultant",
+    "start": 63.135,
+    "end": 71.151,
+    "text": "The current month is not refunded, but you still have one session and email support until the notice period ends."
+  },
+  {
+    "speaker": "customer",
+    "start": 71.551,
+    "end": 75.271,
+    "text": "So I pay for another month I don't want. Great."
+  },
+  {
+    "speaker": "consultant",
+    "start": 75.671,
+    "end": 82.583,
+    "text": "I know it is not what you hoped to hear. It is in the agreement, and it is the same for all clients."
+  },
+  {
+    "speaker": "customer",
+    "start": 82.983,
+    "end": 88.383,
+    "text": "I know it is in the agreement. I am just disappointed with how this went."
+  },
+  {
+    "speaker": "consultant",
+    "start": 88.783,
+    "end": 96.103,
+    "text": "I am sorry it did not work out the way you wanted. I will send you the written cancellation confirmation today."
+  },
+  {
+    "speaker": "customer",
+    "start": 96.503,
+    "end": 101.663,
+    "text": "Fine. Please cancel the last session too. I won't use it."
+  },
+  {
+    "speaker": "consultant",
+    "start": 102.063,
+    "end": 105.831,
+    "text": "Understood. I will confirm everything by email."
+  },
+  {
+    "speaker": "customer",
+    "start": 106.231,
+    "end": 108.079,
+    "text": "Okay. Goodbye."
+  }
+]

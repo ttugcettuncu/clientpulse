@@ -1,0 +1,104 @@
+[
+  {
+    "speaker": "consultant",
+    "start": 0.0,
+    "end": 2.496,
+    "text": "Hello, this is Elena Ward."
+  },
+  {
+    "speaker": "customer",
+    "start": 2.896,
+    "end": 13.84,
+    "text": "Hi Elena! My name is Nadia Flores. Laura Kim gave me your number. She says you completely changed how she runs her design studio."
+  },
+  {
+    "speaker": "consultant",
+    "start": 14.24,
+    "end": 20.792,
+    "text": "That is lovely to hear. Thank you for calling, Nadia. What kind of business do you have?"
+  },
+  {
+    "speaker": "customer",
+    "start": 21.192,
+    "end": 29.856,
+    "text": "I have a small catering company. We have grown fast this year, and honestly, everything is a bit chaotic."
+  },
+  {
+    "speaker": "consultant",
+    "start": 30.256,
+    "end": 36.664,
+    "text": "Growing fast is a good problem, but it does need structure. What feels most chaotic?"
+  },
+  {
+    "speaker": "customer",
+    "start": 37.064,
+    "end": 42.824,
+    "text": "Scheduling staff and pricing events. I always feel like I am guessing."
+  },
+  {
+    "speaker": "consultant",
+    "start": 43.224,
+    "end": 51.84,
+    "text": "For that I would suggest the Growth Package. It is six sessions over three months, so we can fix one area at a time."
+  },
+  {
+    "speaker": "customer",
+    "start": 52.239,
+    "end": 56.559,
+    "text": "That sounds exactly like what I need. How much is it?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 56.959,
+    "end": 63.727,
+    "text": "Nine hundred and fifty dollars upfront, or three monthly payments of three hundred and thirty dollars."
+  },
+  {
+    "speaker": "customer",
+    "start": 64.127,
+    "end": 69.815,
+    "text": "I would prefer the monthly payments. Cash flow is tight while we are growing."
+  },
+  {
+    "speaker": "consultant",
+    "start": 70.215,
+    "end": 77.127,
+    "text": "No problem at all. After you sign, I send an intake questionnaire within twenty-four hours."
+  },
+  {
+    "speaker": "customer",
+    "start": 77.527,
+    "end": 82.375,
+    "text": "Perfect. Let's do it. I am really excited about this."
+  },
+  {
+    "speaker": "consultant",
+    "start": 82.775,
+    "end": 89.495,
+    "text": "Wonderful. The kickoff session will be within ten days. Does next Monday afternoon work?"
+  },
+  {
+    "speaker": "customer",
+    "start": 89.895,
+    "end": 92.295,
+    "text": "Monday afternoon is great."
+  },
+  {
+    "speaker": "consultant",
+    "start": 92.695,
+    "end": 96.439,
+    "text": "Then I will send the agreement and the first invoice today."
+  },
+  {
+    "speaker": "customer",
+    "start": 96.839,
+    "end": 102.431,
+    "text": "Thank you so much, Elena. I already feel calmer just having a plan."
+  },
+  {
+    "speaker": "consultant",
+    "start": 102.831,
+    "end": 106.407,
+    "text": "I am glad. Talk to you on Monday, Nadia."
+  }
+]

@@ -1,0 +1,21 @@
+DANIŞMAN: Good morning, this is Elena Ward.
+MÜŞTERİ: Good morning. My name is Hannah Brooks. I own a small bookshop and I am looking at a few consultants.
+DANIŞMAN: Thank you for calling, Hannah. How can I help?
+MÜŞTERİ: I would like to understand the difference between your Growth Package and the Monthly Retainer.
+DANIŞMAN: The Growth Package is six sessions over three months, for nine hundred and fifty dollars. It is a fixed project.
+MÜŞTERİ: And the retainer?
+DANIŞMAN: The retainer is six hundred dollars per month, with two sessions each month and email support. The minimum is three months.
+MÜŞTERİ: So the retainer is more expensive in total.
+DANIŞMAN: Yes, it is for clients who want ongoing support rather than a single project.
+MÜŞTERİ: I see. How long does it take before we actually start working?
+DANIŞMAN: After signing, you get an intake questionnaire within twenty-four hours, and the kickoff session is within ten days.
+MÜŞTERİ: Okay. I am also talking to two other consultants this week.
+DANIŞMAN: That is very sensible. Would you like me to email you an overview of both options?
+MÜŞTERİ: Yes, please. I want to compare everything side by side before I decide.
+DANIŞMAN: I will send it this afternoon. Should I check in with you next week?
+MÜŞTERİ: Yes, Friday would be fine.
+DANIŞMAN: Great. I will call you on Friday, Hannah.
+MÜŞTERİ: Thank you. Goodbye.
+# topic: prospect compares packages and other consultants, wants an overview before deciding
+# disposition: dusunecek
+# sentiment: notr

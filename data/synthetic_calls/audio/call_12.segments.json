@@ -1,0 +1,104 @@
+[
+  {
+    "speaker": "consultant",
+    "start": 0.0,
+    "end": 2.784,
+    "text": "Good afternoon, this is Elena Ward."
+  },
+  {
+    "speaker": "customer",
+    "start": 3.184,
+    "end": 9.784,
+    "text": "Hi Elena, this is Owen Price. We spoke in the free discovery call last week."
+  },
+  {
+    "speaker": "consultant",
+    "start": 10.184,
+    "end": 14.48,
+    "text": "Of course, Owen. The bicycle repair shop. How are you?"
+  },
+  {
+    "speaker": "customer",
+    "start": 14.88,
+    "end": 22.92,
+    "text": "Great, thanks. I have been thinking about our call all week. The ideas about service plans were brilliant."
+  },
+  {
+    "speaker": "consultant",
+    "start": 23.32,
+    "end": 27.688,
+    "text": "I am happy it was useful. Have you thought about the next step?"
+  },
+  {
+    "speaker": "customer",
+    "start": 28.088,
+    "end": 37.208,
+    "text": "Yes. I would love to do the Growth Package. But my business partner, Jun, has to agree on any big spending."
+  },
+  {
+    "speaker": "consultant",
+    "start": 37.608,
+    "end": 44.04,
+    "text": "That makes sense. Nine hundred and fifty dollars is a real investment for a small shop."
+  },
+  {
+    "speaker": "customer",
+    "start": 44.439,
+    "end": 51.135,
+    "text": "Exactly. Jun is away until the end of the month, so we can only decide when he is back."
+  },
+  {
+    "speaker": "consultant",
+    "start": 51.535,
+    "end": 59.023,
+    "text": "That is no problem. Would it help if I sent you a short summary of what we discussed, so Jun can read it?"
+  },
+  {
+    "speaker": "customer",
+    "start": 59.423,
+    "end": 62.303,
+    "text": "Yes, that would be really helpful."
+  },
+  {
+    "speaker": "consultant",
+    "start": 62.703,
+    "end": 68.559,
+    "text": "I will send it tomorrow. It will include the package details and the payment options."
+  },
+  {
+    "speaker": "customer",
+    "start": 68.959,
+    "end": 75.679,
+    "text": "Thank you. Just so you know, I am personally convinced. I just need Jun on board."
+  },
+  {
+    "speaker": "consultant",
+    "start": 76.079,
+    "end": 79.535,
+    "text": "I understand. When should I follow up with you?"
+  },
+  {
+    "speaker": "customer",
+    "start": 79.935,
+    "end": 84.927,
+    "text": "Call me in the first week of next month. We should have an answer by then."
+  },
+  {
+    "speaker": "consultant",
+    "start": 85.327,
+    "end": 90.463,
+    "text": "I will put it in my calendar. Is there anything else I can prepare for Jun?"
+  },
+  {
+    "speaker": "customer",
+    "start": 90.863,
+    "end": 98.831,
+    "text": "No, the summary is enough. Thanks again, Elena. That discovery call really opened my eyes."
+  },
+  {
+    "speaker": "consultant",
+    "start": 99.231,
+    "end": 102.687,
+    "text": "My pleasure, Owen. Talk to you next month."
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "speaker": "consultant",
+    "start": 0.0,
+    "end": 2.496,
+    "text": "Hello, this is Elena Ward."
+  },
+  {
+    "speaker": "customer",
+    "start": 2.896,
+    "end": 9.808,
+    "text": "Hello. This is Victor Lane. I run two car washes. A friend told me to call you."
+  },
+  {
+    "speaker": "consultant",
+    "start": 10.208,
+    "end": 15.056,
+    "text": "Thank you for calling, Victor. What is going on with the business?"
+  },
+  {
+    "speaker": "customer",
+    "start": 15.456,
+    "end": 24.408,
+    "text": "Revenue has been flat for two years. My friend says consulting helped him, but I am honestly not sure it works."
+  },
+  {
+    "speaker": "consultant",
+    "start": 24.808,
+    "end": 28.864,
+    "text": "That is a fair concern. What have you tried so far?"
+  },
+  {
+    "speaker": "customer",
+    "start": 29.264,
+    "end": 34.904,
+    "text": "Discounts, a loyalty card, new signs. Nothing changed much."
+  },
+  {
+    "speaker": "consultant",
+    "start": 35.304,
+    "end": 44.64,
+    "text": "In cases like yours, the Growth Package usually works best. Six sessions over three months, for nine hundred and fifty dollars."
+  },
+  {
+    "speaker": "customer",
+    "start": 45.039,
+    "end": 47.967,
+    "text": "And what results can you guarantee for that?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 48.367,
+    "end": 57.295,
+    "text": "I cannot guarantee a number. What I can promise is a clear plan, based on your own data, and support while you test it."
+  },
+  {
+    "speaker": "customer",
+    "start": 57.695,
+    "end": 62.375,
+    "text": "So I pay nine hundred and fifty dollars, and maybe nothing happens."
+  },
+  {
+    "speaker": "consultant",
+    "start": 62.775,
+    "end": 70.551,
+    "text": "There is always some risk. That is why many clients start with a single session for one hundred and eighty dollars."
+  },
+  {
+    "speaker": "customer",
+    "start": 70.951,
+    "end": 76.543,
+    "text": "I have paid people for advice before. I got a nice report and nothing else."
+  },
+  {
+    "speaker": "consultant",
+    "start": 76.943,
+    "end": 84.815,
+    "text": "I understand that experience. My sessions focus on actions you can test the next week, not on reports."
+  },
+  {
+    "speaker": "customer",
+    "start": 85.215,
+    "end": 90.423,
+    "text": "Everyone says that. I am still not convinced, to be honest."
+  },
+  {
+    "speaker": "consultant",
+    "start": 90.823,
+    "end": 94.735,
+    "text": "That is okay. Is there anything that would help you decide?"
+  },
+  {
+    "speaker": "customer",
+    "start": 95.135,
+    "end": 100.535,
+    "text": "Not really. I will think about it, but I don't want to be called about it."
+  },
+  {
+    "speaker": "consultant",
+    "start": 100.935,
+    "end": 105.087,
+    "text": "Of course. I will not follow up unless you contact me."
+  },
+  {
+    "speaker": "customer",
+    "start": 105.487,
+    "end": 108.055,
+    "text": "Fine. Thanks for your time."
+  },
+  {
+    "speaker": "consultant",
+    "start": 108.454,
+    "end": 112.318,
+    "text": "Thank you, Victor. Good luck with the car washes."
+  }
+]

@@ -1,0 +1,21 @@
+DANIŞMAN: Good morning, this is Elena Ward.
+MÜŞTERİ: Morning. Ben Carter here. I need to ask about moving my session on Thursday.
+DANIŞMAN: Hi Ben. Sure, what is the problem?
+MÜŞTERİ: A big client meeting came up on Thursday morning. Can we move our session to next week?
+DANIŞMAN: We can move it. Because Thursday is less than forty-eight hours away, there is a fee of fifty percent of the session fee.
+MÜŞTERİ: Fifty percent? For moving a meeting? That is ridiculous.
+DANIŞMAN: I understand it is annoying. The rule is in the agreement, because I usually cannot fill a slot at such short notice.
+MÜŞTERİ: I have been a client for five months. I thought that would count for something.
+DANIŞMAN: I value you as a client, Ben. I apply the same rule to everyone, so it stays fair.
+MÜŞTERİ: Fine. So what are my options exactly?
+DANIŞMAN: You can keep Thursday at ten, or move it and pay the fee. The other option is to do a shorter session by phone on Thursday afternoon.
+MÜŞTERİ: How short?
+DANIŞMAN: Forty-five minutes, at four o'clock. That would not count as a reschedule.
+MÜŞTERİ: Let me check my calendar first. I'll let you know which option by tomorrow.
+DANIŞMAN: That is fine. Please tell me before noon tomorrow.
+MÜŞTERİ: Okay. I still think the rule is too strict.
+DANIŞMAN: I hear you, Ben. I will wait for your message.
+MÜŞTERİ: Right. Bye.
+# topic: existing client asks about moving a session at short notice and is annoyed by the fee rule
+# disposition: bilgi_talebi
+# sentiment: negatif

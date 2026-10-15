@@ -1,0 +1,20 @@
+DANIŞMAN: Hello, this is Elena Ward.
+MÜŞTERİ: Hi Elena! My name is Nadia Flores. Laura Kim gave me your number. She says you completely changed how she runs her design studio.
+DANIŞMAN: That is lovely to hear. Thank you for calling, Nadia. What kind of business do you have?
+MÜŞTERİ: I have a small catering company. We have grown fast this year, and honestly, everything is a bit chaotic.
+DANIŞMAN: Growing fast is a good problem, but it does need structure. What feels most chaotic?
+MÜŞTERİ: Scheduling staff and pricing events. I always feel like I am guessing.
+DANIŞMAN: For that I would suggest the Growth Package. It is six sessions over three months, so we can fix one area at a time.
+MÜŞTERİ: That sounds exactly like what I need. How much is it?
+DANIŞMAN: Nine hundred and fifty dollars upfront, or three monthly payments of three hundred and thirty dollars.
+MÜŞTERİ: I would prefer the monthly payments. Cash flow is tight while we are growing.
+DANIŞMAN: No problem at all. After you sign, I send an intake questionnaire within twenty-four hours.
+MÜŞTERİ: Perfect. Let's do it. I am really excited about this.
+DANIŞMAN: Wonderful. The kickoff session will be within ten days. Does next Monday afternoon work?
+MÜŞTERİ: Monday afternoon is great.
+DANIŞMAN: Then I will send the agreement and the first invoice today.
+MÜŞTERİ: Thank you so much, Elena. I already feel calmer just having a plan.
+DANIŞMAN: I am glad. Talk to you on Monday, Nadia.
+# topic: referral signs up for the Growth Package with monthly payments
+# disposition: teklif_kabul
+# sentiment: pozitif

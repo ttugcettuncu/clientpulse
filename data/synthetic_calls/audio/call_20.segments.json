@@ -1,0 +1,104 @@
+[
+  {
+    "speaker": "consultant",
+    "start": 0.0,
+    "end": 2.496,
+    "text": "Hello, this is Elena Ward."
+  },
+  {
+    "speaker": "customer",
+    "start": 2.896,
+    "end": 9.328,
+    "text": "Hi Elena. It's Chloe Bennett. I had a strategy session with you last Monday."
+  },
+  {
+    "speaker": "consultant",
+    "start": 9.728,
+    "end": 14.384,
+    "text": "Hi Chloe. Yes, about your online shop. How can I help?"
+  },
+  {
+    "speaker": "customer",
+    "start": 14.784,
+    "end": 22.2,
+    "text": "You said I would get the written summary within two business days. It's Friday and I haven't received anything."
+  },
+  {
+    "speaker": "consultant",
+    "start": 22.6,
+    "end": 26.296,
+    "text": "I am sorry, Chloe. Let me check right now."
+  },
+  {
+    "speaker": "customer",
+    "start": 26.696,
+    "end": 32.624,
+    "text": "I was really looking forward to it. I wanted to start on the changes this weekend."
+  },
+  {
+    "speaker": "consultant",
+    "start": 33.024,
+    "end": 42.288,
+    "text": "I see the problem. The summary was finished on Wednesday, but it is still in my drafts. I never sent it. That is my mistake."
+  },
+  {
+    "speaker": "customer",
+    "start": 42.687,
+    "end": 46.287,
+    "text": "Oh. Okay, at least it exists."
+  },
+  {
+    "speaker": "consultant",
+    "start": 46.687,
+    "end": 50.479,
+    "text": "I am sending it right now. You should have it in a minute."
+  },
+  {
+    "speaker": "customer",
+    "start": 50.879,
+    "end": 54.479,
+    "text": "Let me check. Yes, it just arrived."
+  },
+  {
+    "speaker": "consultant",
+    "start": 54.879,
+    "end": 63.135,
+    "text": "Good. Because of the delay, I would also like to offer you a free thirty minute call next week to go through it together."
+  },
+  {
+    "speaker": "customer",
+    "start": 63.535,
+    "end": 66.775,
+    "text": "Really? That would be great, thank you."
+  },
+  {
+    "speaker": "consultant",
+    "start": 67.175,
+    "end": 70.535,
+    "text": "Of course. Would Tuesday at eleven work?"
+  },
+  {
+    "speaker": "customer",
+    "start": 70.935,
+    "end": 79.047,
+    "text": "Tuesday at eleven is perfect. And the summary looks really detailed, I can start this weekend after all."
+  },
+  {
+    "speaker": "consultant",
+    "start": 79.447,
+    "end": 82.927,
+    "text": "I am glad. Again, sorry for the delay."
+  },
+  {
+    "speaker": "customer",
+    "start": 83.327,
+    "end": 89.039,
+    "text": "No problem at all. You fixed it in two minutes. Thanks, Elena."
+  },
+  {
+    "speaker": "consultant",
+    "start": 89.439,
+    "end": 93.327,
+    "text": "Thank you for calling, Chloe. Enjoy the weekend."
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "speaker": "consultant",
+    "start": 0.0,
+    "end": 2.544,
+    "text": "Good morning, this is Elena Ward."
+  },
+  {
+    "speaker": "customer",
+    "start": 2.944,
+    "end": 10.576,
+    "text": "Good morning. My name is Hannah Brooks. I own a small bookshop and I am looking at a few consultants."
+  },
+  {
+    "speaker": "consultant",
+    "start": 10.976,
+    "end": 14.48,
+    "text": "Thank you for calling, Hannah. How can I help?"
+  },
+  {
+    "speaker": "customer",
+    "start": 14.88,
+    "end": 20.328,
+    "text": "I would like to understand the difference between your Growth Package and the Monthly Retainer."
+  },
+  {
+    "speaker": "consultant",
+    "start": 20.728,
+    "end": 28.912,
+    "text": "The Growth Package is six sessions over three months, for nine hundred and fifty dollars. It is a fixed project."
+  },
+  {
+    "speaker": "customer",
+    "start": 29.312,
+    "end": 30.8,
+    "text": "And the retainer?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 31.2,
+    "end": 39.768,
+    "text": "The retainer is six hundred dollars per month, with two sessions each month and email support. The minimum is three months."
+  },
+  {
+    "speaker": "customer",
+    "start": 40.167,
+    "end": 43.479,
+    "text": "So the retainer is more expensive in total."
+  },
+  {
+    "speaker": "consultant",
+    "start": 43.879,
+    "end": 49.663,
+    "text": "Yes, it is for clients who want ongoing support rather than a single project."
+  },
+  {
+    "speaker": "customer",
+    "start": 50.063,
+    "end": 54.815,
+    "text": "I see. How long does it take before we actually start working?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 55.215,
+    "end": 63.375,
+    "text": "After signing, you get an intake questionnaire within twenty-four hours, and the kickoff session is within ten days."
+  },
+  {
+    "speaker": "customer",
+    "start": 63.775,
+    "end": 68.407,
+    "text": "Okay. I am also talking to two other consultants this week."
+  },
+  {
+    "speaker": "consultant",
+    "start": 68.807,
+    "end": 74.903,
+    "text": "That is very sensible. Would you like me to email you an overview of both options?"
+  },
+  {
+    "speaker": "customer",
+    "start": 75.303,
+    "end": 81.231,
+    "text": "Yes, please. I want to compare everything side by side before I decide."
+  },
+  {
+    "speaker": "consultant",
+    "start": 81.631,
+    "end": 86.143,
+    "text": "I will send it this afternoon. Should I check in with you next week?"
+  },
+  {
+    "speaker": "customer",
+    "start": 86.543,
+    "end": 89.375,
+    "text": "Yes, Friday would be fine."
+  },
+  {
+    "speaker": "consultant",
+    "start": 89.775,
+    "end": 93.087,
+    "text": "Great. I will call you on Friday, Hannah."
+  },
+  {
+    "speaker": "customer",
+    "start": 93.487,
+    "end": 95.407,
+    "text": "Thank you. Goodbye."
+  }
+]

@@ -125,7 +125,7 @@ def write_report(rows: list[dict], path: Path = REPORT_PATH) -> None:
         "",
         f"Generated {date.today().isoformat()} by `python -m src.eval_stt`. "
         "Engine: faster-whisper, CPU, int8, English, beam size 5. "
-        "Audio: 9 synthetic calls generated with gTTS (two accents).",
+        f"Audio: {len({r['call_id'] for r in rows})} synthetic calls generated with gTTS (two accents).",
         "",
         f"Target (CLAUDE.md 11.3): **WER < {WER_TARGET:.0%}**. "
         "*Normalized WER* spells out digits before scoring (\"$950\" → \"nine hundred and fifty dollars\"); "

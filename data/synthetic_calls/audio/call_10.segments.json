@@ -1,0 +1,116 @@
+[
+  {
+    "speaker": "consultant",
+    "start": 0.0,
+    "end": 2.544,
+    "text": "Good morning, this is Elena Ward."
+  },
+  {
+    "speaker": "customer",
+    "start": 2.944,
+    "end": 9.904,
+    "text": "Morning. This is Greg Holloway from Holloway Plumbing. I want to book one strategy session."
+  },
+  {
+    "speaker": "consultant",
+    "start": 10.304,
+    "end": 13.904,
+    "text": "Of course, Greg. What would you like to focus on?"
+  },
+  {
+    "speaker": "customer",
+    "start": 14.304,
+    "end": 20.256,
+    "text": "Quoting. We lose too many jobs after we send a quote, and I want to know why."
+  },
+  {
+    "speaker": "consultant",
+    "start": 20.656,
+    "end": 27.568,
+    "text": "That is a good topic for a single session. It is ninety minutes and costs one hundred and eighty dollars."
+  },
+  {
+    "speaker": "customer",
+    "start": 27.968,
+    "end": 32.528,
+    "text": "I saw that on the website. What do I get afterwards?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 32.928,
+    "end": 38.808,
+    "text": "A written summary with the main findings and next steps, within two business days."
+  },
+  {
+    "speaker": "customer",
+    "start": 39.207,
+    "end": 43.239,
+    "text": "Fine. Do you need anything from me before the session?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 43.639,
+    "end": 48.727,
+    "text": "If you can, bring your last twenty quotes and mark which ones you won."
+  },
+  {
+    "speaker": "customer",
+    "start": 49.127,
+    "end": 51.959,
+    "text": "I can do that. When are you free?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 52.359,
+    "end": 55.551,
+    "text": "I have Wednesday at ten or Thursday at four."
+  },
+  {
+    "speaker": "customer",
+    "start": 55.951,
+    "end": 57.703,
+    "text": "Wednesday at ten."
+  },
+  {
+    "speaker": "consultant",
+    "start": 58.103,
+    "end": 63.815,
+    "text": "Wednesday at ten it is. How would you like to pay, card or bank transfer?"
+  },
+  {
+    "speaker": "customer",
+    "start": 64.215,
+    "end": 67.623,
+    "text": "Bank transfer. Send me the invoice."
+  },
+  {
+    "speaker": "consultant",
+    "start": 68.023,
+    "end": 72.415,
+    "text": "I will send it today. It is due within fourteen days."
+  },
+  {
+    "speaker": "customer",
+    "start": 72.815,
+    "end": 76.847,
+    "text": "Okay. And if something comes up, can I move it?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 77.247,
+    "end": 82.263,
+    "text": "Yes, free of charge if you tell me at least forty-eight hours before."
+  },
+  {
+    "speaker": "customer",
+    "start": 82.663,
+    "end": 85.303,
+    "text": "Understood. That is all then."
+  },
+  {
+    "speaker": "consultant",
+    "start": 85.702,
+    "end": 88.75,
+    "text": "Thank you, Greg. See you on Wednesday."
+  }
+]

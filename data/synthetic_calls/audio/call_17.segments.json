@@ -1,0 +1,116 @@
+[
+  {
+    "speaker": "consultant",
+    "start": 0.0,
+    "end": 2.496,
+    "text": "Hello, this is Elena Ward."
+  },
+  {
+    "speaker": "customer",
+    "start": 2.896,
+    "end": 10.816,
+    "text": "Hello Elena, this is Martin Kowalski. I have a few administrative questions about my Growth Package."
+  },
+  {
+    "speaker": "consultant",
+    "start": 11.216,
+    "end": 13.64,
+    "text": "Sure, Martin. Go ahead."
+  },
+  {
+    "speaker": "customer",
+    "start": 14.04,
+    "end": 17.472,
+    "text": "First, how many sessions do I have left?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 17.872,
+    "end": 22.48,
+    "text": "Let me check. You have used three sessions, so three are left."
+  },
+  {
+    "speaker": "customer",
+    "start": 22.88,
+    "end": 26.288,
+    "text": "And they all have to be used within the three months?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 26.688,
+    "end": 32.952,
+    "text": "Yes, the package runs for three months from the kickoff, so until the end of February."
+  },
+  {
+    "speaker": "customer",
+    "start": 33.351,
+    "end": 40.383,
+    "text": "Okay. Second, my bookkeeper needs a copy of the second invoice. I cannot find it."
+  },
+  {
+    "speaker": "consultant",
+    "start": 40.783,
+    "end": 44.239,
+    "text": "No problem. I will email a copy today."
+  },
+  {
+    "speaker": "customer",
+    "start": 44.639,
+    "end": 50.087,
+    "text": "Thanks. Is that invoice already paid? We pay in three parts."
+  },
+  {
+    "speaker": "consultant",
+    "start": 50.487,
+    "end": 55.887,
+    "text": "Yes, the second payment of three hundred and thirty dollars arrived on the fifth."
+  },
+  {
+    "speaker": "customer",
+    "start": 56.287,
+    "end": 59.815,
+    "text": "Good. And the third one is due next month?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 60.215,
+    "end": 66.335,
+    "text": "Correct. I will send the invoice on the first, and it is due within fourteen days."
+  },
+  {
+    "speaker": "customer",
+    "start": 66.735,
+    "end": 70.287,
+    "text": "Can I pay that one by card instead of bank transfer?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 70.687,
+    "end": 75.439,
+    "text": "Yes, card is fine. There is a payment link on the invoice."
+  },
+  {
+    "speaker": "customer",
+    "start": 75.839,
+    "end": 79.271,
+    "text": "Okay. That is everything I needed."
+  },
+  {
+    "speaker": "consultant",
+    "start": 79.671,
+    "end": 82.047,
+    "text": "Great. Anything else, Martin?"
+  },
+  {
+    "speaker": "customer",
+    "start": 82.447,
+    "end": 85.087,
+    "text": "No, that's it. Thank you."
+  },
+  {
+    "speaker": "consultant",
+    "start": 85.486,
+    "end": 88.942,
+    "text": "You're welcome. Talk to you at our next session."
+  }
+]

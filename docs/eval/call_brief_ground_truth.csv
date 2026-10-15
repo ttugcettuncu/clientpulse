@@ -1,10 +1,22 @@
-call_id,disposition,sentiment,topic
-call_01,teklif_kabul,pozitif,"pricing inquiry, chooses Growth Package"
-call_02,vazgecti,notr,package cancellation and refund request
-call_03,dusunecek,notr,service process questions from a new lead
-call_04,sikayet_cozuldu,notr,"complaint about a late action plan, resolved with an extra session"
-call_05,dusunecek,notr,"comparing Growth Package and Monthly Retainer, needs to discuss budget"
-call_06,teklif_kabul,pozitif,existing client upgrades to Monthly Retainer
-call_07,dusunecek,negatif,"price objection, compares with a cheaper course, will think about it"
-call_08,vazgecti,negatif,"complaint about a late cancellation fee, unresolved, client cancels the package"
-call_09,bilgi_talebi,pozitif,"existing client asks about rescheduling, invoice terms and email support"
+call_id,split,disposition,sentiment,topic
+call_01,dev,teklif_kabul,pozitif,"pricing inquiry, chooses Growth Package"
+call_02,dev,vazgecti,notr,package cancellation and refund request
+call_03,dev,dusunecek,notr,service process questions from a new lead
+call_04,dev,sikayet_cozuldu,notr,"complaint about a late action plan, resolved with an extra session"
+call_05,dev,dusunecek,notr,"comparing Growth Package and Monthly Retainer, needs to discuss budget"
+call_06,dev,teklif_kabul,pozitif,existing client upgrades to Monthly Retainer
+call_07,dev,dusunecek,negatif,"price objection, compares with a cheaper course, will think about it"
+call_08,dev,vazgecti,negatif,"complaint about a late cancellation fee, unresolved, client cancels the package"
+call_09,dev,bilgi_talebi,pozitif,"existing client asks about rescheduling, invoice terms and email support"
+call_10,test,teklif_kabul,notr,"books a single strategy session about quoting, pays by bank transfer"
+call_11,test,teklif_kabul,pozitif,referral signs up for the Growth Package with monthly payments
+call_12,test,dusunecek,pozitif,enthusiastic prospect wants the Growth Package but must wait for his partner's approval
+call_13,test,dusunecek,notr,"prospect compares packages and other consultants, wants an overview before deciding"
+call_14,test,red,negatif,"sceptical prospect doubts consulting results, stays unconvinced, asks not to be called"
+call_15,test,vazgecti,negatif,"client cancels the Monthly Retainer, unhappy with results and the notice period"
+call_16,test,red,notr,prospect declines the Growth Package after hiring an office manager
+call_17,test,bilgi_talebi,notr,"existing client asks about remaining sessions, an invoice copy and payment by card"
+call_18,test,bilgi_talebi,pozitif,"happy retainer client shares results, asks what to prepare and about email support"
+call_19,test,bilgi_talebi,negatif,existing client asks about moving a session at short notice and is annoyed by the fee rule
+call_20,test,sikayet_cozuldu,pozitif,"complaint about a missing session summary, resolved immediately with a free follow-up call"
+call_21,test,sikayet_cozuldu,notr,"client was charged twice for the retainer, refund issued during the call"

@@ -1,0 +1,21 @@
+DANIŞMAN: Good afternoon, this is Elena Ward.
+MÜŞTERİ: Hi Elena, it is Patrick Doyle. I am calling to cancel my retainer.
+DANIŞMAN: I am sorry to hear that, Patrick. Can I ask what made you decide?
+MÜŞTERİ: Honestly, I expected more. We have had eight sessions, and our sales are exactly where they were.
+DANIŞMAN: I understand that is frustrating. We did change the pricing only last month, so the effect may not show yet.
+MÜŞTERİ: Maybe. But I cannot keep paying six hundred dollars a month and hope.
+DANIŞMAN: That is completely fair. Would a shorter plan help, for example one more month focused only on sales?
+MÜŞTERİ: No. I have made up my mind. I just want to know how the cancellation works.
+DANIŞMAN: The retainer has a thirty day notice period. If you cancel today, your last month ends on the fourteenth of next month.
+MÜŞTERİ: And this month? I paid on the first.
+DANIŞMAN: The current month is not refunded, but you still have one session and email support until the notice period ends.
+MÜŞTERİ: So I pay for another month I don't want. Great.
+DANIŞMAN: I know it is not what you hoped to hear. It is in the agreement, and it is the same for all clients.
+MÜŞTERİ: I know it is in the agreement. I am just disappointed with how this went.
+DANIŞMAN: I am sorry it did not work out the way you wanted. I will send you the written cancellation confirmation today.
+MÜŞTERİ: Fine. Please cancel the last session too. I won't use it.
+DANIŞMAN: Understood. I will confirm everything by email.
+MÜŞTERİ: Okay. Goodbye.
+# topic: client cancels the Monthly Retainer, unhappy with results and the notice period
+# disposition: vazgecti
+# sentiment: negatif

@@ -25,13 +25,13 @@ from src import db
 from src.budget_guard import PRICE, BudgetGuard
 
 MODEL = "gpt-4o-mini"
-PROMPT_VERSION = "v4"  # bump on every prompt change; eval results are kept per version
+PROMPT_VERSION = "v5"  # bump on every prompt change; eval results are kept per version
 STEP = "call_brief"
 MAX_OUTPUT_TOKENS = 400
 MAX_RETRIES = 2
 BACKOFF_SECONDS = 1.0  # 1s, then 2s
 
-DISPOSITIONS = ["teklif_kabul", "dusunecek", "vazgecti", "bilgi_talebi", "sikayet_cozuldu"]
+DISPOSITIONS = ["teklif_kabul", "dusunecek", "vazgecti", "red", "bilgi_talebi", "sikayet_cozuldu"]
 SENTIMENTS = ["pozitif", "notr", "negatif"]
 
 SYSTEM_PROMPT = f"""You analyse phone calls between an independent business consultant and a customer.
@@ -52,11 +52,14 @@ and whether money changed hands for a new or upgraded service. Write it before c
 disposition: the outcome of the call. Go through the rules in order and pick the first that applies.
 1. sikayet_cozuldu: the customer raised a complaint and it was resolved during the call, even if the fix
    includes a free extra session or other compensation
-2. vazgecti: the customer cancels, declines or decides not to continue (including after an unresolved complaint)
-3. teklif_kabul: the customer agrees to pay for a new or upgraded service during the call
-4. dusunecek: the customer is interested in buying but postpones the decision, including a prospect
+2. vazgecti: an existing client cancels or stops a service they already bought
+   (including after an unresolved complaint)
+3. red: a prospect who has not bought anything declines the offer, or says they do not want to be
+   contacted or followed up about it
+4. teklif_kabul: the customer agrees to pay for a new or upgraded service during the call
+5. dusunecek: the customer is interested in buying but postpones the decision, including a prospect
    who wants more information (e.g. an overview by email) before deciding; a follow-up is expected
-5. bilgi_talebi: anything else where no purchase decision is pending, e.g. an existing client's
+6. bilgi_talebi: anything else where no purchase decision is pending, e.g. an existing client's
    questions about process, invoices or support, or moving an existing appointment
 
 key_topics: 2-5 short noun phrases, e.g. "pricing", "refund policy".

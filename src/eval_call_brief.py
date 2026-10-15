@@ -25,6 +25,7 @@ from src.eval_stt import TRANSCRIPTS_DIR
 GROUND_TRUTH_PATH = PROJECT_ROOT / "docs" / "eval" / "call_brief_ground_truth.csv"
 BRIEFS_DIR = PROJECT_ROOT / "data" / "synthetic_calls" / "briefs"
 REPORT_PATH = PROJECT_ROOT / "docs" / "eval" / "call_brief_accuracy.md"
+SPLITS = ["dev", "test"]  # dev = used for prompt tuning, test = held out
 ACCURACY_TARGET = 0.85  # CLAUDE.md Bölüm 11.3
 MANUAL_MARKER = "<!-- manual analysis below: kept when the report is regenerated -->"
 
@@ -36,6 +37,13 @@ def load_ground_truth() -> list[dict]:
 
 def accuracy(rows: list[dict], field: str) -> float:
     return sum(r[field] == r[f"pred_{field}"] for r in rows) / len(rows)
+
+
+def score(rows: list[dict]) -> dict[str, float]:
+    both = sum(r["disposition"] == r["pred_disposition"] and r["sentiment"] == r["pred_sentiment"]
+               for r in rows) / len(rows)
+    return {"disposition": accuracy(rows, "disposition"), "sentiment": accuracy(rows, "sentiment"),
+            "both": both}
 
 
 def main() -> None:
@@ -67,9 +75,8 @@ def main() -> None:
                      "pred_sentiment": brief["sentiment"], "brief": brief})
         print(f"{call_id}: {brief['disposition']:16} {brief['sentiment']:8} ${brief['cost']:.5f}")
 
-    disp_acc, sent_acc = accuracy(rows, "disposition"), accuracy(rows, "sentiment")
-    both_acc = sum(r["disposition"] == r["pred_disposition"] and r["sentiment"] == r["pred_sentiment"]
-                   for r in rows) / len(rows)
+    splits = {name: [r for r in rows if r["split"] == name] for name in SPLITS}
+    scores = {name: score(split_rows) for name, split_rows in splits.items() if split_rows}
     total_cost = sum(r["brief"]["cost"] for r in rows)
     avg_latency = sum(r["brief"]["latency"] for r in rows) / len(rows)
     avg_in = sum(r["brief"]["input_tokens"] for r in rows) / len(rows)
@@ -86,25 +93,31 @@ def main() -> None:
         f"Input: faster-whisper `{args.stt_model}` transcripts (no speaker labels). "
         f"Ground truth: `docs/eval/call_brief_ground_truth.csv` ({len(rows)} calls).",
         "",
-        f"| Metric | Result | Target ({ACCURACY_TARGET:.0%}) |",
-        "|---|---|---|",
-        f"| Disposition accuracy | {disp_acc:.0%} | {verdict(disp_acc)} |",
-        f"| Sentiment accuracy | {sent_acc:.0%} | {verdict(sent_acc)} |",
-        f"| Both correct | {both_acc:.0%} | {verdict(both_acc)} |",
+        "**dev** calls were used to tune the prompt. **test** calls were never used for tuning, "
+        "so the test score is the one that counts against the target.",
         "",
+        f"| Split | Calls | Disposition | Sentiment | Both correct |",
+        "|---|---|---|---|---|",
+    ]
+    for name, sc in scores.items():
+        lines.append(f"| {name} | {len(splits[name])} | {sc['disposition']:.0%} {verdict(sc['disposition'])} | "
+                     f"{sc['sentiment']:.0%} {verdict(sc['sentiment'])} | {sc['both']:.0%} |")
+    lines += [
+        "",
+        f"Target: ≥ {ACCURACY_TARGET:.0%} (CLAUDE.md 11.3). "
         f"Cost: ${total_cost:.5f} total, ${total_cost / len(rows):.5f} per call "
         f"(avg {avg_in:.0f} input / {avg_out:.0f} output tokens). "
         f"Average latency: {avg_latency:.1f}s per call.",
         "",
-        "| Call | Disposition (truth → predicted) | Sentiment (truth → predicted) | Key topics |",
-        "|---|---|---|---|",
+        "| Call | Split | Disposition (truth → predicted) | Sentiment (truth → predicted) | Key topics |",
+        "|---|---|---|---|---|",
     ]
     for r in rows:
         d = r["disposition"] if r["disposition"] == r["pred_disposition"] \
             else f"**{r['disposition']} → {r['pred_disposition']}**"
         s = r["sentiment"] if r["sentiment"] == r["pred_sentiment"] \
             else f"**{r['sentiment']} → {r['pred_sentiment']}**"
-        lines.append(f"| {r['call_id']} | {d} | {s} | {', '.join(r['brief']['key_topics'])} |")
+        lines.append(f"| {r['call_id']} | {r['split']} | {d} | {s} | {', '.join(r['brief']['key_topics'])} |")
     lines += ["", "## Summaries", ""]
     lines += [f"- **{r['call_id']}:** {r['brief']['summary']}" for r in rows]
 
@@ -115,7 +128,8 @@ def main() -> None:
             manual = old[old.index(MANUAL_MARKER):]
     report_path.write_text("\n".join(lines) + "\n\n" + (manual or MANUAL_MARKER + "\n"), encoding="utf-8")
 
-    print(f"\nDisposition {disp_acc:.0%} | Sentiment {sent_acc:.0%} | Both {both_acc:.0%}")
+    for name, sc in scores.items():
+        print(f"{name:5} Disposition {sc['disposition']:.0%} | Sentiment {sc['sentiment']:.0%} | Both {sc['both']:.0%}")
     print(f"Rapor yazıldı: {report_path.relative_to(PROJECT_ROOT)}  |  "
           f"adım bazlı maliyet: {db.cost_by_step()}  |  toplam: ${guard.spent:.4f}")
 

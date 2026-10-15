@@ -1,0 +1,19 @@
+DANIŞMAN: Good morning, this is Elena Ward.
+MÜŞTERİ: Good morning, Elena. This is Sofia Marin. We had a discovery call two weeks ago about my dental practice.
+DANIŞMAN: Yes, hello Sofia. Thank you for calling back.
+MÜŞTERİ: I wanted to let you know personally that we will not go ahead with the Growth Package.
+DANIŞMAN: Thank you for telling me. May I ask why?
+MÜŞTERİ: We decided to hire a full-time office manager instead. She will take over scheduling and billing.
+DANIŞMAN: That sounds like a sensible choice for a practice of your size.
+MÜŞTERİ: We thought so too. It was not about your offer, it just fits our situation better.
+DANIŞMAN: I appreciate that. If your new manager ever wants a single session to set up processes, I am happy to help.
+MÜŞTERİ: I will mention it to her. How much was the single session again?
+DANIŞMAN: One hundred and eighty dollars for ninety minutes, with a written summary.
+MÜŞTERİ: Okay. I will pass that on, but I don't expect we will need it soon.
+DANIŞMAN: That is perfectly fine. Should I remove you from my follow-up list?
+MÜŞTERİ: Yes, please. We are not planning to work with a consultant right now.
+DANIŞMAN: Done. Thank you for letting me know, Sofia.
+MÜŞTERİ: Thank you, Elena. Have a good day.
+# topic: prospect declines the Growth Package after hiring an office manager
+# disposition: red
+# sentiment: notr

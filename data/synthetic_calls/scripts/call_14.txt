@@ -1,0 +1,22 @@
+DANIŞMAN: Hello, this is Elena Ward.
+MÜŞTERİ: Hello. This is Victor Lane. I run two car washes. A friend told me to call you.
+DANIŞMAN: Thank you for calling, Victor. What is going on with the business?
+MÜŞTERİ: Revenue has been flat for two years. My friend says consulting helped him, but I am honestly not sure it works.
+DANIŞMAN: That is a fair concern. What have you tried so far?
+MÜŞTERİ: Discounts, a loyalty card, new signs. Nothing changed much.
+DANIŞMAN: In cases like yours, the Growth Package usually works best. Six sessions over three months, for nine hundred and fifty dollars.
+MÜŞTERİ: And what results can you guarantee for that?
+DANIŞMAN: I cannot guarantee a number. What I can promise is a clear plan, based on your own data, and support while you test it.
+MÜŞTERİ: So I pay nine hundred and fifty dollars, and maybe nothing happens.
+DANIŞMAN: There is always some risk. That is why many clients start with a single session for one hundred and eighty dollars.
+MÜŞTERİ: I have paid people for advice before. I got a nice report and nothing else.
+DANIŞMAN: I understand that experience. My sessions focus on actions you can test the next week, not on reports.
+MÜŞTERİ: Everyone says that. I am still not convinced, to be honest.
+DANIŞMAN: That is okay. Is there anything that would help you decide?
+MÜŞTERİ: Not really. I will think about it, but I don't want to be called about it.
+DANIŞMAN: Of course. I will not follow up unless you contact me.
+MÜŞTERİ: Fine. Thanks for your time.
+DANIŞMAN: Thank you, Victor. Good luck with the car washes.
+# topic: sceptical prospect doubts consulting results, stays unconvinced, asks not to be called
+# disposition: red
+# sentiment: negatif

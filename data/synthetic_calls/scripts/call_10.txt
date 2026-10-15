@@ -1,0 +1,22 @@
+DANIŞMAN: Good morning, this is Elena Ward.
+MÜŞTERİ: Morning. This is Greg Holloway from Holloway Plumbing. I want to book one strategy session.
+DANIŞMAN: Of course, Greg. What would you like to focus on?
+MÜŞTERİ: Quoting. We lose too many jobs after we send a quote, and I want to know why.
+DANIŞMAN: That is a good topic for a single session. It is ninety minutes and costs one hundred and eighty dollars.
+MÜŞTERİ: I saw that on the website. What do I get afterwards?
+DANIŞMAN: A written summary with the main findings and next steps, within two business days.
+MÜŞTERİ: Fine. Do you need anything from me before the session?
+DANIŞMAN: If you can, bring your last twenty quotes and mark which ones you won.
+MÜŞTERİ: I can do that. When are you free?
+DANIŞMAN: I have Wednesday at ten or Thursday at four.
+MÜŞTERİ: Wednesday at ten.
+DANIŞMAN: Wednesday at ten it is. How would you like to pay, card or bank transfer?
+MÜŞTERİ: Bank transfer. Send me the invoice.
+DANIŞMAN: I will send it today. It is due within fourteen days.
+MÜŞTERİ: Okay. And if something comes up, can I move it?
+DANIŞMAN: Yes, free of charge if you tell me at least forty-eight hours before.
+MÜŞTERİ: Understood. That is all then.
+DANIŞMAN: Thank you, Greg. See you on Wednesday.
+# topic: books a single strategy session about quoting, pays by bank transfer
+# disposition: teklif_kabul
+# sentiment: notr

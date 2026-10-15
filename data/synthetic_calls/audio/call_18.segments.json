@@ -1,0 +1,104 @@
+[
+  {
+    "speaker": "consultant",
+    "start": 0.0,
+    "end": 2.784,
+    "text": "Good afternoon, this is Elena Ward."
+  },
+  {
+    "speaker": "customer",
+    "start": 3.184,
+    "end": 10.744,
+    "text": "Elena, hi! It is Grace Okafor. I just had to call you. We had our best month ever."
+  },
+  {
+    "speaker": "consultant",
+    "start": 11.144,
+    "end": 15.752,
+    "text": "Grace, that is fantastic news! Congratulations."
+  },
+  {
+    "speaker": "customer",
+    "start": 16.152,
+    "end": 22.464,
+    "text": "The new opening hours at the café worked. Weekday mornings are almost full now."
+  },
+  {
+    "speaker": "consultant",
+    "start": 22.864,
+    "end": 26.656,
+    "text": "I am so happy for you. You did the hard work."
+  },
+  {
+    "speaker": "customer",
+    "start": 27.056,
+    "end": 33.944,
+    "text": "Well, I would never have tried it without our sessions. Anyway, I have two quick questions."
+  },
+  {
+    "speaker": "consultant",
+    "start": 34.344,
+    "end": 36.336,
+    "text": "Of course. What are they?"
+  },
+  {
+    "speaker": "customer",
+    "start": 36.735,
+    "end": 41.895,
+    "text": "What should I prepare for our next session? I want to make the most of it."
+  },
+  {
+    "speaker": "consultant",
+    "start": 42.295,
+    "end": 49.591,
+    "text": "Please bring last month's sales by hour, and your staff schedule. We will look at the afternoons next."
+  },
+  {
+    "speaker": "customer",
+    "start": 49.991,
+    "end": 54.119,
+    "text": "Sales by hour and the staff schedule. Got it."
+  },
+  {
+    "speaker": "consultant",
+    "start": 54.519,
+    "end": 57.111,
+    "text": "Perfect. And your second question?"
+  },
+  {
+    "speaker": "customer",
+    "start": 57.511,
+    "end": 62.911,
+    "text": "If I have an idea on a Sunday, can I email you, or should I wait?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 63.311,
+    "end": 72.599,
+    "text": "You can email any time. Your retainer includes email support, and I reply within one business day, Monday to Friday."
+  },
+  {
+    "speaker": "customer",
+    "start": 72.999,
+    "end": 77.199,
+    "text": "So I will hear from you on Monday. That's perfect."
+  },
+  {
+    "speaker": "consultant",
+    "start": 77.599,
+    "end": 80.263,
+    "text": "Exactly. Is there anything else?"
+  },
+  {
+    "speaker": "customer",
+    "start": 80.663,
+    "end": 86.951,
+    "text": "No, I just wanted to share the good news. Thank you, Elena. Really."
+  },
+  {
+    "speaker": "consultant",
+    "start": 87.351,
+    "end": 91.623,
+    "text": "Thank you for calling, Grace. See you next Tuesday."
+  }
+]

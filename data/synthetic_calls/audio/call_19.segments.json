@@ -1,0 +1,110 @@
+[
+  {
+    "speaker": "consultant",
+    "start": 0.0,
+    "end": 2.544,
+    "text": "Good morning, this is Elena Ward."
+  },
+  {
+    "speaker": "customer",
+    "start": 2.944,
+    "end": 9.136,
+    "text": "Morning. Ben Carter here. I need to ask about moving my session on Thursday."
+  },
+  {
+    "speaker": "consultant",
+    "start": 9.536,
+    "end": 12.632,
+    "text": "Hi Ben. Sure, what is the problem?"
+  },
+  {
+    "speaker": "customer",
+    "start": 13.032,
+    "end": 19.32,
+    "text": "A big client meeting came up on Thursday morning. Can we move our session to next week?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 19.72,
+    "end": 27.808,
+    "text": "We can move it. Because Thursday is less than forty-eight hours away, there is a fee of fifty percent of the session fee."
+  },
+  {
+    "speaker": "customer",
+    "start": 28.208,
+    "end": 32.96,
+    "text": "Fifty percent? For moving a meeting? That is ridiculous."
+  },
+  {
+    "speaker": "consultant",
+    "start": 33.36,
+    "end": 41.88,
+    "text": "I understand it is annoying. The rule is in the agreement, because I usually cannot fill a slot at such short notice."
+  },
+  {
+    "speaker": "customer",
+    "start": 42.279,
+    "end": 47.319,
+    "text": "I have been a client for five months. I thought that would count for something."
+  },
+  {
+    "speaker": "consultant",
+    "start": 47.719,
+    "end": 54.895,
+    "text": "I value you as a client, Ben. I apply the same rule to everyone, so it stays fair."
+  },
+  {
+    "speaker": "customer",
+    "start": 55.295,
+    "end": 58.823,
+    "text": "Fine. So what are my options exactly?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 59.223,
+    "end": 69.039,
+    "text": "You can keep Thursday at ten, or move it and pay the fee. The other option is to do a shorter session by phone on Thursday afternoon."
+  },
+  {
+    "speaker": "customer",
+    "start": 69.439,
+    "end": 70.759,
+    "text": "How short?"
+  },
+  {
+    "speaker": "consultant",
+    "start": 71.159,
+    "end": 76.463,
+    "text": "Forty-five minutes, at four o'clock. That would not count as a reschedule."
+  },
+  {
+    "speaker": "customer",
+    "start": 76.863,
+    "end": 81.711,
+    "text": "Let me check my calendar first. I'll let you know which option by tomorrow."
+  },
+  {
+    "speaker": "consultant",
+    "start": 82.111,
+    "end": 85.831,
+    "text": "That is fine. Please tell me before noon tomorrow."
+  },
+  {
+    "speaker": "customer",
+    "start": 86.231,
+    "end": 89.951,
+    "text": "Okay. I still think the rule is too strict."
+  },
+  {
+    "speaker": "consultant",
+    "start": 90.351,
+    "end": 94.263,
+    "text": "I hear you, Ben. I will wait for your message."
+  },
+  {
+    "speaker": "customer",
+    "start": 94.663,
+    "end": 96.391,
+    "text": "Right. Bye."
+  }
+]

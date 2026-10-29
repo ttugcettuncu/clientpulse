@@ -12,3 +12,5 @@ faster-whisper
 av>=18,<19  # faster-whisper 1.2.1 passes metadata_errors to av.open (missing in av 19)
 jiwer
 num2words
+# Phase 4 — dashboard
+streamlit

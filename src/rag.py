@@ -49,15 +49,22 @@ MAX_CHUNK_WORDS = 180  # ~250 tokens, the MiniLM input limit
 TOP_K = 6
 
 MODEL = "gpt-4o-mini"
-PROMPT_VERSION = "v1"  # bump on every prompt change
+PROMPT_VERSION = "v3"  # bump on every prompt change; see docs/cost_experiment.md
 MAX_OUTPUT_TOKENS = 300
 NOT_FOUND = "The documents do not contain this information."
 
+# v2: a documented "no" is an answer; calculations step by step; process questions list every step
+# v3: a "no" needs an explicit statement; silence in the documents stays unanswerable
 SYSTEM_PROMPT = f"""You answer questions from customers of Ward Advisory, a small-business consulting practice.
 Use ONLY the documents in the user message. Do not use outside knowledge and do not guess.
-- answer: 1-3 sentences in English. Include the exact figures, deadlines and conditions from the documents.
-  If the question needs a calculation (e.g. a refund), show it briefly.
-- answerable: false if the documents do not contain the answer; then answer exactly "{NOT_FOUND}"
+- answer: 1-4 sentences in English. Include the exact figures, deadlines and conditions from the documents.
+  - If the documents explicitly state that something is not offered, not accepted or not done, that IS the
+    answer: answer "No" and quote the rule. If the documents simply do not mention it, that is NOT a "no".
+  - If the question needs a calculation (e.g. a refund), write every step with its intermediate result,
+    e.g. "2 x $100 = $200; $200 - $30 = $170".
+  - If the question asks how a process works or how long it takes, include every step the documents give.
+- answerable: true when the documents answer the question, including an explicit "no". false when the documents
+  say nothing about it; then answer exactly "{NOT_FOUND}" and nothing else
 - sources: the file names of the documents you used (empty if not answerable)
 """
 

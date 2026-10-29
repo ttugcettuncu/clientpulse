@@ -32,7 +32,8 @@ GOLDEN_PATH = PROJECT_ROOT / "docs" / "eval" / "golden_qa.csv"
 ANSWERS_DIR = PROJECT_ROOT / "data" / "rag_answers"
 REPORT_PATH = PROJECT_ROOT / "docs" / "cost_experiment.md"
 MODES = ["no_rag", "rag"]
-CALCULATED = {"q12"}  # key fact is a computed amount, not text in the documents
+CALCULATED = {"q12", "t04"}  # key fact is a computed amount, not text in the documents
+SPLITS = ["dev", "test"]  # dev = seen while tuning the answer prompt, test = held out
 QUERIES_PER_MONTH = 1_000  # for the monthly cost projection
 MANUAL_MARKER = "<!-- manual analysis below: kept when the report is regenerated -->"
 
@@ -88,12 +89,17 @@ def context_recall(rows: list[dict], guard: BudgetGuard) -> tuple[int, int, list
 
 def summarize(rows: list[dict], results: dict[str, dict]) -> dict:
     n = len(rows)
+    by_split = {}
+    for s in SPLITS:
+        split_rows = [r for r in rows if r["split"] == s]
+        by_split[s] = (sum(is_correct(r, results[r["id"]]) for r in split_rows), len(split_rows))
     by_type = {}
     for t in ["single_fact", "multi_fact", "unanswerable"]:
         typed = [r for r in rows if r["type"] == t]
         by_type[t] = (sum(is_correct(r, results[r["id"]]) for r in typed), len(typed))
     return {
         "correct": sum(is_correct(r, results[r["id"]]) for r in rows),
+        "by_split": by_split,
         "by_type": by_type,
         "cost": sum(results[r["id"]]["cost"] for r in rows) / n,
         "input_tokens": sum(results[r["id"]]["input_tokens"] for r in rows) / n,
@@ -127,6 +133,9 @@ def main() -> None:
         f"Model: `{rag.MODEL}`, answer prompt `{rag.PROMPT_VERSION}` (temperature 0, strict JSON schema). "
         f"Golden set: `docs/eval/golden_qa.csv` ({n} questions).",
         "",
+        "**dev** questions were seen while analysing and changing the answer prompt; **test** questions were "
+        "written before the first prompt change (see the prompt history below for how clean the test score is).",
+        "",
         f"- **no_rag:** all {len(rag._full_corpus())} corpus documents are sent with every question.",
         f"- **rag:** only the top-{rag.TOP_K} chunks are sent "
         f"(embedding `{rag.EMBEDDINGS[rag.EMBEDDING]}`, ~180-word chunks split by section).",
@@ -136,8 +145,11 @@ def main() -> None:
         "",
         "| | no_rag | rag |",
         "|---|---|---|",
-        f"| Accuracy | {base['correct']}/{n} ({acc_base:.0%}) | {new['correct']}/{n} ({acc_new:.0%}) |",
+        f"| Accuracy, all questions | {base['correct']}/{n} ({acc_base:.0%}) | {new['correct']}/{n} ({acc_new:.0%}) |",
     ]
+    for s in SPLITS:
+        lines.append(f"| &nbsp;&nbsp;{s} | {base['by_split'][s][0]}/{base['by_split'][s][1]} | "
+                     f"{new['by_split'][s][0]}/{new['by_split'][s][1]} |")
     for t in ["single_fact", "multi_fact", "unanswerable"]:
         lines.append(f"| &nbsp;&nbsp;{t} | {base['by_type'][t][0]}/{base['by_type'][t][1]} | "
                      f"{new['by_type'][t][0]}/{new['by_type'][t][1]} |")
@@ -158,13 +170,13 @@ def main() -> None:
         f"**RAG reduced the cost per question by {saving:.0%}; accuracy {trend} {acc_new:.0%} "
         f"(no-RAG: {acc_base:.0%}).**",
         "",
-        "| Question | Type | no_rag | rag | rag answer |",
-        "|---|---|---|---|---|",
+        "| Question | Split | Type | no_rag | rag | rag answer |",
+        "|---|---|---|---|---|---|",
     ]
     for row in rows:
         marks = ["✅" if is_correct(row, results[m][row["id"]]) else "❌" for m in MODES]
         answer = results["rag"][row["id"]]["answer"].replace("|", "\\|").replace("\n", " ")
-        lines.append(f"| {row['id']} | {row['type']} | {marks[0]} | {marks[1]} | {answer} |")
+        lines.append(f"| {row['id']} | {row['split']} | {row['type']} | {marks[0]} | {marks[1]} | {answer} |")
 
     manual = ""
     if REPORT_PATH.exists():
@@ -173,8 +185,10 @@ def main() -> None:
             manual = old[old.index(MANUAL_MARKER):]
     REPORT_PATH.write_text("\n".join(lines) + "\n\n" + (manual or MANUAL_MARKER + "\n"), encoding="utf-8")
 
-    print(f"no_rag {acc_base:.0%} ${base['cost']:.6f}/q | rag {acc_new:.0%} ${new['cost']:.6f}/q | "
-          f"saving {saving:.0%} | context recall {recall_hit}/{recall_n}")
+    for mode in MODES:
+        splits = " | ".join(f"{s} {c}/{t}" for s, (c, t) in stats[mode]["by_split"].items())
+        print(f"{mode:6} all {stats[mode]['correct']}/{n} | {splits} | ${stats[mode]['cost']:.6f}/q")
+    print(f"saving {saving:.0%} | context recall {recall_hit}/{recall_n} {recall_missed}")
     print(f"Report written: {REPORT_PATH.relative_to(PROJECT_ROOT)}  |  cost by step: {db.cost_by_step()}  |  "
           f"total: ${guard.spent:.4f}")
 

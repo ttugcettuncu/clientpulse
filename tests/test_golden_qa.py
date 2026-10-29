@@ -19,3 +19,10 @@ def test_source_docs_exist_and_unanswerable_has_none():
         else:
             assert docs and row["key_facts"], row["id"]
             assert all((CORPUS / d).is_file() for d in docs), row["id"]
+
+
+def test_split_is_dev_or_held_out_test():
+    assert {r["split"] for r in GOLDEN} == {"dev", "test"}
+    test_rows = [r for r in GOLDEN if r["split"] == "test"]
+    assert len(test_rows) >= 10
+    assert {r["type"] for r in test_rows} == {"single_fact", "multi_fact", "unanswerable"}

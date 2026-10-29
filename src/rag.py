@@ -301,6 +301,9 @@ def answer_question(
 if __name__ == "__main__":
     import sys
 
+    from dotenv import load_dotenv
+
+    load_dotenv(PROJECT_ROOT / ".env")
     if sys.argv[1:]:
         print(json.dumps(answer_question(" ".join(sys.argv[1:])), indent=2))
     else:

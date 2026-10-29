@@ -1,0 +1,97 @@
+{
+  "call_brief": {
+    "cost_per_call": 0.00020442857142857141,
+    "latency": 1.869832523809583,
+    "model": "gpt-4o-mini",
+    "prompt": "v6",
+    "splits": {
+      "dev": {
+        "both": 0.7777777777777778,
+        "calls": 9,
+        "disposition": 1.0,
+        "sentiment": 0.7777777777777778
+      },
+      "test": {
+        "both": 0.4166666666666667,
+        "calls": 12,
+        "disposition": 0.75,
+        "sentiment": 0.6666666666666666
+      }
+    },
+    "stt_model": "base",
+    "target": 0.85,
+    "updated": "2026-10-30"
+  },
+  "rag": {
+    "context_recall": {
+      "hit": 24,
+      "total": 25
+    },
+    "cost_saving": 0.7235221386800335,
+    "embedding": "text-embedding-3-small",
+    "model": "gpt-4o-mini",
+    "modes": {
+      "no_rag": {
+        "correct": 29,
+        "cost_per_question": 0.0007013671875,
+        "input_tokens": 4440.65625,
+        "latency": 1.2713356218741865,
+        "splits": {
+          "dev": {
+            "correct": 19,
+            "total": 20
+          },
+          "test": {
+            "correct": 10,
+            "total": 12
+          }
+        }
+      },
+      "rag": {
+        "correct": 30,
+        "cost_per_question": 0.00019391249999999998,
+        "input_tokens": 1073.625,
+        "latency": 2.230764837499919,
+        "splits": {
+          "dev": {
+            "correct": 19,
+            "total": 20
+          },
+          "test": {
+            "correct": 11,
+            "total": 12
+          }
+        }
+      }
+    },
+    "prompt": "v3",
+    "questions": 32,
+    "top_k": 6,
+    "updated": "2026-10-30"
+  },
+  "stt": {
+    "default_model": "base",
+    "models": {
+      "base": {
+        "calls": 21,
+        "raw_wer": 0.05055150679355501,
+        "rtf": 0.1354369051499257,
+        "wer": 0.011963355811920323
+      },
+      "small": {
+        "calls": 21,
+        "raw_wer": 0.04844550585711221,
+        "rtf": 0.2824203464382201,
+        "wer": 0.009354363806448721
+      },
+      "tiny": {
+        "calls": 21,
+        "raw_wer": 0.05370967784421278,
+        "rtf": 0.10312802503347668,
+        "wer": 0.014991783197695433
+      }
+    },
+    "target": 0.15,
+    "updated": "2026-10-30"
+  }
+}

@@ -20,7 +20,7 @@ from pathlib import Path
 import jiwer
 from num2words import num2words
 
-from src import stt
+from src import metrics, stt
 from src.call_scripts import AUDIO_DIR, PROJECT_ROOT, load_scripts
 
 TRANSCRIPTS_DIR = PROJECT_ROOT / "data" / "synthetic_calls" / "transcripts"
@@ -162,11 +162,22 @@ def write_report(rows: list[dict], path: Path = REPORT_PATH) -> None:
     print(f"\nReport written: {path.relative_to(PROJECT_ROOT)}")
 
 
+def save_metrics(rows: list[dict]) -> None:
+    by_model = {}
+    for m in dict.fromkeys(r["model"] for r in rows):
+        mr = [r for r in rows if r["model"] == m]
+        by_model[m] = {"wer": _mean(r["wer"] for r in mr), "raw_wer": _mean(r["raw_wer"] for r in mr),
+                       "rtf": _mean(r["rtf"] for r in mr), "calls": len(mr)}
+    metrics.save("stt", {"default_model": stt.DEFAULT_MODEL, "target": WER_TARGET, "models": by_model})
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--models", nargs="+", default=["tiny", "base", "small"])
     args = parser.parse_args()
-    write_report(run(args.models))
+    rows = run(args.models)
+    write_report(rows)
+    save_metrics(rows)
 
 
 if __name__ == "__main__":

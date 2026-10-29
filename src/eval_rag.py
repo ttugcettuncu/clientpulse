@@ -24,7 +24,7 @@ from datetime import date
 
 from dotenv import load_dotenv
 
-from src import db, rag
+from src import db, metrics, rag
 from src.budget_guard import BudgetGuard
 
 PROJECT_ROOT = rag.PROJECT_ROOT
@@ -184,6 +184,17 @@ def main() -> None:
         if MANUAL_MARKER in old:
             manual = old[old.index(MANUAL_MARKER):]
     REPORT_PATH.write_text("\n".join(lines) + "\n\n" + (manual or MANUAL_MARKER + "\n"), encoding="utf-8")
+
+    metrics.save("rag", {
+        "model": rag.MODEL, "prompt": rag.PROMPT_VERSION, "embedding": rag.EMBEDDINGS[rag.EMBEDDING],
+        "top_k": rag.TOP_K, "questions": n, "cost_saving": saving,
+        "context_recall": {"hit": recall_hit, "total": recall_n},
+        "modes": {mode: {"correct": stats[mode]["correct"],
+                         "splits": {s: {"correct": c, "total": t} for s, (c, t) in stats[mode]["by_split"].items()},
+                         "cost_per_question": stats[mode]["cost"], "input_tokens": stats[mode]["input_tokens"],
+                         "latency": stats[mode]["latency"]}
+                  for mode in MODES},
+    })
 
     for mode in MODES:
         splits = " | ".join(f"{s} {c}/{t}" for s, (c, t) in stats[mode]["by_split"].items())

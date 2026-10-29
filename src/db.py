@@ -76,3 +76,38 @@ def cost_by_step(db_path: Path | str = DEFAULT_DB_PATH) -> dict[str, float]:
         rows = conn.execute("SELECT step, SUM(cost) FROM calls GROUP BY step ORDER BY step").fetchall()
     conn.close()
     return {step: float(cost) for step, cost in rows}
+
+
+def step_stats(db_path: Path | str = DEFAULT_DB_PATH) -> list[dict]:
+    """One row per (step, model): run counts by status, spend, and averages over successful runs.
+
+    Averages use status 'ok' only, so retries and errors do not distort cost or latency per run.
+    """
+    with connect(db_path) as conn:
+        conn.row_factory = sqlite3.Row
+        rows = conn.execute("""
+            SELECT step, model,
+                   COUNT(*)                                        AS runs,
+                   SUM(status = 'ok')                              AS ok,
+                   SUM(status = 'error')                           AS errors,
+                   SUM(status = 'retry')                           AS retries,
+                   SUM(status = 'invalid')                         AS invalid,
+                   COALESCE(SUM(cost), 0)                          AS cost,
+                   AVG(CASE WHEN status = 'ok' THEN cost END)      AS avg_cost,
+                   AVG(CASE WHEN status = 'ok' THEN latency END)   AS avg_latency,
+                   AVG(CASE WHEN status = 'ok' THEN input_tokens END)  AS avg_input_tokens,
+                   AVG(CASE WHEN status = 'ok' THEN output_tokens END) AS avg_output_tokens
+            FROM calls GROUP BY step, model ORDER BY step, model
+        """).fetchall()
+    conn.close()
+    return [dict(r) for r in rows]
+
+
+def daily_cost(db_path: Path | str = DEFAULT_DB_PATH) -> list[dict]:
+    """Spend per UTC day and step, oldest first."""
+    with connect(db_path) as conn:
+        rows = conn.execute(
+            "SELECT substr(timestamp, 1, 10) AS day, step, SUM(cost) FROM calls"
+            " GROUP BY day, step ORDER BY day, step").fetchall()
+    conn.close()
+    return [{"day": day, "step": step, "cost": float(cost)} for day, step, cost in rows]

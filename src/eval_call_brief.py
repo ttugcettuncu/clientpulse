@@ -16,7 +16,7 @@ from datetime import date
 
 from dotenv import load_dotenv
 
-from src import db
+from src import db, metrics
 from src.budget_guard import BudgetGuard
 from src.call_brief import MODEL, PROMPT_VERSION, generate_call_brief
 from src.call_scripts import PROJECT_ROOT
@@ -127,6 +127,13 @@ def main() -> None:
         if MANUAL_MARKER in old:
             manual = old[old.index(MANUAL_MARKER):]
     report_path.write_text("\n".join(lines) + "\n\n" + (manual or MANUAL_MARKER + "\n"), encoding="utf-8")
+
+    if args.model == MODEL:  # the dashboard shows the production model only
+        metrics.save("call_brief", {
+            "model": args.model, "prompt": PROMPT_VERSION, "stt_model": args.stt_model, "target": ACCURACY_TARGET,
+            "splits": {name: {**sc, "calls": len(splits[name])} for name, sc in scores.items()},
+            "cost_per_call": total_cost / len(rows), "latency": avg_latency,
+        })
 
     for name, sc in scores.items():
         print(f"{name:5} Disposition {sc['disposition']:.0%} | Sentiment {sc['sentiment']:.0%} | Both {sc['both']:.0%}")

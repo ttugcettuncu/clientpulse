@@ -5,6 +5,7 @@ import pytest
 from src import rag
 
 CORPUS = Path(__file__).resolve().parent.parent / "data" / "corpus"
+LOCAL = "minilm"  # tests use the free local embedding; OpenAI embeddings are tested with a fake client
 
 
 def test_chunk_markdown_splits_on_sections_and_prefixes_header():
@@ -31,7 +32,7 @@ def test_corpus_chunks_fit_the_embedding_model():
 @pytest.fixture(scope="module")
 def index_dir(tmp_path_factory):
     chroma_dir = tmp_path_factory.mktemp("chroma")
-    count = rag.index_documents(chroma_dir=chroma_dir)
+    count = rag.index_documents(chroma_dir=chroma_dir, embedding=LOCAL)
     return chroma_dir, count
 
 
@@ -40,7 +41,7 @@ def test_index_documents_stores_every_chunk_with_metadata(index_dir):
     expected = sum(len(rag.chunk_markdown(p.read_text(encoding="utf-8"))) for p in CORPUS.glob("*.md"))
     assert count == expected
 
-    stored = rag.get_collection(chroma_dir).get(include=["metadatas"])
+    stored = rag.get_collection(chroma_dir, LOCAL).get(include=["metadatas"])
     assert len(stored["ids"]) == count
     assert {m["source"] for m in stored["metadatas"]} == {p.name for p in CORPUS.glob("*.md")}
     assert {m["version"] for m in stored["metadatas"]} == {"v1"}
@@ -48,14 +49,14 @@ def test_index_documents_stores_every_chunk_with_metadata(index_dir):
 
 def test_reindexing_does_not_duplicate_chunks(index_dir):
     chroma_dir, count = index_dir
-    assert rag.index_documents(chroma_dir=chroma_dir) == count
-    assert rag.get_collection(chroma_dir).count() == count
+    assert rag.index_documents(chroma_dir=chroma_dir, embedding=LOCAL) == count
+    assert rag.get_collection(chroma_dir, LOCAL).count() == count
 
 
 def test_retrieve_finds_the_cancellation_policy(index_dir):
     chroma_dir, _ = index_dir
     hits = rag.retrieve("Will I be charged if I cancel a session less than 48 hours before?",
-                        chroma_dir=chroma_dir)
+                        chroma_dir=chroma_dir, embedding=LOCAL)
     assert len(hits) == rag.TOP_K
     assert "cancellation_and_refund_policy.md" in {h["source"] for h in hits}
 
@@ -113,7 +114,7 @@ def test_answer_question_sends_top_k_chunks_and_logs_cost(index_dir, tmp_path):
     db_path = tmp_path / "test.db"
     client = FakeClient(chat_response(POLICY_ANSWER))
     result = rag.answer_question("Will I be charged if I cancel a session at short notice?",
-                                 question_id="q02", client=client, db_path=db_path, chroma_dir=chroma_dir)
+                                 question_id="q02", client=client, db_path=db_path, chroma_dir=chroma_dir, embedding=LOCAL)
 
     assert result["answer"] == POLICY_ANSWER["answer"]
     assert result["cost"] == pytest.approx(1000 * 0.15e-6 + 50 * 0.60e-6)
@@ -138,7 +139,7 @@ def test_citing_a_document_outside_the_context_is_invalid_but_billed(index_dir, 
     db_path = tmp_path / "test.db"
     bad = {"answer": "x", "answerable": True, "sources": ["made_up.md"]}
     with pytest.raises(rag.InvalidAnswerError):
-        rag.answer_question("q", client=FakeClient(chat_response(bad)), db_path=db_path, chroma_dir=chroma_dir)
+        rag.answer_question("q", client=FakeClient(chat_response(bad)), db_path=db_path, chroma_dir=chroma_dir, embedding=LOCAL)
     assert logged(db_path) == [("rag", "invalid", None)]
 
 
@@ -149,7 +150,7 @@ def test_transient_error_is_retried(index_dir, tmp_path):
     error = openai.RateLimitError("429", response=httpx.Response(429, request=request), body=None)
     not_found = {"answer": rag.NOT_FOUND, "answerable": False, "sources": []}
     client = FakeClient(error, chat_response(not_found))
-    rag.answer_question("q", client=client, db_path=db_path, chroma_dir=chroma_dir, sleep=lambda s: None)
+    rag.answer_question("q", client=client, db_path=db_path, chroma_dir=chroma_dir, embedding=LOCAL, sleep=lambda s: None)
     assert [row[1] for row in logged(db_path)] == ["retry", "ok"]
 
 
@@ -159,5 +160,30 @@ def test_budget_guard_blocks_before_the_api_call(index_dir, tmp_path):
     client = FakeClient()
     with pytest.raises(BudgetExceededError):
         rag.answer_question("q", client=client, guard=BudgetGuard(limit=0, db_path=db_path),
-                            db_path=db_path, chroma_dir=chroma_dir)
+                            db_path=db_path, chroma_dir=chroma_dir, embedding=LOCAL)
     assert client.requests == []
+
+
+class FakeEmbeddingClient:
+    def __init__(self):
+        self.requests = []
+        self.embeddings = SimpleNamespace(create=self._create)
+
+    def _create(self, model, input):
+        self.requests.append(model)
+        return SimpleNamespace(data=[SimpleNamespace(embedding=[1.0, float(i)]) for i in range(len(input))],
+                               usage=SimpleNamespace(prompt_tokens=500))
+
+
+def test_openai_embedding_is_budget_checked_and_logged(tmp_path):
+    db_path = tmp_path / "test.db"
+    client = FakeEmbeddingClient()
+    vectors = rag._embed(["a", "b"], "openai", client=client, db_path=db_path)
+
+    assert vectors == [[1.0, 0.0], [1.0, 1.0]]
+    assert client.requests == ["text-embedding-3-small"]
+    with sqlite3.connect(db_path) as conn:
+        assert conn.execute("SELECT step, status, input_tokens, cost FROM calls").fetchall() == [
+            ("embedding", "ok", 500, pytest.approx(500 * 0.02e-6))]
+    with pytest.raises(BudgetExceededError):
+        rag._embed(["a"], "openai", client=client, guard=BudgetGuard(limit=0, db_path=db_path))

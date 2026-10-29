@@ -27,3 +27,6 @@ data/synthetic_calls/transcripts/
 
 # Generated Call Briefs (reproducible: python -m src.eval_call_brief, costs a few cents)
 data/synthetic_calls/briefs/
+
+# Generated RAG answers (reproducible: python -m src.eval_rag, costs about a cent)
+data/rag_answers/

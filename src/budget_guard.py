@@ -49,6 +49,11 @@ class BudgetGuard:
                      output_tokens=usage.completion_tokens, **log_fields)
         return cost
 
+    def record_embedding(self, usage, model: str = "text-embedding-3-small", **log_fields) -> float:
+        cost = usage.prompt_tokens * PRICE[model]["input"]
+        self._record(cost, model=model, input_tokens=usage.prompt_tokens, **log_fields)
+        return cost
+
     def record_audio(self, minutes: float, model: str = "whisper-1", **log_fields) -> float:
         cost = minutes * PRICE[model]["per_minute"]
         self._record(cost, model=model, **log_fields)

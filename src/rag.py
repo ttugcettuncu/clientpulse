@@ -3,14 +3,20 @@
 Indexing (task 3.2): each Markdown file is split along its `##` sections;
 a section longer than MAX_CHUNK_WORDS is split further at paragraph or
 line boundaries. Every chunk starts with "<document title> > <section>",
-so a chunk is understandable on its own. Chunks are embedded locally with
-Chroma's built-in all-MiniLM-L6-v2 (ONNX, same model as the
-sentence-transformers default, no torch needed, free) and stored in a
-persistent Chroma collection with metadata: source file and corpus version.
+so a chunk is understandable on its own. Chunks are stored in a persistent
+Chroma collection with metadata: source file, section and corpus version.
 
+Two embeddings, one collection each:
+- "openai" (default): text-embedding-3-small, ~$0.0001 to embed the corpus,
+  every call goes through BudgetGuard (step "embedding").
+- "minilm": Chroma's built-in all-MiniLM-L6-v2 (ONNX, local, free; same model
+  as the sentence-transformers default, no torch needed).
 MiniLM truncates input after 256 word pieces, so chunks stay at about
-180 words (~250 tokens) instead of the planned 400 tokens; longer chunks
-would be embedded only partly.
+180 words (~250 tokens) instead of the planned 400 tokens; both embeddings
+use the same chunks so they can be compared. On the golden set (16
+answerable questions with facts stated in the docs), all key facts were in
+the top-6 context for 16/16 with openai vs 15/16 with minilm (top-4: 14/16
+for both), hence openai and top-6.
 
 Answering (task 3.3): the top-k chunks go to gpt-4o-mini with an
 "answer only from the context" instruction and a strict JSON schema
@@ -34,10 +40,13 @@ from src.call_brief import BACKOFF_SECONDS, MAX_RETRIES, RETRYABLE
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 CORPUS_DIR = PROJECT_ROOT / "data" / "corpus"
 CHROMA_DIR = PROJECT_ROOT / "data" / "chroma"
-COLLECTION = "corpus"
 CORPUS_VERSION = "v1"
+# embedding name -> OpenAI model (None = local MiniLM); one Chroma collection per embedding
+EMBEDDINGS = {"minilm": None, "openai": "text-embedding-3-small"}
+EMBEDDING = "openai"
+EMBEDDING_STEP = "embedding"
 MAX_CHUNK_WORDS = 180  # ~250 tokens, the MiniLM input limit
-TOP_K = 4
+TOP_K = 6
 
 MODEL = "gpt-4o-mini"
 PROMPT_VERSION = "v1"  # bump on every prompt change
@@ -118,16 +127,38 @@ def chunk_markdown(text: str, max_words: int = MAX_CHUNK_WORDS) -> list[dict]:
     return chunks
 
 
-def get_collection(chroma_dir: Path | str = CHROMA_DIR):
+def get_collection(chroma_dir: Path | str = CHROMA_DIR, embedding: str = EMBEDDING):
+    """Embeddings are computed by _embed() and passed in explicitly, so Chroma gets no embedding function."""
     client = chromadb.PersistentClient(path=str(chroma_dir))
     return client.get_or_create_collection(
-        COLLECTION, embedding_function=DefaultEmbeddingFunction(),
-        metadata={"hnsw:space": "cosine"},
+        f"corpus_{embedding}", embedding_function=None, metadata={"hnsw:space": "cosine"},
     )
 
 
+def _embed(texts: list[str], embedding: str = EMBEDDING, client: OpenAI | None = None,
+           guard: BudgetGuard | None = None, db_path: Path | str = db.DEFAULT_DB_PATH) -> list[list[float]]:
+    model = EMBEDDINGS[embedding]
+    if model is None:
+        return [[float(x) for x in vector] for vector in DefaultEmbeddingFunction()(texts)]
+
+    client = client or OpenAI()
+    guard = guard or BudgetGuard(db_path=db_path)
+    guard.check(upcoming_cost=sum(len(t) for t in texts) / 4 * PRICE[model]["input"])
+    start = time.perf_counter()
+    try:
+        response = client.embeddings.create(model=model, input=texts)
+    except Exception:
+        db.log_step(EMBEDDING_STEP, "error", model=model, latency=time.perf_counter() - start, db_path=db_path)
+        raise
+    guard.record_embedding(response.usage, model=model, step=EMBEDDING_STEP,
+                           latency=time.perf_counter() - start)
+    return [item.embedding for item in response.data]
+
+
 def index_documents(corpus_dir: Path | str = CORPUS_DIR, chroma_dir: Path | str = CHROMA_DIR,
-                    version: str = CORPUS_VERSION) -> int:
+                    version: str = CORPUS_VERSION, embedding: str = EMBEDDING,
+                    client: OpenAI | None = None, guard: BudgetGuard | None = None,
+                    db_path: Path | str = db.DEFAULT_DB_PATH) -> int:
     """(Re)build the vector index from corpus_dir. Returns the number of chunks stored.
 
     The collection is emptied first, so re-running never leaves stale chunks.
@@ -142,17 +173,21 @@ def index_documents(corpus_dir: Path | str = CORPUS_DIR, chroma_dir: Path | str 
     if not ids:
         raise ValueError(f"no Markdown documents in {corpus_dir}")
 
-    collection = get_collection(chroma_dir)
+    embeddings = _embed(documents, embedding, client=client, guard=guard, db_path=db_path)
+    collection = get_collection(chroma_dir, embedding)
     existing = collection.get(include=[])["ids"]
     if existing:
         collection.delete(ids=existing)
-    collection.add(ids=ids, documents=documents, metadatas=metadatas)
+    collection.add(ids=ids, documents=documents, metadatas=metadatas, embeddings=embeddings)
     return len(ids)
 
 
-def retrieve(question: str, k: int = TOP_K, chroma_dir: Path | str = CHROMA_DIR) -> list[dict]:
+def retrieve(question: str, k: int = TOP_K, chroma_dir: Path | str = CHROMA_DIR,
+             embedding: str = EMBEDDING, client: OpenAI | None = None, guard: BudgetGuard | None = None,
+             db_path: Path | str = db.DEFAULT_DB_PATH) -> list[dict]:
     """Top-k chunks for a question: [{"id", "text", "source", "section", "distance"}]."""
-    result = get_collection(chroma_dir).query(query_texts=[question], n_results=k)
+    query = _embed([question], embedding, client=client, guard=guard, db_path=db_path)
+    result = get_collection(chroma_dir, embedding).query(query_embeddings=query, n_results=k)
     return [
         {"id": id_, "text": doc, "source": meta["source"], "section": meta["section"], "distance": dist}
         for id_, doc, meta, dist in zip(result["ids"][0], result["documents"][0],
@@ -192,6 +227,7 @@ def answer_question(
     question_id: str | None = None,
     use_rag: bool = True,
     k: int = TOP_K,
+    embedding: str = EMBEDDING,
     client: OpenAI | None = None,
     guard: BudgetGuard | None = None,
     db_path: Path | str = db.DEFAULT_DB_PATH,
@@ -210,7 +246,8 @@ def answer_question(
     guard = guard or BudgetGuard(db_path=db_path)
     step = "rag" if use_rag else "no_rag"
 
-    context = retrieve(question, k=k, chroma_dir=chroma_dir) if use_rag else _full_corpus(corpus_dir)
+    context = (retrieve(question, k=k, chroma_dir=chroma_dir, embedding=embedding, guard=guard, db_path=db_path)
+               if use_rag else _full_corpus(corpus_dir))
     context_sources = list(dict.fromkeys(c["source"] for c in context))
     user_message = f"Documents:\n{_format_context(context)}\n\nQuestion: {question}"
 
